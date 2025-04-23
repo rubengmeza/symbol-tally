@@ -1,0 +1,3 @@
+/home/roobz/fun/symbol-tally/CMakeFiles/run.dir
+/home/roobz/fun/symbol-tally/CMakeFiles/edit_cache.dir
+/home/roobz/fun/symbol-tally/CMakeFiles/rebuild_cache.dir

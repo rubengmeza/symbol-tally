@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/roobz/fun/symbol-tally/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

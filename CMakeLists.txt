@@ -4,14 +4,30 @@ project(symbol-tally)
 
 set(CMAKE_CXX_STANDARD 23)
 
-# where i installed poppler. need include and library.
-set(POPPLER_INCLUDE_DIR "external/poppler/install/include")
-set(POPPLER_LIB_DIR "external/poppler/install/lib")
+# --------------------------------------------------------------------
+# POPPLER
+# --------------------------------------------------------------------
+set(POPPLER_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/include")
+set(POPPLER_LIB_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/lib")
 
 include_directories(${POPPLER_INCLUDE_DIR})
 link_directories(${POPPLER_LIB_DIR})
 
+# --------------------------------------------------------------------
+# OpenCV
+# --------------------------------------------------------------------
+# Path to OpenCV (has a config file for use with find_package)
+set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/external/opencv/install/lib/cmake/opencv4")
+
+find_package(OpenCV REQUIRED)
+
+# --------------------------------------------------------------------
+# Executable target
+# --------------------------------------------------------------------
 add_executable(run main.cpp)
 
-target_link_libraries(run poppler-cpp)
+# Include OpenCV headers
+target_include_directories(run PRIVATE ${OpenCV_INCLUDE_DIRS})
 
+# Link Poppler and OpenCV libraries
+target_link_libraries(run PRIVATE poppler-cpp ${OpenCV_LIBS})

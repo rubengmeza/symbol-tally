@@ -4,6 +4,8 @@
 #include <poppler/cpp/poppler-image.h>
 #include <poppler/cpp/poppler-page.h>
 #include <poppler/cpp/poppler-page-renderer.h>
+#include <opencv2/imgcodecs.hpp>
+#include <opencv2/highgui.hpp>
 
 int main() 
 {
@@ -37,9 +39,22 @@ int main()
 		std::cerr << "failed to render" << std::endl;
     }
 
-    if (!img.save("planting.png", "png")) {
+	std::string image_name = "planting.png";
+    if (!img.save(image_name, "png")) {
 		std::cerr << "failed to save image" << std::endl;
     }
+	else
+	{
+		std::println("Image saved as: {}", image_name);
+	}
+
+	// put image into opencv
+	cv::Mat in_image;
+	cv::imread(image_name, in_image, 0);	
+
+	// @Temporary: displaying via opencv.
+	cv::imshow("test", in_image);
+	cv::waitKey(0);
 
     return 0;
 }

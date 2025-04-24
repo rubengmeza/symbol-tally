@@ -222,4 +222,80 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
  /usr/include/c++/14.2.1/pstl/execution_defs.h \
  /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-page-renderer.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-image.h
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-image.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvdef.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/version.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/hal/interface.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mm_malloc.h \
+ /usr/include/c++/14.2.1/stdlib.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/base.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/c++/14.2.1/algorithm \
+ /usr/include/c++/14.2.1/bits/ranges_algo.h \
+ /usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvstd.hpp \
+ /usr/include/c++/14.2.1/cstring /usr/include/string.h \
+ /usr/include/strings.h /usr/include/c++/14.2.1/utility \
+ /usr/include/c++/14.2.1/bits/stl_relops.h /usr/include/c++/14.2.1/cmath \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/14.2.1/bits/specfun.h \
+ /usr/include/c++/14.2.1/tr1/gamma.tcc \
+ /usr/include/c++/14.2.1/tr1/special_function_util.h \
+ /usr/include/c++/14.2.1/tr1/bessel_function.tcc \
+ /usr/include/c++/14.2.1/tr1/beta_function.tcc \
+ /usr/include/c++/14.2.1/tr1/ell_integral.tcc \
+ /usr/include/c++/14.2.1/tr1/exp_integral.tcc \
+ /usr/include/c++/14.2.1/tr1/hypergeometric.tcc \
+ /usr/include/c++/14.2.1/tr1/legendre_function.tcc \
+ /usr/include/c++/14.2.1/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/14.2.1/tr1/poly_hermite.tcc \
+ /usr/include/c++/14.2.1/tr1/poly_laguerre.tcc \
+ /usr/include/c++/14.2.1/tr1/riemann_zeta.tcc \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/neon_utils.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/vsx_utils.hpp \
+ /usr/include/assert.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/check.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/traits.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/matx.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/saturate.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/fast_math.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/matx.inl.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/types.hpp \
+ /usr/include/c++/14.2.1/cfloat \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/float.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/mat.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/bufferpool.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/mat.inl.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/persistence.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/operations.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvstd.inl.hpp \
+ /usr/include/c++/14.2.1/complex /usr/include/c++/14.2.1/sstream \
+ /usr/include/c++/14.2.1/bits/sstream.tcc \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/utility.hpp \
+ /usr/include/c++/14.2.1/functional \
+ /usr/include/c++/14.2.1/bits/std_function.h \
+ /usr/include/c++/14.2.1/unordered_map \
+ /usr/include/c++/14.2.1/bits/unordered_map.h \
+ /usr/include/c++/14.2.1/bits/hashtable.h \
+ /usr/include/c++/14.2.1/bits/hashtable_policy.h \
+ /usr/include/c++/14.2.1/bits/move_only_function.h \
+ /usr/include/c++/14.2.1/bits/mofunc_impl.h /usr/include/c++/14.2.1/mutex \
+ /usr/include/c++/14.2.1/bits/chrono.h /usr/include/c++/14.2.1/ratio \
+ /usr/include/c++/14.2.1/bits/unique_lock.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/optim.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/ovx.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvdef.h \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/highgui.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/videoio.hpp

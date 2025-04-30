@@ -192,8 +192,8 @@ run: \
   /usr/lib/librav1e.so.0.7 \
   /usr/lib/libspeex.so.1 \
   /usr/lib/libSvtAv1Enc.so.3 \
-  /usr/lib/libtheoraenc.so.1 \
-  /usr/lib/libtheoradec.so.1 \
+  /usr/lib/libtheoraenc.so.2 \
+  /usr/lib/libtheoradec.so.2 \
   /usr/lib/libvorbis.so.0 \
   /usr/lib/libvorbisenc.so.2 \
   /usr/lib/libx264.so.164 \
@@ -692,9 +692,9 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libSvtAv1Enc.so.3:
 
-/usr/lib/libtheoraenc.so.1:
+/usr/lib/libtheoraenc.so.2:
 
-/usr/lib/libtheoradec.so.1:
+/usr/lib/libtheoradec.so.2:
 
 /usr/lib/libvorbis.so.0:
 

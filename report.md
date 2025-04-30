@@ -43,3 +43,7 @@ Problems linking poppler.
 - Still needed to run with: 
 `export LD_LIBRARY_PATH=external/poppler/install/lib:$LD_LIBRARY_PATH`
 
+
+OpenCV Template Matching
+- [Example](https://stackoverflow.com/questions/23180630/using-opencv-matchtemplate-for-blister-pack-inspection)
+- Will try implementing OpenCV example: 

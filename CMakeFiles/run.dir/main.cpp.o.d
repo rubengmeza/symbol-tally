@@ -298,4 +298,6 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/ovx.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvdef.h \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/highgui.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/videoio.hpp
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/videoio.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc.hpp \
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc/segmentation.hpp

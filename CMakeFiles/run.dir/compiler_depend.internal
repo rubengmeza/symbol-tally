@@ -31,6 +31,8 @@ CMakeFiles/run.dir/main.cpp.o
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/vsx_utils.hpp
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/highgui.hpp
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc.hpp
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc/segmentation.hpp
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/opencv_modules.hpp
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/videoio.hpp
  /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-document.h
@@ -549,8 +551,8 @@ run
  /usr/lib/libsystemd.so.0
  /usr/lib/libtasn1.so.6
  /usr/lib/libthai.so.0
- /usr/lib/libtheoradec.so.1
- /usr/lib/libtheoraenc.so.1
+ /usr/lib/libtheoradec.so.2
+ /usr/lib/libtheoraenc.so.2
  /usr/lib/libtiff.so.6
  /usr/lib/libtinysparql-3.0.so.0
  /usr/lib/libunistring.so.5

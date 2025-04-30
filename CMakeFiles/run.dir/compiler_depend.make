@@ -30,6 +30,8 @@ CMakeFiles/run.dir/main.cpp.o: main.cpp \
   external/opencv/install/include/opencv4/opencv2/core/vsx_utils.hpp \
   external/opencv/install/include/opencv4/opencv2/highgui.hpp \
   external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp \
+  external/opencv/install/include/opencv4/opencv2/imgproc.hpp \
+  external/opencv/install/include/opencv4/opencv2/imgproc/segmentation.hpp \
   external/opencv/install/include/opencv4/opencv2/opencv_modules.hpp \
   external/opencv/install/include/opencv4/opencv2/videoio.hpp \
   external/poppler/install/include/poppler/cpp/poppler-document.h \
@@ -547,8 +549,8 @@ run: external/poppler/install/lib/libpoppler-cpp.so \
   /usr/lib/libsystemd.so.0 \
   /usr/lib/libtasn1.so.6 \
   /usr/lib/libthai.so.0 \
-  /usr/lib/libtheoradec.so.1 \
-  /usr/lib/libtheoraenc.so.1 \
+  /usr/lib/libtheoradec.so.2 \
+  /usr/lib/libtheoraenc.so.2 \
   /usr/lib/libtiff.so.6 \
   /usr/lib/libtinysparql-3.0.so.0 \
   /usr/lib/libunistring.so.5 \
@@ -832,9 +834,13 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libtiff.so.6:
 
-/usr/lib/libtheoradec.so.1:
+/usr/lib/libtheoradec.so.2:
 
 /usr/lib/libsystemd.so.0:
+
+/usr/lib/libswresample.so.5:
+
+/usr/lib/libssl3.so:
 
 /usr/include/c++/14.2.1/climits:
 
@@ -940,6 +946,8 @@ external/opencv/install/include/opencv4/opencv2/core/neon_utils.hpp:
 
 /usr/include/c++/14.2.1/bits/out_ptr.h:
 
+external/opencv/install/include/opencv4/opencv2/imgproc.hpp:
+
 /usr/lib32/libunistring.so.5:
 
 /usr/lib32/libelf.so.1:
@@ -1044,9 +1052,9 @@ external/opencv/install/include/opencv4/opencv2/opencv_modules.hpp:
 
 external/opencv/install/include/opencv4/opencv2/core/optim.hpp:
 
-/usr/lib/libva-drm.so.2:
+/usr/include/gnu/stubs.h:
 
-/usr/include/bits/cpu-set.h:
+/usr/include/bits/types/timer_t.h:
 
 /usr/include/c++/14.2.1/bits/basic_string.tcc:
 
@@ -1080,42 +1088,6 @@ main.cpp:
 
 /usr/include/asm/posix_types_64.h:
 
-/usr/include/c++/14.2.1/bits/ostream_insert.h:
-
-/usr/include/c++/14.2.1/cmath:
-
-/usr/lib/libtasn1.so.6:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
-/usr/include/c++/14.2.1/bits/locale_facets.tcc:
-
-/usr/include/asm/errno.h:
-
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/c++/14.2.1/iostream:
-
-/usr/include/c++/14.2.1/bits/exception_defines.h:
-
-/usr/include/c++/14.2.1/bits/stl_tree.h:
-
-/usr/include/c++/14.2.1/bits/atomic_base.h:
-
-/usr/lib32/libXrender.so.1:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mmintrin.h:
-
-/usr/lib/libgcc_s.so:
-
-/usr/include/bits/endian.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/lib/libxkbcommon.so.0:
-
-/usr/include/bits/timesize.h:
-
 /usr/include/c++/14.2.1/array:
 
 /usr/lib32/libnss3.so:
@@ -1131,6 +1103,26 @@ main.cpp:
 /usr/lib/librsvg-2.so.2:
 
 external/opencv/install/include/opencv4/opencv2/core/operations.hpp:
+
+/usr/include/c++/14.2.1/bits/basic_ios.h:
+
+/usr/lib/libexpat.so.1:
+
+/usr/lib32/libssh2.so.1:
+
+external/poppler/install/include/poppler/cpp/poppler-page-renderer.h:
+
+/usr/include/c++/14.2.1/bits/atomic_base.h:
+
+/usr/include/c++/14.2.1/bits/exception_defines.h:
+
+/usr/include/c++/14.2.1/bits/stl_tree.h:
+
+/usr/lib32/libXrender.so.1:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mmintrin.h:
+
+/usr/lib/libgcc_s.so:
 
 external/poppler/install/include/poppler/cpp/poppler-font.h:
 
@@ -1172,6 +1164,38 @@ external/poppler/install/include/poppler/cpp/poppler-font.h:
 
 external/opencv/install/include/opencv4/opencv2/videoio.hpp:
 
+external/opencv/install/lib/libopencv_features2d.so.4.12.0:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/lib32/libk5crypto.so.3:
+
+/usr/lib/libnspr4.so:
+
+/usr/include/c++/14.2.1/bits/specfun.h:
+
+/usr/include/c++/14.2.1/bits/hashtable_policy.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/c++/14.2.1/bits/locale_facets.tcc:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/c++/14.2.1/iostream:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/lib/libxkbcommon.so.0:
+
+/usr/include/bits/timesize.h:
+
+/usr/lib/libnghttp3.so.9:
+
 external/opencv/install/lib/libopencv_imgcodecs.so.4.12.0:
 
 /usr/lib/libwayland-egl.so.1:
@@ -1208,13 +1232,15 @@ external/opencv/install/include/opencv4/opencv2/core/ovx.hpp:
 
 /usr/include/bits/stdint-intn.h:
 
+/usr/lib32/libffi.so.8:
+
+/usr/include/bits/types/wint_t.h:
+
+external/opencv/install/include/opencv4/opencv2/core/matx.hpp:
+
 /usr/include/c++/14.2.1/bits/uses_allocator_args.h:
 
 external/opencv/install/include/opencv4/opencv2/core/bufferpool.hpp:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/bits/types/timer_t.h:
 
 /usr/include/c++/14.2.1/bits/mofunc_impl.h:
 
@@ -1270,8 +1296,6 @@ external/opencv/install/include/opencv4/opencv2/core/cvdef.h:
 
 external/opencv/install/include/opencv4/opencv2/core/traits.hpp:
 
-/usr/include/wchar.h:
-
 /usr/lib32/libXi.so.6:
 
 /usr/include/c++/14.2.1/bits/stl_map.h:
@@ -1291,8 +1315,6 @@ external/opencv/install/include/opencv4/opencv2/core/types.hpp:
 /usr/lib/libopenmpt.so.0:
 
 /usr/include/bits/types/__fpos64_t.h:
-
-/usr/lib/libtheoraenc.so.1:
 
 /usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h:
 
@@ -1318,10 +1340,6 @@ external/opencv/install/include/opencv4/opencv2/highgui.hpp:
 
 /usr/lib/libgmodule-2.0.so.0:
 
-/usr/include/c++/14.2.1/bits/hashtable_policy.h:
-
-/usr/include/c++/14.2.1/bits/specfun.h:
-
 /usr/lib/libbz2.so.1.0:
 
 external/poppler/install/include/poppler/cpp/poppler_cpp_export.h:
@@ -1329,6 +1347,10 @@ external/poppler/install/include/poppler/cpp/poppler_cpp_export.h:
 /usr/include/c++/14.2.1/bits/unicode-data.h:
 
 /usr/include/c++/14.2.1/bits/iterator_concepts.h:
+
+/usr/lib/libva-drm.so.2:
+
+/usr/include/bits/cpu-set.h:
 
 /usr/include/bits/endianness.h:
 
@@ -1366,9 +1388,7 @@ external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp:
 
 /usr/include/sched.h:
 
-/usr/lib/libswresample.so.5:
-
-/usr/lib/libnghttp3.so.9:
+/usr/include/wchar.h:
 
 /usr/lib32/libresolv.so.2:
 
@@ -1421,16 +1441,6 @@ external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp:
 /usr/include/c++/14.2.1/bits/stl_heap.h:
 
 /usr/include/features-time64.h:
-
-external/opencv/install/lib/libopencv_features2d.so.4.12.0:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/lib32/libk5crypto.so.3:
-
-/usr/lib/libnspr4.so:
-
-/usr/include/bits/types/time_t.h:
 
 /usr/include/c++/14.2.1/bits/unique_ptr.h:
 
@@ -1530,6 +1540,8 @@ external/poppler/install/include/poppler/cpp/poppler-page.h:
 
 /usr/include/bits/mathcalls.h:
 
+external/opencv/install/include/opencv4/opencv2/imgproc/segmentation.hpp:
+
 /usr/lib/libp11-kit.so.0:
 
 /usr/lib/libpgm-5.3.so.0:
@@ -1560,19 +1572,13 @@ external/poppler/install/include/poppler/cpp/poppler-page.h:
 
 /usr/include/bits/types/struct_tm.h:
 
-/usr/include/c++/14.2.1/bits/basic_ios.h:
+/usr/include/c++/14.2.1/bits/ostream_insert.h:
 
-/usr/lib/libexpat.so.1:
+/usr/include/c++/14.2.1/cmath:
 
-/usr/lib32/libssh2.so.1:
+/usr/lib/libtasn1.so.6:
 
-external/poppler/install/include/poppler/cpp/poppler-page-renderer.h:
-
-/usr/lib32/libffi.so.8:
-
-external/opencv/install/include/opencv4/opencv2/core/matx.hpp:
-
-/usr/include/bits/types/wint_t.h:
+/usr/lib/ld-linux-x86-64.so.2:
 
 /usr/include/c++/14.2.1/compare:
 
@@ -1581,8 +1587,6 @@ external/opencv/install/include/opencv4/opencv2/core/matx.hpp:
 /usr/include/c++/14.2.1/print:
 
 /usr/lib/libhwy.so.1:
-
-/usr/lib/libssl3.so:
 
 /usr/include/c++/14.2.1/cstdint:
 
@@ -1727,6 +1731,8 @@ external/opencv/install/lib/libopencv_imgproc.so.4.12.0:
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/emmintrin.h:
 
 /usr/include/c++/14.2.1/tr1/riemann_zeta.tcc:
+
+/usr/lib/libtheoraenc.so.2:
 
 /usr/include/c++/14.2.1/unordered_map:
 

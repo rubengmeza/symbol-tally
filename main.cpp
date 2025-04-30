@@ -83,9 +83,9 @@ int main()
 	poppler::page_renderer page_renderer;
     page_renderer.set_render_hint(poppler::page_renderer::antialiasing, true);
     page_renderer.set_render_hint(poppler::page_renderer::text_antialiasing, true);
-    page_renderer.set_render_hint(poppler::page_renderer::thin_line_shape, true);
+    page_renderer.set_render_hint(poppler::page_renderer::text_hinting, true);
 
-    poppler::image img = page_renderer.render_page(page);
+    poppler::image img = page_renderer.render_page(page, 300, 300);
     if (!img.is_valid()) {
 		std::cerr << "failed to render" << std::endl;
     }

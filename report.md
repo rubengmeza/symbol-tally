@@ -47,3 +47,9 @@ Problems linking poppler.
 OpenCV Template Matching
 - [Example](https://stackoverflow.com/questions/23180630/using-opencv-matchtemplate-for-blister-pack-inspection)
 - Will try implementing OpenCV example: 
+
+
+Problems with found matches
+- Searching for specific symbol, but finding matches with different ones as well.  
+- Poppler image is low res.
+    - Could try to improve poppler saved image.

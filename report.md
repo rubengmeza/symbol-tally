@@ -53,3 +53,4 @@ Problems with found matches
 - Searching for specific symbol, but finding matches with different ones as well.  
 - Poppler image is low res.
     - Could try to improve poppler saved image.
+- Find exact resolution of original pdf????

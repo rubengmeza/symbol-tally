@@ -22,7 +22,10 @@ int match(std::string filename, std::string templatename)
 	//cv::imshow("file", ref);
 	//cv::imshow("template", tpl);
 
+	// matchTemplate use: from samples at github.
 	cv::Mat res_32f(ref.rows - tpl.rows + 1, ref.cols - tpl.cols + 1, CV_32FC1);
+	// @TODO: try passing a mask to Matchtemplate.
+	// but what is a mask????????
 	cv::matchTemplate(ref, tpl, res_32f, cv::TM_CCOEFF_NORMED);
 
 	cv::Mat res;
@@ -85,6 +88,7 @@ int main()
     page_renderer.set_render_hint(poppler::page_renderer::text_antialiasing, true);
     page_renderer.set_render_hint(poppler::page_renderer::text_hinting, true);
 
+	// pass DPI to page renderer for higher resolution image
     poppler::image img = page_renderer.render_page(page, 300, 300);
     if (!img.is_valid()) {
 		std::cerr << "failed to render" << std::endl;
@@ -107,7 +111,7 @@ int main()
 	//cv::imshow("test", in_image);
 	//cv::waitKey(0);
 
-	match(image_name, "clj_template_2.png");	
+	match(image_name, "clj_template_3.png");	
     return 0;
 }
 

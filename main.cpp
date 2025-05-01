@@ -89,7 +89,7 @@ int main()
     page_renderer.set_render_hint(poppler::page_renderer::text_hinting, true);
 
 	// pass DPI to page renderer for higher resolution image
-    poppler::image img = page_renderer.render_page(page, 300, 300);
+    poppler::image img = page_renderer.render_page(page, 600, 600);
     if (!img.is_valid()) {
 		std::cerr << "failed to render" << std::endl;
     }
@@ -111,7 +111,7 @@ int main()
 	//cv::imshow("test", in_image);
 	//cv::waitKey(0);
 
-	match(image_name, "clj_template_3.png");	
+	match(image_name, "clj_template_4.png");	
     return 0;
 }
 

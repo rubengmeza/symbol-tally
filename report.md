@@ -54,3 +54,4 @@ Problems with found matches
 - Poppler image is low res.
     - Could try to improve poppler saved image.
 - Find exact resolution of original pdf????
+- Passing high DPI to page renderer causes slowing. Still worth? 

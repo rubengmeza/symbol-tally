@@ -9,6 +9,11 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core/hal/interface.h>
 
+// @Temporary: globals bad
+poppler::document *doc = nullptr;
+std::string file_path = "landscape_plans.pdf";
+poppler::page *page = nullptr;
+
 int match(std::string filename, std::string templatename)
 {
 	cv::Mat ref = cv::imread(filename);
@@ -24,8 +29,6 @@ int match(std::string filename, std::string templatename)
 
 	// matchTemplate use: from samples at github.
 	cv::Mat res_32f(ref.rows - tpl.rows + 1, ref.cols - tpl.cols + 1, CV_32FC1);
-	// @TODO: try passing a mask to Matchtemplate.
-	// but what is a mask????????
 	cv::matchTemplate(ref, tpl, res_32f, cv::TM_CCOEFF_NORMED);
 
 	cv::Mat res;
@@ -60,10 +63,8 @@ int match(std::string filename, std::string templatename)
     return 0;
 }
 
-int main() 
+poppler::document * load_pdf(std::string path)
 {
-	std::string file_path = "landscape_plans.pdf";
-	poppler::document *doc = nullptr;
 	doc = poppler::document::load_from_file(file_path);
     if (!doc) {
         delete doc;
@@ -73,16 +74,27 @@ int main()
 		std::println("Loaded PDF: {}", file_path);
 	}
 
-	std::string pdf_title = doc->get_title().to_latin1();
-	int pdf_page_count = doc->pages();
-	std::println("Document title: {}", pdf_title);
-	std::println("Document page count: {}", pdf_page_count);
+	// PDF meta data
+	//std::string pdf_title = doc->get_title().to_latin1();
+	//int pdf_page_count = doc->pages();
+	//std::println("Document title: {}", pdf_title);
+	//std::println("Document page count: {}", pdf_page_count);
+	
+	return doc;
 
-	// extract a single page
+}
+
+poppler::page * process_pdf()
+{
 	int target_page = 6;
-    poppler::page *page = nullptr;
 	page = doc->create_page(target_page);
 
+	
+	return page;
+}
+
+void create_image_from_pdf(std::string image_name)
+{
 	poppler::page_renderer page_renderer;
     page_renderer.set_render_hint(poppler::page_renderer::antialiasing, true);
     page_renderer.set_render_hint(poppler::page_renderer::text_antialiasing, true);
@@ -94,7 +106,6 @@ int main()
 		std::cerr << "failed to render" << std::endl;
     }
 
-	std::string image_name = "planting.png";
     if (!img.save(image_name, "png")) {
 		std::cerr << "failed to save image" << std::endl;
     }
@@ -102,16 +113,18 @@ int main()
 	{
 		std::println("Image saved as: {}", image_name);
 	}
+}
 
-	// put image into opencv
-	//cv::Mat in_image;
-	//cv::imread(image_name, in_image, 0);	
+int main() 
+{
+	doc = load_pdf(file_path);
+	// extract a single page
+	page = process_pdf();
+	// Save as a reference image for opencv.
+	create_image_from_pdf("planting.png");
+	// find the template in the reference image.
+	match("planting.png", "clj_template_4.png");	
 
-	// @Temporary: displaying via opencv.
-	//cv::imshow("test", in_image);
-	//cv::waitKey(0);
-
-	match(image_name, "clj_template_4.png");	
     return 0;
 }
 

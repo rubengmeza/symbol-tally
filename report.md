@@ -55,3 +55,9 @@ Problems with found matches
     - Could try to improve poppler saved image.
 - Find exact resolution of original pdf????
 - Passing high DPI to page renderer causes slowing. Still worth? 
+    - Finding perfect matches. 
+
+Cleaning up the code
+- I don't think classes are necessary here. 
+- Will start with just a simple refactor.
+    - Create functions.

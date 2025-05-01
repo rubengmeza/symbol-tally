@@ -12,6 +12,9 @@ run: \
   external/opencv/install/lib/libopencv_stitching.so.4.12.0 \
   external/opencv/install/lib/libopencv_video.so.4.12.0 \
   external/opencv/install/lib/libopencv_videoio.so.4.12.0 \
+  /home/roobz/fun/symbol-tally/external/SFML/install/lib/libsfml-graphics.so \
+  /home/roobz/fun/symbol-tally/external/SFML/install/lib/libsfml-window.so \
+  /home/roobz/fun/symbol-tally/external/SFML/install/lib/libsfml-system.so \
   external/opencv/install/lib/libopencv_imgcodecs.so.4.12.0 \
   external/opencv/install/lib/libopencv_dnn.so.4.12.0 \
   external/opencv/install/lib/libopencv_calib3d.so.4.12.0 \
@@ -66,6 +69,26 @@ run: \
   /usr/lib/libavcodec.so.61 \
   /usr/lib/libswscale.so.8 \
   /usr/lib/libavutil.so.59 \
+  /usr/lib32/libfreetype.so.6 \
+  /usr/lib/libfreetype.so.6 \
+  /usr/lib32/libX11.so.6 \
+  /usr/lib/libX11.so.6 \
+  /usr/lib32/libXrandr.so.2 \
+  /usr/lib/libXrandr.so.2 \
+  /usr/lib32/libXcursor.so.1 \
+  /usr/lib/libXcursor.so.1 \
+  /usr/lib32/libXi.so.6 \
+  /usr/lib/libXi.so.6 \
+  /usr/lib32/libGL.so.1 \
+  /usr/lib/libGL.so.1 \
+  /usr/lib32/libudev.so.1 \
+  /usr/lib/libudev.so.1 \
+  /usr/lib32/libXrender.so.1 \
+  /usr/lib/libXrender.so.1 \
+  /usr/lib32/libXfixes.so.3 \
+  /usr/lib/libXfixes.so.3 \
+  /usr/lib32/libXext.so.6 \
+  /usr/lib/libXext.so.6 \
   /usr/lib/libjpeg.so.8 \
   /usr/lib/libwebp.so.7 \
   /usr/lib/libwebpmux.so.3 \
@@ -76,8 +99,6 @@ run: \
   /usr/lib/libz.so.1 \
   /usr/lib/libtiff.so.6 \
   /usr/lib/libopenjp2.so.7 \
-  /usr/lib32/libfreetype.so.6 \
-  /usr/lib/libfreetype.so.6 \
   /usr/lib32/libfontconfig.so.1 \
   /usr/lib/libfontconfig.so.1 \
   /usr/lib32/libcurl.so.4 \
@@ -123,15 +144,9 @@ run: \
   /usr/lib/libcairo-gobject.so.2 \
   /usr/lib/libatk-1.0.so.0 \
   /usr/lib/libepoxy.so.0 \
-  /usr/lib32/libXi.so.6 \
-  /usr/lib/libXi.so.6 \
-  /usr/lib32/libX11.so.6 \
-  /usr/lib/libX11.so.6 \
   /usr/lib/libatk-bridge-2.0.so.0 \
   /usr/lib/libcloudproviders.so.0 \
   /usr/lib/libtinysparql-3.0.so.0 \
-  /usr/lib32/libXfixes.so.3 \
-  /usr/lib/libXfixes.so.3 \
   /usr/lib/libxkbcommon.so.0 \
   /usr/lib32/libwayland-client.so.0 \
   /usr/lib/libwayland-client.so.0 \
@@ -139,18 +154,10 @@ run: \
   /usr/lib/libwayland-cursor.so.0 \
   /usr/lib32/libwayland-egl.so.1 \
   /usr/lib/libwayland-egl.so.1 \
-  /usr/lib32/libXext.so.6 \
-  /usr/lib/libXext.so.6 \
-  /usr/lib32/libXcursor.so.1 \
-  /usr/lib/libXcursor.so.1 \
   /usr/lib/libXdamage.so.1 \
   /usr/lib/libXcomposite.so.1 \
-  /usr/lib32/libXrandr.so.2 \
-  /usr/lib/libXrandr.so.2 \
   /usr/lib32/libXinerama.so.1 \
   /usr/lib/libXinerama.so.1 \
-  /usr/lib32/libXrender.so.1 \
-  /usr/lib/libXrender.so.1 \
   /usr/lib32/libxcb.so.1 \
   /usr/lib/libxcb.so.1 \
   /usr/lib32/libxcb-render.so.0 \
@@ -210,12 +217,18 @@ run: \
   /usr/lib32/libdrm.so.2 \
   /usr/lib/libdrm.so.2 \
   /usr/lib/libOpenCL.so.1 \
+  /usr/lib32/libbrotlidec.so.1 \
+  /usr/lib/libbrotlidec.so.1 \
+  /usr/lib32/libGLdispatch.so.0 \
+  /usr/lib/libGLdispatch.so.0 \
+  /usr/lib32/libGLX.so.0 \
+  /usr/lib/libGLX.so.0 \
+  /usr/lib32/libcap.so.2 \
+  /usr/lib/libcap.so.2 \
   /usr/lib/libsharpyuv.so.0 \
   /usr/lib32/libzstd.so.1 \
   /usr/lib/libzstd.so.1 \
   /usr/lib/libjbig.so.2.1 \
-  /usr/lib32/libbrotlidec.so.1 \
-  /usr/lib/libbrotlidec.so.1 \
   /usr/lib32/libexpat.so.1 \
   /usr/lib/libexpat.so.1 \
   /usr/lib32/libnghttp3.so.9 \
@@ -302,9 +315,7 @@ run: \
   /usr/lib32/libicudata.so.76 \
   /usr/lib/libicudata.so.76 \
   /usr/lib32/libgomp.so.1 \
-  /usr/lib/libgomp.so.1 \
-  /usr/lib32/libcap.so.2 \
-  /usr/lib/libcap.so.2
+  /usr/lib/libgomp.so.1
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/../../../../lib/Scrt1.o:
 
@@ -331,6 +342,12 @@ external/opencv/install/lib/libopencv_stitching.so.4.12.0:
 external/opencv/install/lib/libopencv_video.so.4.12.0:
 
 external/opencv/install/lib/libopencv_videoio.so.4.12.0:
+
+/home/roobz/fun/symbol-tally/external/SFML/install/lib/libsfml-graphics.so:
+
+/home/roobz/fun/symbol-tally/external/SFML/install/lib/libsfml-window.so:
+
+/home/roobz/fun/symbol-tally/external/SFML/install/lib/libsfml-system.so:
 
 external/opencv/install/lib/libopencv_imgcodecs.so.4.12.0:
 
@@ -440,6 +457,46 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libavutil.so.59:
 
+/usr/lib32/libfreetype.so.6:
+
+/usr/lib/libfreetype.so.6:
+
+/usr/lib32/libX11.so.6:
+
+/usr/lib/libX11.so.6:
+
+/usr/lib32/libXrandr.so.2:
+
+/usr/lib/libXrandr.so.2:
+
+/usr/lib32/libXcursor.so.1:
+
+/usr/lib/libXcursor.so.1:
+
+/usr/lib32/libXi.so.6:
+
+/usr/lib/libXi.so.6:
+
+/usr/lib32/libGL.so.1:
+
+/usr/lib/libGL.so.1:
+
+/usr/lib32/libudev.so.1:
+
+/usr/lib/libudev.so.1:
+
+/usr/lib32/libXrender.so.1:
+
+/usr/lib/libXrender.so.1:
+
+/usr/lib32/libXfixes.so.3:
+
+/usr/lib/libXfixes.so.3:
+
+/usr/lib32/libXext.so.6:
+
+/usr/lib/libXext.so.6:
+
 /usr/lib/libjpeg.so.8:
 
 /usr/lib/libwebp.so.7:
@@ -459,10 +516,6 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 /usr/lib/libtiff.so.6:
 
 /usr/lib/libopenjp2.so.7:
-
-/usr/lib32/libfreetype.so.6:
-
-/usr/lib/libfreetype.so.6:
 
 /usr/lib32/libfontconfig.so.1:
 
@@ -554,23 +607,11 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libepoxy.so.0:
 
-/usr/lib32/libXi.so.6:
-
-/usr/lib/libXi.so.6:
-
-/usr/lib32/libX11.so.6:
-
-/usr/lib/libX11.so.6:
-
 /usr/lib/libatk-bridge-2.0.so.0:
 
 /usr/lib/libcloudproviders.so.0:
 
 /usr/lib/libtinysparql-3.0.so.0:
-
-/usr/lib32/libXfixes.so.3:
-
-/usr/lib/libXfixes.so.3:
 
 /usr/lib/libxkbcommon.so.0:
 
@@ -586,29 +627,13 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libwayland-egl.so.1:
 
-/usr/lib32/libXext.so.6:
-
-/usr/lib/libXext.so.6:
-
-/usr/lib32/libXcursor.so.1:
-
-/usr/lib/libXcursor.so.1:
-
 /usr/lib/libXdamage.so.1:
 
 /usr/lib/libXcomposite.so.1:
 
-/usr/lib32/libXrandr.so.2:
-
-/usr/lib/libXrandr.so.2:
-
 /usr/lib32/libXinerama.so.1:
 
 /usr/lib/libXinerama.so.1:
-
-/usr/lib32/libXrender.so.1:
-
-/usr/lib/libXrender.so.1:
 
 /usr/lib32/libxcb.so.1:
 
@@ -728,6 +753,22 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libOpenCL.so.1:
 
+/usr/lib32/libbrotlidec.so.1:
+
+/usr/lib/libbrotlidec.so.1:
+
+/usr/lib32/libGLdispatch.so.0:
+
+/usr/lib/libGLdispatch.so.0:
+
+/usr/lib32/libGLX.so.0:
+
+/usr/lib/libGLX.so.0:
+
+/usr/lib32/libcap.so.2:
+
+/usr/lib/libcap.so.2:
+
 /usr/lib/libsharpyuv.so.0:
 
 /usr/lib32/libzstd.so.1:
@@ -735,10 +776,6 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 /usr/lib/libzstd.so.1:
 
 /usr/lib/libjbig.so.2.1:
-
-/usr/lib32/libbrotlidec.so.1:
-
-/usr/lib/libbrotlidec.so.1:
 
 /usr/lib32/libexpat.so.1:
 
@@ -913,7 +950,3 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 /usr/lib32/libgomp.so.1:
 
 /usr/lib/libgomp.so.1:
-
-/usr/lib32/libcap.so.2:
-
-/usr/lib/libcap.so.2:

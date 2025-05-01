@@ -61,3 +61,12 @@ Cleaning up the code
 - I don't think classes are necessary here. 
 - Will start with just a simple refactor.
     - Create functions.
+1. function read in pdf.
+2. function read in a page. 
+3. function create image from page
+
+Use SFML to markup the image
+- Display image
+- Markup matches
+- Keep count of markups
+- Name the markups.

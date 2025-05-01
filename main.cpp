@@ -8,6 +8,7 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core/hal/interface.h>
+#include <SFML/Window.hpp>
 
 // @Temporary: globals bad
 poppler::document *doc = nullptr;
@@ -127,4 +128,3 @@ int main()
 
     return 0;
 }
-

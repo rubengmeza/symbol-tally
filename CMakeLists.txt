@@ -5,6 +5,16 @@ project(symbol-tally)
 set(CMAKE_CXX_STANDARD 23)
 
 # --------------------------------------------------------------------
+# SFML
+# --------------------------------------------------------------------
+set(SFML_DIR "${CMAKE_SOURCE_DIR}/external/SFML/install/lib/cmake/SFML")
+
+include_directories("${CMAKE_SOURCE_DIR}/external/SFML/install/include")
+link_directories("${CMAKE_SOURCE_DIR}/external/SFML/install/lib")
+
+#find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED)
+
+# --------------------------------------------------------------------
 # POPPLER
 # --------------------------------------------------------------------
 set(POPPLER_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/include")
@@ -30,4 +40,4 @@ add_executable(run main.cpp)
 target_include_directories(run PRIVATE ${OpenCV_INCLUDE_DIRS})
 
 # Link Poppler and OpenCV libraries
-target_link_libraries(run PRIVATE poppler-cpp ${OpenCV_LIBS})
+target_link_libraries(run PRIVATE poppler-cpp ${OpenCV_LIBS} sfml-graphics sfml-window sfml-system)

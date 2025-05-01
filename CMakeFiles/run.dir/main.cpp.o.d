@@ -300,4 +300,57 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/highgui.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/videoio.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc/segmentation.hpp
+ /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc/segmentation.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Clipboard.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Export.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Config.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Context.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/GlResource.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Vector2.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Export.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Angle.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Angle.inl \
+ /usr/include/c++/14.2.1/cassert \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Vector2.inl \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/ContextSettings.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Cursor.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Event.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Joystick.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/String.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Utf.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Utf.inl \
+ /usr/include/c++/14.2.1/iterator \
+ /usr/include/c++/14.2.1/bits/stream_iterator.h \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/String.inl \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Keyboard.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Mouse.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Sensor.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Vector3.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Vector3.inl \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Event.inl \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Touch.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/VideoMode.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Window.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/WindowBase.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Vulkan.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/WindowEnums.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/WindowHandle.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Time.hpp \
+ /usr/include/c++/14.2.1/chrono /usr/include/c++/14.2.1/bits/chrono_io.h \
+ /usr/include/c++/14.2.1/iomanip \
+ /usr/include/c++/14.2.1/bits/quoted_string.h \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Time.inl \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/WindowBase.inl \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Clock.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Err.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Exception.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/FileInputStream.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/InputStream.hpp \
+ /usr/include/c++/14.2.1/filesystem /usr/include/c++/14.2.1/bits/fs_fwd.h \
+ /usr/include/c++/14.2.1/bits/fs_path.h /usr/include/c++/14.2.1/codecvt \
+ /usr/include/c++/14.2.1/bits/fs_dir.h \
+ /usr/include/c++/14.2.1/bits/fs_ops.h \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/MemoryInputStream.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Sleep.hpp

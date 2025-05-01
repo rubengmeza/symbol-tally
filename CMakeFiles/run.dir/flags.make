@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/roobz/fun/symbol-tally/external/poppler/install/include -isystem /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4
+CXX_INCLUDES = -I/home/roobz/fun/symbol-tally/external/SFML/install/include -I/home/roobz/fun/symbol-tally/external/poppler/install/include -isystem /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4
 
 CXX_FLAGS = -std=gnu++23
 

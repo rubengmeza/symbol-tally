@@ -3,6 +3,41 @@
 
 CMakeFiles/run.dir/main.cpp.o: main.cpp \
   external/SFML/install/include/SFML/Config.hpp \
+  external/SFML/install/include/SFML/Graphics.hpp \
+  external/SFML/install/include/SFML/Graphics/BlendMode.hpp \
+  external/SFML/install/include/SFML/Graphics/CircleShape.hpp \
+  external/SFML/install/include/SFML/Graphics/Color.hpp \
+  external/SFML/install/include/SFML/Graphics/Color.inl \
+  external/SFML/install/include/SFML/Graphics/ConvexShape.hpp \
+  external/SFML/install/include/SFML/Graphics/CoordinateType.hpp \
+  external/SFML/install/include/SFML/Graphics/Drawable.hpp \
+  external/SFML/install/include/SFML/Graphics/Export.hpp \
+  external/SFML/install/include/SFML/Graphics/Font.hpp \
+  external/SFML/install/include/SFML/Graphics/Glsl.hpp \
+  external/SFML/install/include/SFML/Graphics/Glsl.inl \
+  external/SFML/install/include/SFML/Graphics/Glyph.hpp \
+  external/SFML/install/include/SFML/Graphics/Image.hpp \
+  external/SFML/install/include/SFML/Graphics/PrimitiveType.hpp \
+  external/SFML/install/include/SFML/Graphics/Rect.hpp \
+  external/SFML/install/include/SFML/Graphics/Rect.inl \
+  external/SFML/install/include/SFML/Graphics/RectangleShape.hpp \
+  external/SFML/install/include/SFML/Graphics/RenderStates.hpp \
+  external/SFML/install/include/SFML/Graphics/RenderTarget.hpp \
+  external/SFML/install/include/SFML/Graphics/RenderTexture.hpp \
+  external/SFML/install/include/SFML/Graphics/RenderWindow.hpp \
+  external/SFML/install/include/SFML/Graphics/Shader.hpp \
+  external/SFML/install/include/SFML/Graphics/Shape.hpp \
+  external/SFML/install/include/SFML/Graphics/Sprite.hpp \
+  external/SFML/install/include/SFML/Graphics/StencilMode.hpp \
+  external/SFML/install/include/SFML/Graphics/Text.hpp \
+  external/SFML/install/include/SFML/Graphics/Texture.hpp \
+  external/SFML/install/include/SFML/Graphics/Transform.hpp \
+  external/SFML/install/include/SFML/Graphics/Transform.inl \
+  external/SFML/install/include/SFML/Graphics/Transformable.hpp \
+  external/SFML/install/include/SFML/Graphics/Vertex.hpp \
+  external/SFML/install/include/SFML/Graphics/VertexArray.hpp \
+  external/SFML/install/include/SFML/Graphics/VertexBuffer.hpp \
+  external/SFML/install/include/SFML/Graphics/View.hpp \
   external/SFML/install/include/SFML/System.hpp \
   external/SFML/install/include/SFML/System/Angle.hpp \
   external/SFML/install/include/SFML/System/Angle.inl \
@@ -183,222 +218,225 @@ CMakeFiles/run.dir/main.cpp.o: main.cpp \
   /usr/include/bits/wctype-wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/14.2.1/algorithm \
-  /usr/include/c++/14.2.1/array \
-  /usr/include/c++/14.2.1/backward/auto_ptr.h \
-  /usr/include/c++/14.2.1/backward/binders.h \
-  /usr/include/c++/14.2.1/bit \
-  /usr/include/c++/14.2.1/bits/algorithmfwd.h \
-  /usr/include/c++/14.2.1/bits/align.h \
-  /usr/include/c++/14.2.1/bits/alloc_traits.h \
-  /usr/include/c++/14.2.1/bits/allocated_ptr.h \
-  /usr/include/c++/14.2.1/bits/allocator.h \
-  /usr/include/c++/14.2.1/bits/atomic_base.h \
-  /usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/14.2.1/bits/atomic_wait.h \
-  /usr/include/c++/14.2.1/bits/basic_ios.h \
-  /usr/include/c++/14.2.1/bits/basic_ios.tcc \
-  /usr/include/c++/14.2.1/bits/basic_string.h \
-  /usr/include/c++/14.2.1/bits/basic_string.tcc \
-  /usr/include/c++/14.2.1/bits/char_traits.h \
-  /usr/include/c++/14.2.1/bits/charconv.h \
-  /usr/include/c++/14.2.1/bits/chrono.h \
-  /usr/include/c++/14.2.1/bits/chrono_io.h \
-  /usr/include/c++/14.2.1/bits/codecvt.h \
-  /usr/include/c++/14.2.1/bits/concept_check.h \
-  /usr/include/c++/14.2.1/bits/cpp_type_traits.h \
-  /usr/include/c++/14.2.1/bits/cxxabi_forced.h \
-  /usr/include/c++/14.2.1/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14.2.1/bits/enable_special_members.h \
-  /usr/include/c++/14.2.1/bits/erase_if.h \
-  /usr/include/c++/14.2.1/bits/exception.h \
-  /usr/include/c++/14.2.1/bits/exception_defines.h \
-  /usr/include/c++/14.2.1/bits/exception_ptr.h \
-  /usr/include/c++/14.2.1/bits/fs_dir.h \
-  /usr/include/c++/14.2.1/bits/fs_fwd.h \
-  /usr/include/c++/14.2.1/bits/fs_ops.h \
-  /usr/include/c++/14.2.1/bits/fs_path.h \
-  /usr/include/c++/14.2.1/bits/functexcept.h \
-  /usr/include/c++/14.2.1/bits/functional_hash.h \
-  /usr/include/c++/14.2.1/bits/hash_bytes.h \
-  /usr/include/c++/14.2.1/bits/hashtable.h \
-  /usr/include/c++/14.2.1/bits/hashtable_policy.h \
-  /usr/include/c++/14.2.1/bits/invoke.h \
-  /usr/include/c++/14.2.1/bits/ios_base.h \
-  /usr/include/c++/14.2.1/bits/istream.tcc \
-  /usr/include/c++/14.2.1/bits/iterator_concepts.h \
-  /usr/include/c++/14.2.1/bits/locale_classes.h \
-  /usr/include/c++/14.2.1/bits/locale_classes.tcc \
-  /usr/include/c++/14.2.1/bits/locale_conv.h \
-  /usr/include/c++/14.2.1/bits/locale_facets.h \
-  /usr/include/c++/14.2.1/bits/locale_facets.tcc \
-  /usr/include/c++/14.2.1/bits/locale_facets_nonio.h \
-  /usr/include/c++/14.2.1/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/14.2.1/bits/localefwd.h \
-  /usr/include/c++/14.2.1/bits/max_size_type.h \
-  /usr/include/c++/14.2.1/bits/memory_resource.h \
-  /usr/include/c++/14.2.1/bits/memoryfwd.h \
-  /usr/include/c++/14.2.1/bits/mofunc_impl.h \
-  /usr/include/c++/14.2.1/bits/move.h \
-  /usr/include/c++/14.2.1/bits/move_only_function.h \
-  /usr/include/c++/14.2.1/bits/nested_exception.h \
-  /usr/include/c++/14.2.1/bits/new_allocator.h \
-  /usr/include/c++/14.2.1/bits/node_handle.h \
-  /usr/include/c++/14.2.1/bits/ostream.tcc \
-  /usr/include/c++/14.2.1/bits/ostream_insert.h \
-  /usr/include/c++/14.2.1/bits/out_ptr.h \
-  /usr/include/c++/14.2.1/bits/parse_numbers.h \
-  /usr/include/c++/14.2.1/bits/postypes.h \
-  /usr/include/c++/14.2.1/bits/predefined_ops.h \
-  /usr/include/c++/14.2.1/bits/ptr_traits.h \
-  /usr/include/c++/14.2.1/bits/quoted_string.h \
-  /usr/include/c++/14.2.1/bits/range_access.h \
-  /usr/include/c++/14.2.1/bits/ranges_algo.h \
-  /usr/include/c++/14.2.1/bits/ranges_algobase.h \
-  /usr/include/c++/14.2.1/bits/ranges_base.h \
-  /usr/include/c++/14.2.1/bits/ranges_cmp.h \
-  /usr/include/c++/14.2.1/bits/ranges_uninitialized.h \
-  /usr/include/c++/14.2.1/bits/ranges_util.h \
-  /usr/include/c++/14.2.1/bits/refwrap.h \
-  /usr/include/c++/14.2.1/bits/requires_hosted.h \
-  /usr/include/c++/14.2.1/bits/shared_ptr.h \
-  /usr/include/c++/14.2.1/bits/shared_ptr_atomic.h \
-  /usr/include/c++/14.2.1/bits/shared_ptr_base.h \
-  /usr/include/c++/14.2.1/bits/specfun.h \
-  /usr/include/c++/14.2.1/bits/sstream.tcc \
-  /usr/include/c++/14.2.1/bits/std_abs.h \
-  /usr/include/c++/14.2.1/bits/std_function.h \
-  /usr/include/c++/14.2.1/bits/std_mutex.h \
-  /usr/include/c++/14.2.1/bits/stl_algo.h \
-  /usr/include/c++/14.2.1/bits/stl_algobase.h \
-  /usr/include/c++/14.2.1/bits/stl_bvector.h \
-  /usr/include/c++/14.2.1/bits/stl_construct.h \
-  /usr/include/c++/14.2.1/bits/stl_function.h \
-  /usr/include/c++/14.2.1/bits/stl_heap.h \
-  /usr/include/c++/14.2.1/bits/stl_iterator.h \
-  /usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14.2.1/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14.2.1/bits/stl_map.h \
-  /usr/include/c++/14.2.1/bits/stl_multimap.h \
-  /usr/include/c++/14.2.1/bits/stl_pair.h \
-  /usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/14.2.1/bits/stl_relops.h \
-  /usr/include/c++/14.2.1/bits/stl_tempbuf.h \
-  /usr/include/c++/14.2.1/bits/stl_tree.h \
-  /usr/include/c++/14.2.1/bits/stl_uninitialized.h \
-  /usr/include/c++/14.2.1/bits/stl_vector.h \
-  /usr/include/c++/14.2.1/bits/stream_iterator.h \
-  /usr/include/c++/14.2.1/bits/streambuf.tcc \
-  /usr/include/c++/14.2.1/bits/streambuf_iterator.h \
-  /usr/include/c++/14.2.1/bits/string_view.tcc \
-  /usr/include/c++/14.2.1/bits/stringfwd.h \
-  /usr/include/c++/14.2.1/bits/unicode-data.h \
-  /usr/include/c++/14.2.1/bits/unicode.h \
-  /usr/include/c++/14.2.1/bits/uniform_int_dist.h \
-  /usr/include/c++/14.2.1/bits/unique_lock.h \
-  /usr/include/c++/14.2.1/bits/unique_ptr.h \
-  /usr/include/c++/14.2.1/bits/unordered_map.h \
-  /usr/include/c++/14.2.1/bits/uses_allocator.h \
-  /usr/include/c++/14.2.1/bits/uses_allocator_args.h \
-  /usr/include/c++/14.2.1/bits/utility.h \
-  /usr/include/c++/14.2.1/bits/vector.tcc \
-  /usr/include/c++/14.2.1/bits/version.h \
-  /usr/include/c++/14.2.1/cassert \
-  /usr/include/c++/14.2.1/cctype \
-  /usr/include/c++/14.2.1/cerrno \
-  /usr/include/c++/14.2.1/cfloat \
-  /usr/include/c++/14.2.1/charconv \
-  /usr/include/c++/14.2.1/chrono \
-  /usr/include/c++/14.2.1/climits \
-  /usr/include/c++/14.2.1/clocale \
-  /usr/include/c++/14.2.1/cmath \
-  /usr/include/c++/14.2.1/codecvt \
-  /usr/include/c++/14.2.1/compare \
-  /usr/include/c++/14.2.1/complex \
-  /usr/include/c++/14.2.1/concepts \
-  /usr/include/c++/14.2.1/cstddef \
-  /usr/include/c++/14.2.1/cstdint \
-  /usr/include/c++/14.2.1/cstdio \
-  /usr/include/c++/14.2.1/cstdlib \
-  /usr/include/c++/14.2.1/cstring \
-  /usr/include/c++/14.2.1/ctime \
-  /usr/include/c++/14.2.1/cwchar \
-  /usr/include/c++/14.2.1/cwctype \
-  /usr/include/c++/14.2.1/debug/assertions.h \
-  /usr/include/c++/14.2.1/debug/debug.h \
-  /usr/include/c++/14.2.1/exception \
-  /usr/include/c++/14.2.1/ext/aligned_buffer.h \
-  /usr/include/c++/14.2.1/ext/alloc_traits.h \
-  /usr/include/c++/14.2.1/ext/atomicity.h \
-  /usr/include/c++/14.2.1/ext/concurrence.h \
-  /usr/include/c++/14.2.1/ext/numeric_traits.h \
-  /usr/include/c++/14.2.1/ext/string_conversions.h \
-  /usr/include/c++/14.2.1/ext/type_traits.h \
-  /usr/include/c++/14.2.1/filesystem \
-  /usr/include/c++/14.2.1/format \
-  /usr/include/c++/14.2.1/functional \
-  /usr/include/c++/14.2.1/initializer_list \
-  /usr/include/c++/14.2.1/iomanip \
-  /usr/include/c++/14.2.1/ios \
-  /usr/include/c++/14.2.1/iosfwd \
-  /usr/include/c++/14.2.1/iostream \
-  /usr/include/c++/14.2.1/istream \
-  /usr/include/c++/14.2.1/iterator \
-  /usr/include/c++/14.2.1/limits \
-  /usr/include/c++/14.2.1/locale \
-  /usr/include/c++/14.2.1/map \
-  /usr/include/c++/14.2.1/memory \
-  /usr/include/c++/14.2.1/mutex \
-  /usr/include/c++/14.2.1/new \
-  /usr/include/c++/14.2.1/numbers \
-  /usr/include/c++/14.2.1/optional \
-  /usr/include/c++/14.2.1/ostream \
-  /usr/include/c++/14.2.1/print \
-  /usr/include/c++/14.2.1/pstl/execution_defs.h \
-  /usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/14.2.1/pstl/glue_memory_defs.h \
-  /usr/include/c++/14.2.1/pstl/pstl_config.h \
-  /usr/include/c++/14.2.1/ratio \
-  /usr/include/c++/14.2.1/span \
-  /usr/include/c++/14.2.1/sstream \
-  /usr/include/c++/14.2.1/stdexcept \
-  /usr/include/c++/14.2.1/stdlib.h \
-  /usr/include/c++/14.2.1/streambuf \
-  /usr/include/c++/14.2.1/string \
-  /usr/include/c++/14.2.1/string_view \
-  /usr/include/c++/14.2.1/system_error \
-  /usr/include/c++/14.2.1/tr1/bessel_function.tcc \
-  /usr/include/c++/14.2.1/tr1/beta_function.tcc \
-  /usr/include/c++/14.2.1/tr1/ell_integral.tcc \
-  /usr/include/c++/14.2.1/tr1/exp_integral.tcc \
-  /usr/include/c++/14.2.1/tr1/gamma.tcc \
-  /usr/include/c++/14.2.1/tr1/hypergeometric.tcc \
-  /usr/include/c++/14.2.1/tr1/legendre_function.tcc \
-  /usr/include/c++/14.2.1/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/14.2.1/tr1/poly_hermite.tcc \
-  /usr/include/c++/14.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/14.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/14.2.1/tr1/special_function_util.h \
-  /usr/include/c++/14.2.1/tuple \
-  /usr/include/c++/14.2.1/type_traits \
-  /usr/include/c++/14.2.1/typeinfo \
-  /usr/include/c++/14.2.1/unordered_map \
-  /usr/include/c++/14.2.1/utility \
-  /usr/include/c++/14.2.1/variant \
-  /usr/include/c++/14.2.1/vector \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/messages_members.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
-  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/time_members.h \
+  /usr/include/c++/15.1.1/algorithm \
+  /usr/include/c++/15.1.1/array \
+  /usr/include/c++/15.1.1/backward/auto_ptr.h \
+  /usr/include/c++/15.1.1/backward/binders.h \
+  /usr/include/c++/15.1.1/bit \
+  /usr/include/c++/15.1.1/bits/algorithmfwd.h \
+  /usr/include/c++/15.1.1/bits/align.h \
+  /usr/include/c++/15.1.1/bits/alloc_traits.h \
+  /usr/include/c++/15.1.1/bits/allocated_ptr.h \
+  /usr/include/c++/15.1.1/bits/allocator.h \
+  /usr/include/c++/15.1.1/bits/atomic_base.h \
+  /usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/15.1.1/bits/atomic_wait.h \
+  /usr/include/c++/15.1.1/bits/basic_ios.h \
+  /usr/include/c++/15.1.1/bits/basic_ios.tcc \
+  /usr/include/c++/15.1.1/bits/basic_string.h \
+  /usr/include/c++/15.1.1/bits/basic_string.tcc \
+  /usr/include/c++/15.1.1/bits/char_traits.h \
+  /usr/include/c++/15.1.1/bits/charconv.h \
+  /usr/include/c++/15.1.1/bits/chrono.h \
+  /usr/include/c++/15.1.1/bits/chrono_io.h \
+  /usr/include/c++/15.1.1/bits/codecvt.h \
+  /usr/include/c++/15.1.1/bits/concept_check.h \
+  /usr/include/c++/15.1.1/bits/cpp_type_traits.h \
+  /usr/include/c++/15.1.1/bits/cxxabi_forced.h \
+  /usr/include/c++/15.1.1/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15.1.1/bits/enable_special_members.h \
+  /usr/include/c++/15.1.1/bits/erase_if.h \
+  /usr/include/c++/15.1.1/bits/exception.h \
+  /usr/include/c++/15.1.1/bits/exception_defines.h \
+  /usr/include/c++/15.1.1/bits/exception_ptr.h \
+  /usr/include/c++/15.1.1/bits/formatfwd.h \
+  /usr/include/c++/15.1.1/bits/fs_dir.h \
+  /usr/include/c++/15.1.1/bits/fs_fwd.h \
+  /usr/include/c++/15.1.1/bits/fs_ops.h \
+  /usr/include/c++/15.1.1/bits/fs_path.h \
+  /usr/include/c++/15.1.1/bits/functexcept.h \
+  /usr/include/c++/15.1.1/bits/functional_hash.h \
+  /usr/include/c++/15.1.1/bits/hash_bytes.h \
+  /usr/include/c++/15.1.1/bits/hashtable.h \
+  /usr/include/c++/15.1.1/bits/hashtable_policy.h \
+  /usr/include/c++/15.1.1/bits/invoke.h \
+  /usr/include/c++/15.1.1/bits/ios_base.h \
+  /usr/include/c++/15.1.1/bits/istream.tcc \
+  /usr/include/c++/15.1.1/bits/iterator_concepts.h \
+  /usr/include/c++/15.1.1/bits/locale_classes.h \
+  /usr/include/c++/15.1.1/bits/locale_classes.tcc \
+  /usr/include/c++/15.1.1/bits/locale_conv.h \
+  /usr/include/c++/15.1.1/bits/locale_facets.h \
+  /usr/include/c++/15.1.1/bits/locale_facets.tcc \
+  /usr/include/c++/15.1.1/bits/locale_facets_nonio.h \
+  /usr/include/c++/15.1.1/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/15.1.1/bits/localefwd.h \
+  /usr/include/c++/15.1.1/bits/max_size_type.h \
+  /usr/include/c++/15.1.1/bits/memory_resource.h \
+  /usr/include/c++/15.1.1/bits/memoryfwd.h \
+  /usr/include/c++/15.1.1/bits/mofunc_impl.h \
+  /usr/include/c++/15.1.1/bits/monostate.h \
+  /usr/include/c++/15.1.1/bits/move.h \
+  /usr/include/c++/15.1.1/bits/move_only_function.h \
+  /usr/include/c++/15.1.1/bits/nested_exception.h \
+  /usr/include/c++/15.1.1/bits/new_allocator.h \
+  /usr/include/c++/15.1.1/bits/node_handle.h \
+  /usr/include/c++/15.1.1/bits/ostream.h \
+  /usr/include/c++/15.1.1/bits/ostream.tcc \
+  /usr/include/c++/15.1.1/bits/ostream_insert.h \
+  /usr/include/c++/15.1.1/bits/out_ptr.h \
+  /usr/include/c++/15.1.1/bits/parse_numbers.h \
+  /usr/include/c++/15.1.1/bits/postypes.h \
+  /usr/include/c++/15.1.1/bits/predefined_ops.h \
+  /usr/include/c++/15.1.1/bits/ptr_traits.h \
+  /usr/include/c++/15.1.1/bits/quoted_string.h \
+  /usr/include/c++/15.1.1/bits/range_access.h \
+  /usr/include/c++/15.1.1/bits/ranges_algo.h \
+  /usr/include/c++/15.1.1/bits/ranges_algobase.h \
+  /usr/include/c++/15.1.1/bits/ranges_base.h \
+  /usr/include/c++/15.1.1/bits/ranges_cmp.h \
+  /usr/include/c++/15.1.1/bits/ranges_uninitialized.h \
+  /usr/include/c++/15.1.1/bits/ranges_util.h \
+  /usr/include/c++/15.1.1/bits/refwrap.h \
+  /usr/include/c++/15.1.1/bits/requires_hosted.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr_base.h \
+  /usr/include/c++/15.1.1/bits/specfun.h \
+  /usr/include/c++/15.1.1/bits/sstream.tcc \
+  /usr/include/c++/15.1.1/bits/std_abs.h \
+  /usr/include/c++/15.1.1/bits/std_function.h \
+  /usr/include/c++/15.1.1/bits/std_mutex.h \
+  /usr/include/c++/15.1.1/bits/stl_algo.h \
+  /usr/include/c++/15.1.1/bits/stl_algobase.h \
+  /usr/include/c++/15.1.1/bits/stl_bvector.h \
+  /usr/include/c++/15.1.1/bits/stl_construct.h \
+  /usr/include/c++/15.1.1/bits/stl_function.h \
+  /usr/include/c++/15.1.1/bits/stl_heap.h \
+  /usr/include/c++/15.1.1/bits/stl_iterator.h \
+  /usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/15.1.1/bits/stl_iterator_base_types.h \
+  /usr/include/c++/15.1.1/bits/stl_map.h \
+  /usr/include/c++/15.1.1/bits/stl_multimap.h \
+  /usr/include/c++/15.1.1/bits/stl_pair.h \
+  /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/15.1.1/bits/stl_relops.h \
+  /usr/include/c++/15.1.1/bits/stl_tempbuf.h \
+  /usr/include/c++/15.1.1/bits/stl_tree.h \
+  /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
+  /usr/include/c++/15.1.1/bits/stl_vector.h \
+  /usr/include/c++/15.1.1/bits/stream_iterator.h \
+  /usr/include/c++/15.1.1/bits/streambuf.tcc \
+  /usr/include/c++/15.1.1/bits/streambuf_iterator.h \
+  /usr/include/c++/15.1.1/bits/string_view.tcc \
+  /usr/include/c++/15.1.1/bits/stringfwd.h \
+  /usr/include/c++/15.1.1/bits/unicode-data.h \
+  /usr/include/c++/15.1.1/bits/unicode.h \
+  /usr/include/c++/15.1.1/bits/uniform_int_dist.h \
+  /usr/include/c++/15.1.1/bits/unique_lock.h \
+  /usr/include/c++/15.1.1/bits/unique_ptr.h \
+  /usr/include/c++/15.1.1/bits/unordered_map.h \
+  /usr/include/c++/15.1.1/bits/uses_allocator.h \
+  /usr/include/c++/15.1.1/bits/uses_allocator_args.h \
+  /usr/include/c++/15.1.1/bits/utility.h \
+  /usr/include/c++/15.1.1/bits/vector.tcc \
+  /usr/include/c++/15.1.1/bits/version.h \
+  /usr/include/c++/15.1.1/cassert \
+  /usr/include/c++/15.1.1/cctype \
+  /usr/include/c++/15.1.1/cerrno \
+  /usr/include/c++/15.1.1/cfloat \
+  /usr/include/c++/15.1.1/charconv \
+  /usr/include/c++/15.1.1/chrono \
+  /usr/include/c++/15.1.1/climits \
+  /usr/include/c++/15.1.1/clocale \
+  /usr/include/c++/15.1.1/cmath \
+  /usr/include/c++/15.1.1/codecvt \
+  /usr/include/c++/15.1.1/compare \
+  /usr/include/c++/15.1.1/complex \
+  /usr/include/c++/15.1.1/concepts \
+  /usr/include/c++/15.1.1/cstddef \
+  /usr/include/c++/15.1.1/cstdint \
+  /usr/include/c++/15.1.1/cstdio \
+  /usr/include/c++/15.1.1/cstdlib \
+  /usr/include/c++/15.1.1/cstring \
+  /usr/include/c++/15.1.1/ctime \
+  /usr/include/c++/15.1.1/cwchar \
+  /usr/include/c++/15.1.1/cwctype \
+  /usr/include/c++/15.1.1/debug/assertions.h \
+  /usr/include/c++/15.1.1/debug/debug.h \
+  /usr/include/c++/15.1.1/exception \
+  /usr/include/c++/15.1.1/ext/aligned_buffer.h \
+  /usr/include/c++/15.1.1/ext/alloc_traits.h \
+  /usr/include/c++/15.1.1/ext/atomicity.h \
+  /usr/include/c++/15.1.1/ext/concurrence.h \
+  /usr/include/c++/15.1.1/ext/numeric_traits.h \
+  /usr/include/c++/15.1.1/ext/string_conversions.h \
+  /usr/include/c++/15.1.1/ext/type_traits.h \
+  /usr/include/c++/15.1.1/filesystem \
+  /usr/include/c++/15.1.1/format \
+  /usr/include/c++/15.1.1/functional \
+  /usr/include/c++/15.1.1/initializer_list \
+  /usr/include/c++/15.1.1/iomanip \
+  /usr/include/c++/15.1.1/ios \
+  /usr/include/c++/15.1.1/iosfwd \
+  /usr/include/c++/15.1.1/iostream \
+  /usr/include/c++/15.1.1/istream \
+  /usr/include/c++/15.1.1/iterator \
+  /usr/include/c++/15.1.1/limits \
+  /usr/include/c++/15.1.1/locale \
+  /usr/include/c++/15.1.1/map \
+  /usr/include/c++/15.1.1/memory \
+  /usr/include/c++/15.1.1/mutex \
+  /usr/include/c++/15.1.1/new \
+  /usr/include/c++/15.1.1/numbers \
+  /usr/include/c++/15.1.1/optional \
+  /usr/include/c++/15.1.1/ostream \
+  /usr/include/c++/15.1.1/print \
+  /usr/include/c++/15.1.1/pstl/execution_defs.h \
+  /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
+  /usr/include/c++/15.1.1/pstl/pstl_config.h \
+  /usr/include/c++/15.1.1/ratio \
+  /usr/include/c++/15.1.1/span \
+  /usr/include/c++/15.1.1/sstream \
+  /usr/include/c++/15.1.1/stdexcept \
+  /usr/include/c++/15.1.1/stdlib.h \
+  /usr/include/c++/15.1.1/streambuf \
+  /usr/include/c++/15.1.1/string \
+  /usr/include/c++/15.1.1/string_view \
+  /usr/include/c++/15.1.1/system_error \
+  /usr/include/c++/15.1.1/tr1/bessel_function.tcc \
+  /usr/include/c++/15.1.1/tr1/beta_function.tcc \
+  /usr/include/c++/15.1.1/tr1/ell_integral.tcc \
+  /usr/include/c++/15.1.1/tr1/exp_integral.tcc \
+  /usr/include/c++/15.1.1/tr1/gamma.tcc \
+  /usr/include/c++/15.1.1/tr1/hypergeometric.tcc \
+  /usr/include/c++/15.1.1/tr1/legendre_function.tcc \
+  /usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/15.1.1/tr1/poly_hermite.tcc \
+  /usr/include/c++/15.1.1/tr1/poly_laguerre.tcc \
+  /usr/include/c++/15.1.1/tr1/riemann_zeta.tcc \
+  /usr/include/c++/15.1.1/tr1/special_function_util.h \
+  /usr/include/c++/15.1.1/tuple \
+  /usr/include/c++/15.1.1/type_traits \
+  /usr/include/c++/15.1.1/typeinfo \
+  /usr/include/c++/15.1.1/unordered_map \
+  /usr/include/c++/15.1.1/utility \
+  /usr/include/c++/15.1.1/variant \
+  /usr/include/c++/15.1.1/vector \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++locale.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/messages_members.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -435,16 +473,16 @@ CMakeFiles/run.dir/main.cpp.o: main.cpp \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/emmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/float.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/limits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mm_malloc.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/syslimits.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/xmmintrin.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/float.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mm_malloc.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xmmintrin.h
 
 run: external/SFML/install/lib/libsfml-graphics.so \
   external/SFML/install/lib/libsfml-system.so \
@@ -459,9 +497,9 @@ run: external/SFML/install/lib/libsfml-graphics.so \
   /usr/lib/libgcc_s.so.1 \
   /usr/lib/libm.so \
   /usr/lib/libstdc++.so \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a \
   /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libGL.so.1 \
   /usr/lib/libGLX.so.0 \
@@ -640,7 +678,7 @@ run: external/SFML/install/lib/libsfml-graphics.so \
   /usr/lib/libxcb-shm.so.0 \
   /usr/lib/libxcb.so.1 \
   /usr/lib/libxkbcommon.so.0 \
-  /usr/lib/libxml2.so.2 \
+  /usr/lib/libxml2.so.16 \
   /usr/lib/libxvidcore.so.4 \
   /usr/lib/libz.so.1 \
   /usr/lib/libzmq.so.5 \
@@ -728,7 +766,7 @@ run: external/SFML/install/lib/libsfml-graphics.so \
   /usr/lib32/libxcb-render.so.0 \
   /usr/lib32/libxcb-shm.so.0 \
   /usr/lib32/libxcb.so.1 \
-  /usr/lib32/libxml2.so.2 \
+  /usr/lib32/libxml2.so.16 \
   /usr/lib32/libz.so.1 \
   /usr/lib32/libzstd.so.1 \
   CMakeFiles/run.dir/main.cpp.o \
@@ -749,23 +787,19 @@ run: external/SFML/install/lib/libsfml-graphics.so \
   external/opencv/install/lib/libopencv_videoio.so.4.12.0
 
 
-external/opencv/install/lib/libopencv_videoio.so.4.12.0:
-
 external/opencv/install/lib/libopencv_video.so.4.12.0:
 
 external/opencv/install/lib/libopencv_stitching.so.4.12.0:
 
 external/opencv/install/lib/libopencv_objdetect.so.4.12.0:
 
+external/opencv/install/lib/libopencv_imgproc.so.4.12.0:
+
 external/opencv/install/lib/libopencv_gapi.so.4.12.0:
 
 external/opencv/install/lib/libopencv_flann.so.4.12.0:
 
-external/opencv/install/lib/libopencv_core.so.4.12.0:
-
-/usr/lib32/libz.so.1:
-
-/usr/lib32/libxcb.so.1:
+CMakeFiles/run.dir/main.cpp.o:
 
 /usr/lib32/libxcb-shm.so.0:
 
@@ -783,21 +817,21 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib32/libtasn1.so.6:
 
-/usr/lib32/libsystemd.so.0:
-
 /usr/lib32/libpng16.so.16:
+
+/usr/lib32/libplds4.so:
 
 /usr/lib32/libpcre2-8.so.0:
 
 /usr/lib32/libnssutil3.so:
+
+/usr/lib32/libnss3.so:
 
 /usr/lib32/libnghttp3.so.9:
 
 /usr/lib32/libnettle.so.8:
 
 /usr/lib32/liblzma.so.5:
-
-/usr/lib32/libkrb5.so.3:
 
 /usr/lib32/libkeyutils.so.1:
 
@@ -806,8 +840,6 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 /usr/lib32/libhogweed.so.6:
 
 /usr/lib32/libgssapi_krb5.so.2:
-
-/usr/lib32/libgpg-error.so.0:
 
 /usr/lib32/libgomp.so.1:
 
@@ -827,6 +859,10 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib32/libfontconfig.so.1:
 
+/usr/lib32/libunistring.so.5:
+
+/usr/lib32/libelf.so.1:
+
 /usr/lib32/libdw.so.1:
 
 /usr/lib32/libdrm.so.2:
@@ -837,9 +873,9 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib32/libcom_err.so.2:
 
-/usr/lib32/libcap.so.2:
-
 /usr/lib32/libbz2.so.1.0:
+
+/usr/lib32/libbrotlienc.so.1:
 
 /usr/lib32/libbrotlicommon.so.1:
 
@@ -847,19 +883,13 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib32/libXrandr.so.2:
 
-/usr/lib32/libzstd.so.1:
-
-/usr/lib32/libXinerama.so.1:
+/usr/lib32/libXi.so.6:
 
 /usr/lib32/libXfixes.so.3:
-
-/usr/lib32/libXext.so.6:
 
 /usr/lib32/libXdmcp.so.6:
 
 /usr/lib32/libXcursor.so.1:
-
-/usr/lib32/libX11.so.6:
 
 /usr/lib32/libX11-xcb.so.1:
 
@@ -869,9 +899,11 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib32/libGLX.so.0:
 
-/usr/lib/libzmq.so.5:
-
 /usr/lib/libz.so.1:
+
+/usr/lib32/libsystemd.so.0:
+
+/usr/lib/libxml2.so.16:
 
 /usr/lib/libxcb.so.1:
 
@@ -883,7 +915,7 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libx264.so.164:
 
-/usr/lib/libwayland-cursor.so.0:
+/usr/lib/libwebp.so.7:
 
 /usr/lib/libwayland-client.so.0:
 
@@ -907,7 +939,7 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libtiff.so.6:
 
-/usr/lib/libtheoradec.so.2:
+/usr/lib/libtheoraenc.so.2:
 
 /usr/lib/libsystemd.so.0:
 
@@ -925,10 +957,6 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libsnappy.so.1:
 
-/usr/lib/libsmime3.so:
-
-/usr/lib/libsharpyuv.so.0:
-
 /usr/lib/librsvg-2.so.2:
 
 /usr/lib/librav1e.so.0.7:
@@ -939,21 +967,23 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libplds4.so:
 
-/usr/lib/libpixman-1.so.0:
-
-/usr/lib/libpgm-5.3.so.0:
-
 /usr/lib/libpcre2-8.so.0:
 
 /usr/lib/libpangoft2-1.0.so.0:
 
 /usr/lib/libpangocairo-1.0.so.0:
 
-/usr/lib/libopenmpt.so.0:
+/usr/lib/libpango-1.0.so.0:
+
+/usr/lib/libsrt.so.1.5:
+
+/usr/lib/libopus.so.0:
 
 /usr/lib/libopencore-amrwb.so.0:
 
 /usr/lib/libogg.so.0:
+
+/usr/lib/libnssutil3.so:
 
 /usr/lib/libnss3.so:
 
@@ -977,6 +1007,8 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/liblzma.so.5:
 
+/usr/lib/libleancrypto.so.1:
+
 /usr/lib32/libXau.so.6:
 
 /usr/lib/liblcms2.so.2:
@@ -987,131 +1019,127 @@ external/opencv/install/lib/libopencv_core.so.4.12.0:
 
 /usr/lib/libjxl_threads.so.0.11:
 
-/usr/lib/liborc-0.4.so.0:
-
-/usr/lib/libjxl.so.0.11:
-
-/usr/lib/libjson-glib-1.0.so.0:
-
 /usr/lib/libjpeg.so.8:
 
+/usr/lib32/libssl.so.3:
+
+/usr/lib/libjbig.so.2.1:
+
 /usr/lib/libidn2.so.0:
+
+/usr/lib/libicuuc.so.76:
 
 /usr/lib/libicudata.so.76:
 
 /usr/lib/libhwy.so.1:
 
-/usr/lib32/libicudata.so.76:
+/usr/lib/libgtk-3.so.0:
 
-/usr/lib/libhogweed.so.6:
+/usr/lib/libgstvideo-1.0.so.0:
 
-/usr/include/c++/14.2.1/bits/ranges_uninitialized.h:
+/usr/lib/libgsttag-1.0.so.0:
 
-/usr/include/linux/sched/types.h:
+/usr/lib/libgstpbutils-1.0.so.0:
 
-/usr/include/c++/14.2.1/bits/ranges_cmp.h:
+/usr/lib/libgraphite2.so.3:
 
-/usr/include/c++/14.2.1/bits/ranges_algobase.h:
+/usr/lib/libgpgme.so.11:
 
-/usr/include/c++/14.2.1/bits/quoted_string.h:
+/usr/lib32/libnspr4.so:
 
-/usr/include/c++/14.2.1/bits/ostream.tcc:
+/usr/lib/libgpg-error.so.0:
 
-/usr/include/endian.h:
+/usr/lib/libgobject-2.0.so.0:
 
-/usr/include/stdint.h:
+/usr/lib/libgnutls.so.30:
 
-/usr/include/c++/14.2.1/bits/move_only_function.h:
+/usr/lib/libgmp.so.10:
 
-external/opencv/install/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
+/usr/lib/libglib-2.0.so.0:
 
-external/opencv/install/include/opencv4/opencv2/core/persistence.hpp:
+/usr/lib/libgdk-3.so.0:
 
-external/SFML/install/include/SFML/Window/VideoMode.hpp:
+/usr/lib/libfribidi.so.0:
 
-/usr/include/c++/14.2.1/bits/move.h:
+/usr/lib/libfreetype.so.6:
 
-/usr/include/c++/14.2.1/bits/locale_facets_nonio.tcc:
+/usr/lib/libexpat.so.1:
 
-/usr/include/c++/14.2.1/bits/locale_classes.h:
+/usr/lib/libepoxy.so.0:
 
-/usr/include/c++/14.2.1/bits/out_ptr.h:
+/usr/lib/libdw.so.1:
 
-external/opencv/install/include/opencv4/opencv2/imgproc.hpp:
+/usr/lib/libdvdread.so.8:
 
-/usr/lib32/libunistring.so.5:
+/usr/lib/libdvdnav.so.4:
 
-/usr/lib32/libelf.so.1:
+/usr/lib/libdav1d.so.7:
 
-/usr/include/c++/14.2.1/bits/istream.tcc:
+/usr/include/c++/15.1.1/bits/cxxabi_forced.h:
 
-/usr/include/c++/14.2.1/bits/invoke.h:
+/usr/include/bits/types/time_t.h:
 
-/usr/include/c++/14.2.1/bits/hashtable.h:
+/usr/include/c++/15.1.1/bits/concept_check.h:
 
-/usr/lib/libblkid.so.1:
+/usr/include/asm/posix_types_64.h:
 
-/usr/include/c++/14.2.1/bits/functional_hash.h:
+/usr/include/bits/timex.h:
 
-/usr/include/bits/types/__locale_t.h:
+/usr/include/c++/15.1.1/bits/chrono.h:
 
-/usr/include/c++/14.2.1/bits/functexcept.h:
+/usr/include/c++/15.1.1/bits/functexcept.h:
 
-/usr/include/c++/14.2.1/bits/fs_path.h:
+external/opencv/install/lib/libopencv_calib3d.so.4.12.0:
 
-/usr/include/c++/14.2.1/bits/cpp_type_traits.h:
+/usr/include/bits/local_lim.h:
 
-/usr/include/c++/14.2.1/bits/node_handle.h:
+/usr/lib/libgssapi_krb5.so.2:
 
-/usr/include/c++/14.2.1/bits/new_allocator.h:
+external/poppler/install/include/poppler/cpp/poppler-image.h:
 
-/usr/include/c++/14.2.1/bits/fs_fwd.h:
+/usr/include/c++/15.1.1/bits/basic_string.h:
 
-/usr/include/bits/locale.h:
+/usr/include/c++/15.1.1/bits/memory_resource.h:
 
-/usr/include/c++/14.2.1/bits/cxxabi_forced.h:
+/usr/include/c++/15.1.1/bits/hash_bytes.h:
 
-/usr/include/asm/bitsperlong.h:
+/usr/lib/libcairo.so.2:
 
-/usr/include/c++/14.2.1/bits/chrono.h:
+/usr/include/c++/15.1.1/bits/basic_ios.tcc:
 
-/usr/include/asm-generic/bitsperlong.h:
+/usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h:
 
-/usr/include/c++/14.2.1/bits/charconv.h:
+/usr/include/bits/byteswap.h:
 
-/usr/lib/libwebpdemux.so.2:
+/usr/lib/libOpenCL.so.1:
 
-/usr/include/bits/setjmp.h:
+/usr/include/c++/15.1.1/backward/binders.h:
 
-/usr/include/c++/14.2.1/bits/basic_ios.tcc:
+/usr/lib32/libkrb5.so.3:
 
-/usr/include/c++/14.2.1/bits/atomic_wait.h:
+/usr/include/c++/15.1.1/bits/formatfwd.h:
 
-/usr/include/c++/14.2.1/bits/alloc_traits.h:
-
-/usr/include/c++/14.2.1/bits/sstream.tcc:
-
-/usr/include/c++/14.2.1/bits/align.h:
-
-/usr/lib/libcap.so.2:
-
-/usr/include/c++/14.2.1/bits/memoryfwd.h:
-
-/usr/include/c++/14.2.1/bits/vector.tcc:
+/usr/include/c++/15.1.1/algorithm:
 
 /usr/include/bits/wordsize.h:
 
+/usr/include/c++/15.1.1/bits/allocator.h:
+
 /usr/include/stdio.h:
 
-/usr/lib32/libbrotlienc.so.1:
+/usr/include/c++/15.1.1/mutex:
 
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+/usr/include/bits/unistd_ext.h:
 
 /usr/include/bits/uio_lim.h:
 
+/usr/lib32/libsqlite3.so.0:
+
+/usr/include/c++/15.1.1/bits/basic_ios.h:
+
 /usr/include/bits/math-vector.h:
 
-external/opencv/install/include/opencv4/opencv2/core/optim.hpp:
+external/SFML/install/include/SFML/Graphics/Font.hpp:
 
 /usr/lib/libopenjp2.so.7:
 
@@ -1119,49 +1147,37 @@ external/opencv/install/include/opencv4/opencv2/core/optim.hpp:
 
 external/SFML/install/include/SFML/System/Vector2.inl:
 
-/usr/lib/libsrt.so.1.5:
+/usr/lib32/libpsl.so.5:
 
-/usr/lib/libopus.so.0:
+/usr/lib32/libp11-kit.so.0:
 
-/usr/include/c++/14.2.1/bits/localefwd.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/c++/14.2.1/bits/fs_ops.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/bits/types/struct_timespec.h:
+/usr/include/c++/15.1.1/bits/enable_special_members.h:
 
 /usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/c++/14.2.1/bits/stl_uninitialized.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/float.h:
+/usr/include/c++/15.1.1/bits/basic_string.tcc:
 
 /usr/include/bits/waitstatus.h:
 
+/usr/lib32/libssl3.so:
+
+/usr/include/bits/wchar.h:
+
 /usr/include/bits/types/sigset_t.h:
-
-external/opencv/install/include/opencv4/opencv2/core/check.hpp:
-
-/usr/include/bits/types/error_t.h:
 
 /usr/include/bits/types/clockid_t.h:
 
-/usr/include/bits/wctype-wchar.h:
+/usr/lib/libsmime3.so:
 
-/usr/include/bits/stdint-intn.h:
+/usr/include/c++/15.1.1/bits/fs_ops.h:
 
-/usr/include/c++/14.2.1/bit:
+/usr/include/bits/types/FILE.h:
 
 /usr/include/bits/types/__sigset_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h:
+
+/usr/include/bits/types/__locale_t.h:
 
 /usr/lib/libxkbcommon.so.0:
 
@@ -1171,31 +1187,159 @@ external/opencv/install/include/opencv4/opencv2/core/check.hpp:
 
 /usr/include/bits/types/struct_itimerspec.h:
 
-/usr/lib/libgsttag-1.0.so.0:
-
-/usr/include/c++/14.2.1/bits/locale_conv.h:
-
-/usr/lib/libgstvideo-1.0.so.0:
+/usr/include/c++/15.1.1/codecvt:
 
 /usr/include/bits/struct_mutex.h:
 
-/usr/lib32/libxml2.so.2:
+/usr/include/asm/errno.h:
 
-/usr/include/c++/14.2.1/bits/locale_classes.tcc:
+/usr/lib/libwebpdemux.so.2:
 
-external/opencv/install/lib/libopencv_dnn.so.4.12.0:
+/usr/include/bits/setjmp.h:
 
-/usr/include/bits/time64.h:
+/usr/include/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/c++/14.2.1/bits/ranges_base.h:
+/usr/lib/libkrb5support.so.0:
 
-/usr/include/c++/14.2.1/bits/predefined_ops.h:
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/wchar.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/c++/15.1.1/tr1/beta_function.tcc:
+
+/usr/lib/libswscale.so.8:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/c++/15.1.1/bits/refwrap.h:
+
+external/opencv/install/lib/libopencv_core.so.4.12.0:
+
+/usr/include/c++/15.1.1/bits/atomic_base.h:
+
+/usr/include/bits/libc-header-start.h:
+
+external/opencv/install/lib/libopencv_features2d.so.4.12.0:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/c++/15.1.1/bits/allocated_ptr.h:
+
+external/SFML/install/include/SFML/Window/Export.hpp:
+
+/usr/include/bits/locale.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/bits/syscall.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/c++/15.1.1/bits/postypes.h:
+
+/usr/lib/libx265.so.212:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/errno.h:
+
+/usr/lib32/libresolv.so.2:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/c++/15.1.1/bits/ranges_util.h:
+
+/usr/lib/libk5crypto.so.3:
+
+/usr/include/wctype.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/errno.h:
+
+external/opencv/install/lib/libopencv_videoio.so.4.12.0:
+
+/usr/include/c++/15.1.1/bits/exception.h:
+
+external/SFML/install/include/SFML/System/Vector2.hpp:
+
+/usr/include/bits/endian.h:
+
+/usr/lib/libva-drm.so.2:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/lib/libbrotlicommon.so.1:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/15.1.1/bits/alloc_traits.h:
+
+/usr/lib/libva-x11.so.2:
+
+/usr/include/assert.h:
+
+/usr/include/asm/unistd.h:
+
+external/SFML/install/include/SFML/Graphics/Transform.hpp:
+
+/usr/include/c++/15.1.1/utility:
+
+/usr/include/asm/types.h:
+
+external/SFML/install/include/SFML/System/String.inl:
+
+/usr/lib32/libva.so.2:
+
+/usr/lib/libkeyutils.so.1:
+
+/usr/include/c++/15.1.1/bits/hashtable_policy.h:
+
+external/opencv/install/include/opencv4/opencv2/core/base.hpp:
+
+external/SFML/install/include/SFML/Graphics/Glyph.hpp:
+
+external/SFML/install/include/SFML/Window/WindowEnums.hpp:
+
+/usr/lib/libopencore-amrnb.so.0:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/c++/15.1.1/bits/stl_iterator_base_types.h:
+
+external/SFML/install/include/SFML/System/Export.hpp:
+
+external/opencv/install/include/opencv4/opencv2/core/utility.hpp:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+external/SFML/install/include/SFML/Window/Sensor.hpp:
+
+external/SFML/install/include/SFML/System/Clock.hpp:
+
+/usr/include/asm/bitsperlong.h:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/c++/15.1.1/cstdint:
+
+/usr/lib/libgdk_pixbuf-2.0.so.0:
+
+external/poppler/install/include/poppler/cpp/poppler-rectangle.h:
 
 /usr/lib32/libnghttp2.so.14:
 
 /usr/include/bits/types/__mbstate_t.h:
 
-/usr/include/bits/time.h:
+/usr/include/c++/15.1.1/tr1/bessel_function.tcc:
 
 /usr/lib32/libharfbuzz.so.0:
 
@@ -1203,287 +1347,109 @@ external/opencv/install/lib/libopencv_dnn.so.4.12.0:
 
 main.cpp:
 
-/usr/include/c++/14.2.1/debug/assertions.h:
-
 /usr/lib/libSvtAv1Enc.so.3:
 
 /usr/include/bits/stdio_lim.h:
 
-/usr/include/bits/stdint-uintn.h:
+/usr/include/c++/15.1.1/bits/std_abs.h:
 
-/usr/include/asm/errno.h:
+external/SFML/install/include/SFML/Graphics/Text.hpp:
 
-/usr/include/c++/14.2.1/iostream:
+/usr/include/bits/mathcalls-macros.h:
 
-/usr/include/bits/select.h:
+/usr/include/c++/15.1.1/format:
 
-/usr/include/c++/14.2.1/bits/algorithmfwd.h:
+/usr/lib32/libplc4.so:
 
-external/opencv/install/include/opencv4/opencv2/opencv_modules.hpp:
+/usr/include/asm-generic/int-ll64.h:
 
-/usr/include/c++/14.2.1/tr1/special_function_util.h:
+/usr/include/c++/15.1.1/bits/stl_vector.h:
 
-/usr/lib32/libplds4.so:
+/usr/include/c++/15.1.1/bits/atomic_wait.h:
 
-/usr/include/c++/14.2.1/bits/basic_string.h:
+/usr/include/c++/15.1.1/cwctype:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/sys/syscall.h:
 
-/usr/include/asm-generic/types.h:
+/usr/include/c++/15.1.1/bits/charconv.h:
 
-/usr/lib/libc.so:
+/usr/lib/libgsm.so.1:
 
-/usr/include/bits/pthread_stack_min-dynamic.h:
+/usr/lib/libdbus-1.so.3:
 
-/usr/lib/libssh2.so.1:
+/usr/include/c++/15.1.1/istream:
 
-/usr/include/c++/14.2.1/tr1/ell_integral.tcc:
+/usr/include/c++/15.1.1/bits/fs_path.h:
 
-external/opencv/install/include/opencv4/opencv2/core/mat.inl.hpp:
+/usr/include/c++/15.1.1/bits/align.h:
 
-external/SFML/install/include/SFML/Window/Joystick.hpp:
+external/SFML/install/include/SFML/System/Angle.hpp:
 
-/usr/lib/libsqlite3.so.0:
+/usr/include/c++/15.1.1/tr1/special_function_util.h:
 
-external/opencv/install/include/opencv4/opencv2/core/mat.hpp:
+external/SFML/install/include/SFML/Window/WindowBase.inl:
 
-/usr/lib/libdav1d.so.7:
+external/SFML/install/include/SFML/System/Time.hpp:
 
-external/SFML/install/include/SFML/System/Angle.inl:
+external/opencv/install/include/opencv4/opencv2/core/ovx.hpp:
 
-/usr/include/c++/14.2.1/cwctype:
+external/opencv/install/include/opencv4/opencv2/core.hpp:
 
-/usr/include/asm/unistd.h:
+/usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/14.2.1/bits/ranges_algo.h:
+/usr/lib/libXcursor.so.1:
 
-/usr/include/c++/14.2.1/bits/shared_ptr.h:
+external/SFML/install/include/SFML/Config.hpp:
 
-/usr/lib/libnssutil3.so:
+external/SFML/install/include/SFML/System.hpp:
 
-/usr/include/c++/14.2.1/tr1/bessel_function.tcc:
+/usr/include/c++/15.1.1/bits/move.h:
 
-/usr/include/c++/14.2.1/tr1/poly_laguerre.tcc:
+external/SFML/install/include/SFML/System/InputStream.hpp:
 
-/usr/include/c++/14.2.1/iomanip:
+/usr/include/c++/15.1.1/bits/utility.h:
 
-/usr/include/bits/struct_rwlock.h:
+external/SFML/install/include/SFML/Window/GlResource.hpp:
 
-/usr/include/bits/sched.h:
+/usr/lib/libm.so:
 
-/usr/include/bits/types/__FILE.h:
+external/SFML/install/include/SFML/Graphics/Vertex.hpp:
 
-/usr/include/features.h:
+/usr/include/c++/15.1.1/bits/cpp_type_traits.h:
+
+external/SFML/install/include/SFML/Graphics/Rect.inl:
+
+external/opencv/install/include/opencv4/opencv2/core/cvdef.h:
+
+/usr/include/c++/15.1.1/bits/unordered_map.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/15.1.1/memory:
+
+external/opencv/install/include/opencv4/opencv2/core/check.hpp:
+
+external/SFML/install/include/SFML/Graphics/Export.hpp:
+
+external/opencv/install/lib/libopencv_dnn.so.4.12.0:
+
+/usr/include/bits/time64.h:
 
 /usr/lib/libssl.so.3:
 
 external/SFML/install/include/SFML/System/Err.hpp:
 
-external/opencv/install/include/opencv4/opencv2/core.hpp:
+/usr/include/c++/15.1.1/bits/hashtable.h:
 
-/usr/lib/libXcursor.so.1:
+/usr/include/bits/stdlib-float.h:
 
-/usr/include/c++/14.2.1/bits/exception_ptr.h:
-
-external/SFML/install/include/SFML/System/Utf.inl:
-
-external/SFML/install/include/SFML/Window/WindowEnums.hpp:
-
-external/SFML/install/include/SFML/Window/Vulkan.hpp:
-
-external/SFML/install/include/SFML/System/String.hpp:
-
-/usr/include/bits/unistd_ext.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mm_malloc.h:
-
-/usr/lib/libXau.so.6:
-
-/usr/lib/libopencore-amrnb.so.0:
-
-/usr/include/bits/waitflags.h:
-
-external/SFML/install/include/SFML/Window/Touch.hpp:
-
-external/SFML/install/include/SFML/System/MemoryInputStream.hpp:
-
-/usr/include/c++/14.2.1/bits/uses_allocator_args.h:
+external/SFML/install/include/SFML/Graphics/Shape.hpp:
 
 external/SFML/install/include/SFML/Window.hpp:
 
-/usr/include/c++/14.2.1/tr1/modified_bessel_func.tcc:
+external/SFML/install/include/SFML/Graphics/Image.hpp:
 
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/c++/14.2.1/pstl/glue_algorithm_defs.h:
-
-external/SFML/install/include/SFML/Window/Sensor.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/xmmintrin.h:
-
-/usr/include/c++/14.2.1/bits/chrono_io.h:
-
-/usr/lib32/libkrb5support.so.0:
-
-/usr/include/bits/confname.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-external/opencv/install/include/opencv4/opencv2/core/cvdef.h:
-
-/usr/include/c++/14.2.1/bits/allocated_ptr.h:
-
-/usr/lib/libgnutls.so.30:
-
-external/SFML/install/include/SFML/Window/Export.hpp:
-
-external/opencv/install/lib/libopencv_features2d.so.4.12.0:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-external/SFML/install/include/SFML/Window/WindowBase.hpp:
-
-/usr/lib/libgmodule-2.0.so.0:
-
-external/SFML/install/include/SFML/Window/WindowBase.inl:
-
-/usr/lib/libgdk-3.so.0:
-
-/usr/include/asm/posix_types_64.h:
-
-external/opencv/install/lib/libopencv_imgcodecs.so.4.12.0:
-
-/usr/lib/libwayland-egl.so.1:
-
-external/opencv/install/include/opencv4/opencv2/core/hal/interface.h:
-
-external/SFML/install/include/SFML/System/Export.hpp:
-
-/usr/include/c++/14.2.1/bits/locale_facets.h:
-
-/usr/include/c++/14.2.1/pstl/execution_defs.h:
-
-/usr/include/c++/14.2.1/array:
-
-/usr/lib32/libnss3.so:
-
-/usr/include/c++/14.2.1/type_traits:
-
-/usr/lib/Scrt1.o:
-
-/usr/lib/libgpgme.so.11:
-
-/usr/lib/libvorbis.so.0:
-
-external/opencv/install/include/opencv4/opencv2/core/fast_math.hpp:
-
-CMakeFiles/run.dir/main.cpp.o:
-
-/usr/include/c++/14.2.1/stdexcept:
-
-external/SFML/install/include/SFML/System/Exception.hpp:
-
-/usr/include/bits/types/mbstate_t.h:
-
-external/SFML/install/include/SFML/Window/WindowHandle.hpp:
-
-/usr/include/c++/14.2.1/sstream:
-
-external/SFML/install/include/SFML/System/String.inl:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr.h:
-
-external/SFML/install/include/SFML/Window/Window.hpp:
-
-/usr/lib32/libgmodule-2.0.so.0:
-
-/usr/include/limits.h:
-
-/usr/include/c++/14.2.1/backward/binders.h:
-
-/usr/include/c++/14.2.1/limits:
-
-/usr/include/bits/types.h:
-
-external/opencv/install/include/opencv4/opencv2/core/bufferpool.hpp:
-
-external/SFML/install/include/SFML/System.hpp:
-
-external/SFML/install/include/SFML/Config.hpp:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/lib/libgraphite2.so.3:
-
-external/SFML/install/include/SFML/System/InputStream.hpp:
-
-/usr/include/c++/14.2.1/bits/ranges_util.h:
-
-/usr/lib/libm.so:
-
-/usr/include/c++/14.2.1/bits/stl_relops.h:
-
-/usr/include/sys/syscall.h:
-
-external/SFML/install/include/SFML/System/FileInputStream.hpp:
-
-external/SFML/install/include/SFML/Window/ContextSettings.hpp:
-
-external/SFML/install/include/SFML/Window/Context.hpp:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/asm/unistd_64.h:
-
-/usr/include/c++/14.2.1/bits/uses_allocator.h:
-
-/usr/include/c++/14.2.1/mutex:
-
-/usr/lib/libswscale.so.8:
-
-/usr/include/bits/mathcalls.h:
-
-external/opencv/install/include/opencv4/opencv2/core/ovx.hpp:
-
-external/SFML/install/include/SFML/System/Time.hpp:
-
-external/SFML/install/include/SFML/System/Utf.hpp:
-
-/usr/include/c++/14.2.1/bits/iterator_concepts.h:
-
-external/opencv/install/include/opencv4/opencv2/core/version.hpp:
-
-/usr/include/c++/14.2.1/bits/unicode.h:
-
-/usr/include/bits/environments.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-external/SFML/install/include/SFML/Window/Clipboard.hpp:
-
-/usr/include/bits/posix2_lim.h:
-
-/usr/include/c++/14.2.1/bits/ios_base.h:
-
-external/opencv/install/include/opencv4/opencv2/core/operations.hpp:
-
-/usr/include/c++/14.2.1/chrono:
-
-external/opencv/install/include/opencv4/opencv2/core/traits.hpp:
-
-external/opencv/install/include/opencv4/opencv2/core/types.hpp:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/lib/libbluray.so.2:
-
-/usr/include/c++/14.2.1/bits/postypes.h:
-
-external/SFML/install/include/SFML/System/Vector3.inl:
-
-/usr/include/c++/14.2.1/climits:
+/usr/include/c++/15.1.1/debug/assertions.h:
 
 external/opencv/install/lib/libopencv_photo.so.4.12.0:
 
@@ -1491,31 +1457,309 @@ external/opencv/install/lib/libopencv_photo.so.4.12.0:
 
 external/opencv/install/include/opencv4/opencv2/core/vsx_utils.hpp:
 
-/usr/lib/libgomp.so.1:
+external/SFML/install/include/SFML/System/Vector3.inl:
 
-/usr/lib/libxml2.so.2:
+/usr/include/bits/types/struct_tm.h:
 
-/usr/include/bits/typesizes.h:
+/usr/include/c++/15.1.1/streambuf:
 
-external/opencv/install/lib/libopencv_calib3d.so.4.12.0:
+/usr/include/c++/15.1.1/bits/algorithmfwd.h:
 
-/usr/include/bits/local_lim.h:
+external/SFML/install/include/SFML/System/MemoryInputStream.hpp:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/c++/15.1.1/bits/shared_ptr.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/c++/15.1.1/bits/char_traits.h:
+
+external/SFML/install/include/SFML/Window/Window.hpp:
+
+/usr/lib32/libgmodule-2.0.so.0:
+
+/usr/include/limits.h:
+
+external/SFML/install/include/SFML/Graphics/Drawable.hpp:
+
+/usr/lib/libxvidcore.so.4:
+
+/usr/include/strings.h:
+
+/usr/lib/libsqlite3.so.0:
+
+external/opencv/install/include/opencv4/opencv2/core/mat.hpp:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/libintl.h:
+
+external/SFML/install/include/SFML/Graphics/Transformable.hpp:
+
+/usr/include/c++/15.1.1/ext/aligned_buffer.h:
+
+external/SFML/install/include/SFML/Graphics/Sprite.hpp:
+
+external/SFML/install/include/SFML/Graphics/RectangleShape.hpp:
+
+/usr/include/c++/15.1.1/bits/codecvt.h:
+
+external/SFML/install/include/SFML/Window/Clipboard.hpp:
+
+/usr/lib/libXrender.so.1:
+
+external/SFML/install/include/SFML/Graphics/View.hpp:
+
+external/SFML/install/include/SFML/Graphics/Rect.hpp:
+
+external/opencv/install/include/opencv4/opencv2/imgproc.hpp:
+
+/usr/lib/libpgm-5.3.so.0:
+
+/usr/include/c++/15.1.1/bits/exception_ptr.h:
+
+external/opencv/install/include/opencv4/opencv2/core/traits.hpp:
+
+external/SFML/install/include/SFML/Graphics/Color.inl:
+
+/usr/lib/libcom_err.so.2:
+
+external/SFML/install/include/SFML/Window/Event.hpp:
+
+/usr/lib/libgcc_s.so.1:
+
+/usr/include/bits/pthreadtypes.h:
+
+external/SFML/install/include/SFML/Graphics.hpp:
+
+/usr/include/bits/select.h:
+
+external/SFML/install/include/SFML/Graphics/BlendMode.hpp:
+
+external/SFML/install/include/SFML/Graphics/RenderWindow.hpp:
+
+/usr/include/bits/time.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h:
+
+/usr/lib/libgstbase-1.0.so.0:
+
+external/SFML/install/include/SFML/System/Sleep.hpp:
+
+/usr/include/c++/15.1.1/cmath:
+
+/usr/include/c++/15.1.1/tr1/legendre_function.tcc:
+
+/usr/include/bits/types.h:
+
+external/SFML/install/include/SFML/Graphics/CoordinateType.hpp:
+
+external/SFML/install/include/SFML/Graphics/Glsl.inl:
+
+/usr/include/c++/15.1.1/system_error:
+
+external/SFML/install/include/SFML/Window/Cursor.hpp:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/lib/libc.so:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/c++/15.1.1/bits/stringfwd.h:
+
+/usr/include/c++/15.1.1/functional:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
+
+external/SFML/install/include/SFML/System/Utf.inl:
+
+external/opencv/install/include/opencv4/opencv2/core/cvstd.inl.hpp:
+
+external/SFML/install/include/SFML/System/Utf.hpp:
 
 external/opencv/install/include/opencv4/opencv2/highgui.hpp:
 
-/usr/include/c++/14.2.1/bits/locale_facets_nonio.h:
+/usr/include/c++/15.1.1/cstdio:
 
-external/SFML/install/include/SFML/System/Vector3.hpp:
+/usr/include/c++/15.1.1/variant:
 
-/usr/include/c++/14.2.1/bits/basic_ios.h:
+external/opencv/install/include/opencv4/opencv2/core/version.hpp:
 
-/usr/lib/libexpat.so.1:
+/usr/lib32/libxml2.so.16:
+
+/usr/include/c++/15.1.1/unordered_map:
+
+external/SFML/install/include/SFML/Graphics/VertexBuffer.hpp:
+
+external/SFML/install/include/SFML/Graphics/Color.hpp:
+
+/usr/lib32/libbrotlidec.so.1:
+
+/usr/include/stdlib.h:
+
+/usr/lib32/libkrb5support.so.0:
+
+/usr/include/bits/confname.h:
+
+/usr/include/c++/15.1.1/ext/string_conversions.h:
+
+/usr/lib32/libzstd.so.1:
+
+/usr/lib32/libXinerama.so.1:
+
+external/SFML/install/include/SFML/Graphics/Shader.hpp:
+
+/usr/lib/libgpgmepp.so.6:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/c++/15.1.1/charconv:
+
+external/SFML/install/include/SFML/Window/Context.hpp:
+
+external/SFML/install/include/SFML/System/FileInputStream.hpp:
+
+external/SFML/install/include/SFML/Window/ContextSettings.hpp:
+
+external/SFML/install/include/SFML/Window/VideoMode.hpp:
+
+external/opencv/install/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
+
+external/opencv/install/include/opencv4/opencv2/core/persistence.hpp:
+
+external/SFML/install/include/SFML/Window/Joystick.hpp:
+
+external/opencv/install/include/opencv4/opencv2/core/mat.inl.hpp:
+
+/usr/lib32/libwayland-cursor.so.0:
+
+external/SFML/install/include/SFML/Window/Keyboard.hpp:
+
+external/SFML/install/include/SFML/Graphics/Texture.hpp:
+
+external/SFML/install/include/SFML/System/String.hpp:
+
+/usr/lib/libXau.so.6:
+
+external/SFML/install/include/SFML/Window/Vulkan.hpp:
+
+/usr/include/c++/15.1.1/numbers:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/sched.h:
+
+/usr/lib/libgstaudio-1.0.so.0:
+
+/usr/include/c++/15.1.1/ext/numeric_traits.h:
+
+/usr/include/features.h:
+
+external/SFML/install/include/SFML/System/Exception.hpp:
+
+/usr/include/c++/15.1.1/ext/type_traits.h:
+
+/usr/lib/libvorbis.so.0:
+
+/usr/include/c++/15.1.1/concepts:
+
+external/opencv/install/include/opencv4/opencv2/core/fast_math.hpp:
+
+/usr/lib/libgstriff-1.0.so.0:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/lib/libgomp.so.1:
+
+/usr/include/c++/15.1.1/bits/stl_pair.h:
+
+/usr/include/c++/15.1.1/cstddef:
+
+external/SFML/install/include/SFML/Window/WindowBase.hpp:
+
+/usr/include/sched.h:
+
+external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp:
+
+/usr/include/c++/15.1.1/bits/locale_facets_nonio.h:
+
+/usr/include/c++/15.1.1/bits/stl_iterator.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+external/SFML/install/include/SFML/Window/WindowHandle.hpp:
+
+/usr/include/c++/15.1.1/bits/functional_hash.h:
+
+/usr/include/c++/15.1.1/bits/fs_dir.h:
+
+external/SFML/install/lib/libsfml-graphics.so:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/c++/15.1.1/tr1/gamma.tcc:
+
+external/SFML/install/include/SFML/Graphics/Glsl.hpp:
+
+/usr/lib/libassuan.so.9:
+
+/usr/include/bits/types/struct_timeval.h:
+
+external/SFML/install/include/SFML/Graphics/VertexArray.hpp:
+
+external/opencv/install/lib/libopencv_imgcodecs.so.4.12.0:
+
+/usr/lib/libwayland-egl.so.1:
+
+external/opencv/install/include/opencv4/opencv2/core/hal/interface.h:
+
+/usr/lib/libopenmpt.so.0:
+
+/usr/include/c++/15.1.1/bits/istream.tcc:
+
+/usr/include/c++/15.1.1/backward/auto_ptr.h:
+
+external/SFML/install/include/SFML/Graphics/PrimitiveType.hpp:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/c++/15.1.1/bits/monostate.h:
+
+external/opencv/install/include/opencv4/opencv2/core/operations.hpp:
+
+/usr/include/c++/15.1.1/pstl/execution_defs.h:
+
+/usr/include/c++/15.1.1/bits/node_handle.h:
+
+/usr/include/c++/15.1.1/bit:
+
+external/opencv/install/include/opencv4/opencv2/core/optim.hpp:
+
+external/opencv/install/include/opencv4/opencv2/core/types.hpp:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/lib/libbluray.so.2:
+
+/usr/include/bits/typesizes.h:
+
+external/SFML/install/include/SFML/Graphics/RenderTexture.hpp:
+
+external/opencv/install/include/opencv4/opencv2/opencv_modules.hpp:
 
 /usr/lib32/libffi.so.8:
 
 external/opencv/install/include/opencv4/opencv2/core/matx.hpp:
 
 /usr/include/bits/types/wint_t.h:
+
+external/SFML/install/include/SFML/Graphics/RenderStates.hpp:
 
 /usr/lib32/libssh2.so.1:
 
@@ -1525,297 +1769,107 @@ external/poppler/install/include/poppler/cpp/poppler-page-renderer.h:
 
 external/opencv/install/include/opencv4/opencv2/videoio.hpp:
 
-/usr/include/c++/14.2.1/bits/atomic_base.h:
+/usr/include/c++/15.1.1/bits/stream_iterator.h:
 
-/usr/include/c++/14.2.1/bits/exception_defines.h:
+/usr/lib/libjxl_cms.so.0.11:
 
-/usr/include/c++/14.2.1/bits/stl_tree.h:
+/usr/include/linux/posix_types.h:
 
-/usr/lib32/libXrender.so.1:
+external/SFML/install/include/SFML/Graphics/Transform.inl:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/mmintrin.h:
+external/SFML/install/include/SFML/System/Time.inl:
 
-/usr/lib/libgcc_s.so:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
+
+/usr/lib/libplc4.so:
+
+external/SFML/install/include/SFML/Graphics/StencilMode.hpp:
+
+external/poppler/install/include/poppler/cpp/poppler-document.h:
+
+/usr/lib32/libX11.so.6:
+
+/usr/include/c++/15.1.1/array:
 
 external/poppler/install/include/poppler/cpp/poppler-font.h:
 
 /usr/include/asm-generic/posix_types.h:
 
+/usr/include/c++/15.1.1/cerrno:
+
 external/poppler/install/include/poppler/cpp/poppler-global.h:
 
-/usr/include/bits/getopt_posix.h:
-
-/usr/include/c++/14.2.1/bits/fs_dir.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/usr/include/errno.h:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/lib32/libwayland-cursor.so.0:
-
-external/SFML/install/include/SFML/Window/Keyboard.hpp:
-
-/usr/include/c++/14.2.1/cctype:
-
-/usr/lib/libjxl_cms.so.0.11:
-
-external/SFML/install/include/SFML/System/Time.inl:
-
-/usr/include/linux/posix_types.h:
+/usr/include/c++/15.1.1/bits/chrono_io.h:
 
 /usr/include/bits/flt-eval-method.h:
 
-/usr/include/bits/mathcalls-narrow.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdint.h:
-
 external/SFML/install/include/SFML/Window/Mouse.hpp:
-
-/usr/include/c++/14.2.1/variant:
 
 external/poppler/install/include/poppler/cpp/poppler-page.h:
 
 /usr/lib32/libexpat.so.1:
 
-/usr/include/c++/14.2.1/optional:
-
 /usr/lib/crti.o:
-
-/usr/lib/libresolv.so.2:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/14.2.1/bits/hashtable_policy.h:
-
-/usr/include/c++/14.2.1/span:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/c++/14.2.1/bits/specfun.h:
-
-/usr/lib/libbz2.so.1.0:
-
-external/poppler/install/include/poppler/cpp/poppler_cpp_export.h:
-
-external/SFML/install/include/SFML/Window/Cursor.hpp:
-
-/usr/include/c++/14.2.1/bits/mofunc_impl.h:
-
-/usr/include/c++/14.2.1/cwchar:
-
-/usr/lib/libXinerama.so.1:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/14.2.1/bits/locale_facets.tcc:
-
-external/SFML/install/include/SFML/System/Vector2.hpp:
-
-/usr/include/bits/endian.h:
-
-/usr/include/c++/14.2.1/bits/concept_check.h:
-
-/usr/include/syscall.h:
-
-/usr/lib/libva-x11.so.2:
-
-/usr/include/assert.h:
-
-/usr/include/c++/14.2.1/bits/ptr_traits.h:
-
-/usr/include/c++/14.2.1/istream:
-
-/usr/include/c++/14.2.1/bits/char_traits.h:
-
-/usr/include/c++/14.2.1/bits/basic_string.tcc:
-
-/usr/include/bits/byteswap.h:
-
-/usr/lib/libOpenCL.so.1:
-
-/usr/lib/libva-drm.so.2:
-
-/usr/include/bits/cpu-set.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/c++/14.2.1/typeinfo:
-
-/usr/include/libintl.h:
-
-/usr/include/c++/14.2.1/bits/parse_numbers.h:
-
-/usr/include/c++/14.2.1/codecvt:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/lib/libXrender.so.1:
-
-/usr/include/c++/14.2.1/vector:
-
-external/SFML/install/include/SFML/Window/GlResource.hpp:
-
-/usr/include/c++/14.2.1/bits/cxxabi_init_exception.h:
-
-/usr/lib/libdvdnav.so.4:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/c++/14.2.1/bits/atomic_lockfree_defines.h:
-
-/usr/lib/libfribidi.so.0:
-
-external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp:
-
-/usr/include/sched.h:
-
-/usr/lib/libk5crypto.so.3:
-
-/usr/include/wctype.h:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/lib/libgpgmepp.so.6:
-
-/usr/lib/libkrb5support.so.0:
-
-/usr/include/bits/posix1_lim.h:
-
-/usr/lib/libplc4.so:
-
-external/poppler/install/include/poppler/cpp/poppler-document.h:
-
-/usr/include/c++/14.2.1/clocale:
-
-/usr/include/wchar.h:
-
-/usr/include/bits/posix_opt.h:
-
-/usr/lib/libbrotlicommon.so.1:
-
-/usr/lib32/libresolv.so.2:
-
-/usr/include/bits/getopt_core.h:
-
-/usr/include/c++/14.2.1/locale:
-
-/usr/include/c++/14.2.1/bits/codecvt.h:
-
-/usr/lib/libx265.so.212:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/c++/14.2.1/ext/aligned_buffer.h:
 
 /usr/include/bits/long-double.h:
 
-/usr/lib32/libplc4.so:
+/usr/include/c++/15.1.1/stdexcept:
 
-/usr/include/asm-generic/int-ll64.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o:
 
-/usr/include/bits/mathcalls-macros.h:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/c++/14.2.1/bits/refwrap.h:
+/usr/lib32/libicudata.so.76:
 
-/usr/include/c++/14.2.1/bits/requires_hosted.h:
+/usr/lib/libhogweed.so.6:
 
-/usr/include/c++/14.2.1/bits/shared_ptr_atomic.h:
+/usr/include/c++/15.1.1/bits/invoke.h:
 
-/usr/lib32/libcurl.so.4:
+/usr/lib32/libz.so.1:
 
-/usr/include/c++/14.2.1/format:
+/usr/include/c++/15.1.1/bits/locale_facets.tcc:
 
-/usr/include/c++/14.2.1/bits/std_abs.h:
+/usr/include/asm/unistd_64.h:
 
-/usr/include/c++/14.2.1/bits/stl_bvector.h:
+/usr/include/c++/15.1.1/bits/erase_if.h:
 
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+/usr/include/c++/15.1.1/bits/ranges_cmp.h:
 
-/usr/include/c++/14.2.1/bits/std_function.h:
+/usr/include/c++/15.1.1/bits/ios_base.h:
 
-/usr/lib32/libva.so.2:
+/usr/lib32/libgpg-error.so.0:
 
-/usr/lib/libkeyutils.so.1:
+/usr/include/c++/15.1.1/bits/iterator_concepts.h:
 
-external/opencv/install/include/opencv4/opencv2/core/base.hpp:
+/usr/include/c++/15.1.1/type_traits:
 
-/usr/include/c++/14.2.1/bits/std_mutex.h:
+/usr/include/bits/stdint-uintn.h:
 
-/usr/include/c++/14.2.1/bits/stl_algo.h:
+/usr/include/c++/15.1.1/bits/locale_classes.tcc:
 
-/usr/include/c++/14.2.1/bits/stl_algobase.h:
+/usr/include/c++/15.1.1/bits/requires_hosted.h:
 
-/usr/include/c++/14.2.1/cstdlib:
+/usr/include/c++/15.1.1/bits/locale_conv.h:
 
-/usr/include/c++/14.2.1/bits/stl_construct.h:
+/usr/include/c++/15.1.1/bits/stl_multimap.h:
 
-/usr/include/c++/14.2.1/bits/utility.h:
+/usr/include/c++/15.1.1/ratio:
 
-/usr/include/c++/14.2.1/ext/atomicity.h:
+external/SFML/install/include/SFML/Window/Touch.hpp:
 
-/usr/include/c++/14.2.1/stdlib.h:
+/usr/include/c++/15.1.1/bits/locale_facets.h:
 
-/usr/include/features-time64.h:
+/usr/lib/libavformat.so.61:
 
-/usr/include/c++/14.2.1/bits/stl_heap.h:
+/usr/include/c++/15.1.1/bits/locale_facets_nonio.tcc:
 
-/usr/include/c++/14.2.1/bits/stl_iterator.h:
+/usr/include/c++/15.1.1/bits/localefwd.h:
 
-external/opencv/install/lib/libopencv_highgui.so.4.12.0:
+/usr/lib/libblkid.so.1:
 
-/usr/include/c++/14.2.1/bits/stl_iterator_base_funcs.h:
+/usr/include/c++/15.1.1/bits/max_size_type.h:
 
-/usr/include/bits/stdint-least.h:
-
-/usr/include/c++/14.2.1/bits/stl_iterator_base_types.h:
-
-/usr/lib32/libXi.so.6:
-
-/usr/include/c++/14.2.1/bits/stl_map.h:
-
-/usr/lib/libdvdread.so.8:
-
-/usr/include/c++/14.2.1/bits/stl_multimap.h:
-
-/usr/include/c++/14.2.1/bits/stl_pair.h:
-
-/usr/lib/libpango-1.0.so.0:
-
-/usr/include/c++/14.2.1/bits/stl_raw_storage_iter.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/c++/14.2.1/bits/stl_tempbuf.h:
-
-/usr/include/bits/timex.h:
-
-/usr/include/c++/14.2.1/bits/stl_vector.h:
-
-/usr/lib/libicuuc.so.76:
-
-/usr/include/c++/14.2.1/bits/max_size_type.h:
-
-/usr/include/c++/14.2.1/bits/stream_iterator.h:
-
-external/SFML/install/include/SFML/Window/Event.hpp:
-
-/usr/lib/libcom_err.so.2:
-
-/usr/lib/libgcc_s.so.1:
-
-/usr/include/c++/14.2.1/bits/string_view.tcc:
-
-/usr/lib32/libpsl.so.5:
-
-/usr/lib32/libp11-kit.so.0:
-
-/usr/include/c++/14.2.1/bits/stringfwd.h:
-
-/usr/include/c++/14.2.1/bits/unicode-data.h:
+/usr/include/c++/15.1.1/bits/memoryfwd.h:
 
 /usr/include/locale.h:
 
@@ -1823,233 +1877,317 @@ external/SFML/install/include/SFML/Window/Event.hpp:
 
 /usr/lib/libaom.so.3:
 
-/usr/include/c++/14.2.1/bits/unique_lock.h:
+/usr/include/c++/15.1.1/bits/exception_defines.h:
 
-/usr/include/c++/14.2.1/bits/unique_ptr.h:
+/usr/include/c++/15.1.1/bits/mofunc_impl.h:
 
-/usr/include/c++/14.2.1/algorithm:
+/usr/include/c++/15.1.1/cstdlib:
 
-/usr/include/c++/14.2.1/bits/unordered_map.h:
+/usr/include/c++/15.1.1/bits/move_only_function.h:
 
-/usr/include/c++/14.2.1/bits/version.h:
+/usr/include/c++/15.1.1/bits/streambuf.tcc:
 
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+/usr/include/c++/15.1.1/bits/new_allocator.h:
 
-/usr/include/c++/14.2.1/cassert:
+/usr/lib/libjson-glib-1.0.so.0:
 
-/usr/include/c++/14.2.1/cerrno:
+/usr/include/c++/15.1.1/bits/ostream.h:
 
-/usr/lib32/libssl.so.3:
+/usr/lib/libcloudproviders.so.0:
 
-/usr/lib/libjbig.so.2.1:
+/usr/include/c++/15.1.1/bits/ostream.tcc:
 
-/usr/include/c++/14.2.1/cfloat:
+/usr/include/c++/15.1.1/bits/ostream_insert.h:
 
-/usr/include/c++/14.2.1/initializer_list:
+/usr/include/c++/15.1.1/bits/stl_relops.h:
 
-/usr/lib/libudev.so.1:
+/usr/include/bits/getopt_posix.h:
 
-/usr/lib/libbrotlidec.so.1:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/time_members.h:
 
-/usr/include/c++/14.2.1/charconv:
+/usr/include/c++/15.1.1/bits/out_ptr.h:
 
-/usr/include/c++/14.2.1/bits/ostream_insert.h:
+/usr/include/c++/15.1.1/bits/ranges_base.h:
 
-/usr/include/c++/14.2.1/cmath:
+/usr/include/c++/15.1.1/bits/predefined_ops.h:
 
-/usr/lib/libtasn1.so.6:
+/usr/include/c++/15.1.1/pstl/glue_memory_defs.h:
 
-/usr/lib/ld-linux-x86-64.so.2:
+/usr/include/c++/15.1.1/bits/ptr_traits.h:
 
-/usr/include/c++/14.2.1/compare:
+/usr/include/bits/types/error_t.h:
 
-/usr/include/c++/14.2.1/concepts:
+/usr/include/c++/15.1.1/bits/range_access.h:
 
-/usr/include/c++/14.2.1/print:
+/usr/include/c++/15.1.1/bits/stl_tree.h:
 
-/usr/include/c++/14.2.1/cstdint:
+/usr/lib32/libxcb.so.1:
 
-/usr/lib/libwebp.so.7:
+/usr/include/c++/15.1.1/bits/ranges_uninitialized.h:
 
-/usr/include/c++/14.2.1/cstdio:
+/usr/include/c++/15.1.1/bits/shared_ptr_atomic.h:
 
-/usr/include/c++/14.2.1/cstring:
+/usr/include/c++/15.1.1/bits/stl_tempbuf.h:
 
-/usr/include/c++/14.2.1/ctime:
+/usr/include/c++/15.1.1/bits/ranges_algo.h:
 
-/usr/include/c++/14.2.1/bits/allocator.h:
+/usr/include/c++/15.1.1/bits/shared_ptr_base.h:
 
-/usr/include/c++/14.2.1/debug/debug.h:
+/usr/include/c++/15.1.1/bits/specfun.h:
 
-/usr/include/c++/14.2.1/exception:
+/usr/lib/libfontconfig.so.1:
 
-external/SFML/install/include/SFML/System/Angle.hpp:
+/usr/include/c++/15.1.1/bits/sstream.tcc:
 
-/usr/include/c++/14.2.1/ext/concurrence.h:
+/usr/lib/libbrotlienc.so.1:
 
-/usr/include/c++/14.2.1/ext/numeric_traits.h:
+/usr/include/c++/15.1.1/bits/std_function.h:
 
-/usr/lib/libgstaudio-1.0.so.0:
+/usr/include/c++/15.1.1/bits/std_mutex.h:
 
-/usr/include/c++/14.2.1/ext/string_conversions.h:
+/usr/include/endian.h:
 
-/usr/include/c++/14.2.1/ext/type_traits.h:
+/usr/include/stdint.h:
 
-external/SFML/install/include/SFML/System/Clock.hpp:
+/usr/lib/libharfbuzz.so.0:
 
-/usr/include/c++/14.2.1/filesystem:
+/usr/include/c++/15.1.1/bits/stl_algobase.h:
 
-/usr/lib32/libnspr4.so:
+/usr/include/c++/15.1.1/bits/stl_bvector.h:
 
-/usr/include/c++/14.2.1/bits/range_access.h:
+/usr/include/c++/15.1.1/tr1/hypergeometric.tcc:
 
-/usr/lib/libgpg-error.so.0:
+/usr/include/c++/15.1.1/bits/stl_function.h:
 
-/usr/lib/libgstapp-1.0.so.0:
+/usr/include/c++/15.1.1/bits/stl_heap.h:
 
-/usr/lib32/libsqlite3.so.0:
+/usr/include/bits/types/struct_FILE.h:
 
-/usr/include/c++/14.2.1/functional:
+/usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h:
 
-/usr/include/asm/types.h:
+/usr/include/c++/15.1.1/bits/fs_fwd.h:
 
-/usr/include/c++/14.2.1/ios:
+/usr/include/bits/fp-fast.h:
 
-/usr/include/math.h:
+/usr/lib/libc.so.6:
 
-/usr/include/c++/14.2.1/bits/streambuf.tcc:
+/usr/include/c++/15.1.1/bits/streambuf_iterator.h:
 
-/usr/include/c++/14.2.1/iosfwd:
+/usr/lib/libpixman-1.so.0:
 
-external/opencv/install/include/opencv4/opencv2/core/utility.hpp:
+/usr/include/c++/15.1.1/bits/string_view.tcc:
 
-/usr/include/c++/14.2.1/iterator:
+/usr/include/c++/15.1.1/bits/unicode-data.h:
 
-/usr/include/c++/14.2.1/bits/exception.h:
+/usr/lib32/libXext.so.6:
 
-/usr/include/c++/14.2.1/map:
+/usr/include/c++/15.1.1/bits/unicode.h:
 
-/usr/include/c++/14.2.1/memory:
+/usr/include/c++/15.1.1/bits/unique_ptr.h:
 
-/usr/lib/libgsm.so.1:
+/usr/include/bits/environments.h:
 
-/usr/lib/libdbus-1.so.3:
+/usr/include/c++/15.1.1/bits/uses_allocator.h:
 
-external/opencv/install/include/opencv4/opencv2/core/cvstd.inl.hpp:
+/usr/lib/libtheoradec.so.2:
 
-/usr/include/c++/14.2.1/new:
+/usr/include/c++/15.1.1/bits/uses_allocator_args.h:
 
-/usr/lib32/libssl3.so:
+/usr/include/c++/15.1.1/bits/vector.tcc:
 
-/usr/include/bits/wchar.h:
+/usr/include/c++/15.1.1/bits/version.h:
 
-/usr/include/c++/14.2.1/cstddef:
+/usr/include/c++/15.1.1/cassert:
 
-/usr/include/c++/14.2.1/numbers:
+/usr/include/c++/15.1.1/iostream:
 
-/usr/include/c++/14.2.1/pstl/glue_memory_defs.h:
+/usr/include/c++/15.1.1/cctype:
 
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/messages_members.h:
+/usr/include/c++/15.1.1/cfloat:
 
-/usr/include/bits/syscall.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/messages_members.h:
 
-/usr/include/c++/14.2.1/pstl/pstl_config.h:
+/usr/lib/libcap.so.2:
 
-/usr/include/c++/14.2.1/tuple:
+/usr/include/c++/15.1.1/chrono:
 
-/usr/lib/libXcomposite.so.1:
+/usr/include/c++/15.1.1/pstl/pstl_config.h:
 
-/usr/include/c++/14.2.1/ratio:
+/usr/include/c++/15.1.1/bits/stl_construct.h:
 
-/usr/include/c++/14.2.1/streambuf:
+/usr/include/c++/15.1.1/tr1/poly_laguerre.tcc:
 
-/usr/include/c++/14.2.1/backward/auto_ptr.h:
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/c++/14.2.1/string:
+external/SFML/install/include/SFML/System/Vector3.hpp:
 
-external/SFML/install/include/SFML/Window/Event.inl:
+/usr/include/c++/15.1.1/climits:
 
-/usr/include/pthread.h:
+/usr/lib/liborc-0.4.so.0:
 
-/usr/include/bits/xopen_lim.h:
+/usr/lib/libjxl.so.0.11:
 
-/usr/lib/libgstriff-1.0.so.0:
+/usr/include/c++/15.1.1/bits/unique_lock.h:
 
-/usr/include/linux/errno.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mmintrin.h:
 
-/usr/include/c++/14.2.1/string_view:
+/usr/include/c++/15.1.1/complex:
 
-/usr/include/c++/14.2.1/system_error:
+/usr/include/c++/15.1.1/cstring:
 
-/usr/include/c++/14.2.1/complex:
+/usr/include/c++/15.1.1/bits/quoted_string.h:
 
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
-
-/usr/include/c++/14.2.1/bits/nested_exception.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
-
-/usr/include/c++/14.2.1/tr1/beta_function.tcc:
-
-/usr/include/c++/14.2.1/tr1/exp_integral.tcc:
-
-/usr/include/c++/14.2.1/tr1/gamma.tcc:
-
-/usr/lib/libleancrypto.so.1:
-
-/usr/include/c++/14.2.1/ext/alloc_traits.h:
-
-/usr/include/c++/14.2.1/tr1/hypergeometric.tcc:
-
-external/opencv/install/lib/libopencv_imgproc.so.4.12.0:
-
-/usr/include/c++/14.2.1/tr1/legendre_function.tcc:
-
-/usr/include/unistd.h:
-
-/usr/include/c++/14.2.1/tr1/poly_hermite.tcc:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/emmintrin.h:
-
-/usr/include/c++/14.2.1/tr1/riemann_zeta.tcc:
-
-/usr/lib/libtheoraenc.so.2:
-
-/usr/include/c++/14.2.1/unordered_map:
-
-/usr/include/bits/errno.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
-
-/usr/include/c++/14.2.1/bits/hash_bytes.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-external/opencv/install/include/opencv4/opencv2/core/cvstd.hpp:
-
-/usr/include/sys/types.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/os_defines.h:
-
-/usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/time_members.h:
-
-/usr/include/c++/14.2.1/bits/memory_resource.h:
-
-external/SFML/install/lib/libsfml-graphics.so:
-
-/usr/include/c++/14.2.1/bits/stl_function.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/14.2.1/ostream:
+/usr/include/c++/15.1.1/ctime:
 
 /usr/include/linux/close_range.h:
 
-/usr/lib/crtn.o:
+/usr/include/c++/15.1.1/cwchar:
 
-/usr/include/linux/limits.h:
+/usr/lib32/libXrender.so.1:
+
+/usr/include/c++/15.1.1/debug/debug.h:
+
+/usr/lib/libgcc_s.so:
+
+/usr/include/c++/15.1.1/bits/stl_algo.h:
+
+/usr/include/c++/15.1.1/exception:
+
+/usr/lib/libzmq.so.5:
+
+/usr/include/c++/15.1.1/ext/alloc_traits.h:
+
+/usr/include/c++/15.1.1/ext/atomicity.h:
+
+external/opencv/install/include/opencv4/opencv2/core/matx.inl.hpp:
+
+/usr/lib/libavcodec.so.61:
+
+/usr/include/c++/15.1.1/ext/concurrence.h:
+
+/usr/include/c++/15.1.1/filesystem:
+
+/usr/include/c++/15.1.1/initializer_list:
+
+/usr/lib/libresolv.so.2:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/15.1.1/iomanip:
+
+/usr/lib/libssh2.so.1:
+
+/usr/include/c++/15.1.1/ostream:
+
+external/SFML/install/include/SFML/System/Angle.inl:
+
+/usr/include/c++/15.1.1/ios:
+
+/usr/include/c++/15.1.1/iterator:
+
+/usr/include/c++/15.1.1/limits:
+
+/usr/lib/libgmodule-2.0.so.0:
+
+/usr/include/c++/15.1.1/locale:
+
+/usr/include/c++/15.1.1/map:
+
+/usr/lib/libgstreamer-1.0.so.0:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/sys/single_threaded.h:
+
+/usr/include/c++/15.1.1/new:
+
+external/SFML/install/include/SFML/Graphics/CircleShape.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/15.1.1/optional:
+
+/usr/include/c++/15.1.1/print:
+
+/usr/lib/libgstapp-1.0.so.0:
+
+/usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/c++/15.1.1/span:
+
+/usr/include/c++/15.1.1/tr1/poly_hermite.tcc:
+
+/usr/include/c++/15.1.1/sstream:
+
+/usr/include/c++/15.1.1/clocale:
+
+/usr/include/c++/15.1.1/string:
+
+/usr/lib32/libcurl.so.4:
+
+/usr/include/c++/15.1.1/string_view:
+
+/usr/lib32/libcap.so.2:
+
+/usr/include/c++/15.1.1/tr1/ell_integral.tcc:
+
+/usr/include/c++/15.1.1/tr1/exp_integral.tcc:
+
+/usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc:
+
+external/opencv/install/include/opencv4/opencv2/core/bufferpool.hpp:
+
+/usr/include/c++/15.1.1/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/15.1.1/vector:
+
+/usr/include/c++/15.1.1/tuple:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/c++/15.1.1/typeinfo:
+
+/usr/lib/libelf.so.1:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/c++/15.1.1/bits/stl_uninitialized.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/lib/libwayland-cursor.so.0:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/lib/libsharpyuv.so.0:
+
+/usr/include/c++/15.1.1/bits/ranges_algobase.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+external/SFML/install/include/SFML/Graphics/RenderTarget.hpp:
+
+/usr/include/sys/select.h:
+
+/usr/include/c++/15.1.1/bits/cxxabi_init_exception.h:
+
+/usr/include/ctype.h:
+
+/usr/include/features-time64.h:
 
 /usr/lib/libmvec.so.1:
 
@@ -2059,43 +2197,59 @@ external/SFML/install/lib/libsfml-graphics.so:
 
 /usr/include/linux/types.h:
 
+/usr/include/math.h:
+
+external/SFML/install/include/SFML/Window/Event.inl:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/15.1.1/bits/nested_exception.h:
+
 /usr/include/stdc-predef.h:
 
-/usr/lib32/libbrotlidec.so.1:
-
-/usr/include/stdlib.h:
-
 /usr/include/string.h:
-
-/usr/lib/libxvidcore.so.4:
-
-/usr/include/strings.h:
 
 /usr/lib/libzstd.so.1:
 
 /usr/include/sys/cdefs.h:
 
-/usr/include/sys/select.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a:
 
-/usr/lib/libgtk-3.so.0:
+external/opencv/install/include/opencv4/opencv2/core/cvstd.hpp:
+
+/usr/include/sys/types.h:
+
+/usr/include/syscall.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h:
 
 /usr/include/time.h:
 
-/usr/include/c++/14.2.1/bits/uniform_int_dist.h:
+/usr/include/unistd.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/limits.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/emmintrin.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/float.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h:
+external/opencv/install/lib/libopencv_highgui.so.4.12.0:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/syslimits.h:
+/usr/include/c++/15.1.1/bits/uniform_int_dist.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mm_malloc.h:
+
+/usr/lib/libdrm.so.2:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xmmintrin.h:
 
 /usr/lib/libp11-kit.so.0:
 
 external/opencv/install/include/opencv4/opencv2/imgproc/segmentation.hpp:
 
 external/SFML/install/lib/libsfml-system.so:
+
+/usr/include/c++/15.1.1/stdlib.h:
 
 external/SFML/install/lib/libsfml-window.so:
 
@@ -2111,11 +2265,23 @@ external/poppler/install/lib/libpoppler-cpp.so:
 
 external/poppler/install/lib/libpoppler.so.148:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtendS.o:
+external/SFML/install/include/SFML/Graphics/ConvexShape.hpp:
 
-/usr/include/c++/14.2.1/utility:
+/usr/include/c++/15.1.1/iosfwd:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/libgcc.a:
+/usr/lib/Scrt1.o:
+
+/usr/include/linux/limits.h:
+
+/usr/lib/crtn.o:
+
+/usr/lib/libtasn1.so.6:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/usr/lib/libffi.so.8:
+
+/usr/lib/libGL.so.1:
 
 external/opencv/install/lib/libopencv_ml.so.4.12.0:
 
@@ -2125,19 +2291,21 @@ external/opencv/install/include/opencv4/opencv2/core/neon_utils.hpp:
 
 /usr/lib/libmount.so.1:
 
-/usr/include/c++/14.2.1/bits/erase_if.h:
-
 external/opencv/install/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
 
 /usr/lib/libGLdispatch.so.0:
 
-/usr/lib/libGL.so.1:
-
-/usr/lib/libffi.so.8:
-
 /usr/lib/libX11-xcb.so.1:
 
 /usr/lib/libX11.so.6:
+
+/usr/lib/libXcomposite.so.1:
+
+/usr/lib/libgio-2.0.so.0:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/lib/libXdamage.so.1:
 
 /usr/lib/libXext.so.6:
 
@@ -2145,9 +2313,9 @@ external/opencv/install/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
 
 /usr/lib/libXi.so.6:
 
-/usr/lib/libXrandr.so.2:
+/usr/lib/libXinerama.so.1:
 
-/usr/lib/libassuan.so.9:
+/usr/lib/libXrandr.so.2:
 
 /usr/lib/libnghttp2.so.14:
 
@@ -2155,86 +2323,32 @@ external/opencv/install/include/opencv4/opencv2/core/cv_cpu_dispatch.h:
 
 /usr/lib/libatspi.so.0:
 
-external/opencv/install/include/opencv4/opencv2/core/matx.inl.hpp:
-
-/usr/lib/libavcodec.so.61:
-
-/usr/lib/libavformat.so.61:
-
 /usr/lib/libavutil.so.59:
 
-/usr/lib/libbrotlienc.so.1:
+/usr/lib/libudev.so.1:
 
-/usr/include/bits/fp-fast.h:
+/usr/lib/libbrotlidec.so.1:
 
-/usr/lib/libc.so.6:
+/usr/include/c++/15.1.1/bits/locale_classes.h:
+
+external/poppler/install/include/poppler/cpp/poppler_cpp_export.h:
+
+/usr/include/c++/15.1.1/bits/parse_numbers.h:
+
+/usr/lib/libbz2.so.1.0:
+
+/usr/include/c++/15.1.1/bits/stl_map.h:
 
 /usr/lib/libc_nonshared.a:
 
-/usr/lib/libfontconfig.so.1:
+/usr/include/c++/15.1.1/compare:
 
 /usr/lib/libatk-bridge-2.0.so.0:
 
 /usr/lib/libcairo-gobject.so.2:
 
-/usr/lib/libcairo.so.2:
-
-/usr/lib/libcloudproviders.so.0:
-
 /usr/lib/libcrypto.so.3:
 
 /usr/lib/libcurl.so.4:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/crtbeginS.o:
-
 /usr/lib/libdatrie.so.1:
-
-/usr/lib/libdrm.so.2:
-
-/usr/lib/libdw.so.1:
-
-/usr/lib/libelf.so.1:
-
-/usr/lib/libepoxy.so.0:
-
-/usr/include/c++/14.2.1/bits/enable_special_members.h:
-
-/usr/lib/libfreetype.so.6:
-
-external/poppler/install/include/poppler/cpp/poppler-rectangle.h:
-
-/usr/lib/libgdk_pixbuf-2.0.so.0:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/lib/libXdamage.so.1:
-
-/usr/lib/libgio-2.0.so.0:
-
-/usr/lib/libglib-2.0.so.0:
-
-/usr/lib/libgmp.so.10:
-
-/usr/include/c++/14.2.1/bits/shared_ptr_base.h:
-
-/usr/lib/libgobject-2.0.so.0:
-
-external/poppler/install/include/poppler/cpp/poppler-image.h:
-
-/usr/lib/libgssapi_krb5.so.2:
-
-external/SFML/install/include/SFML/System/Sleep.hpp:
-
-/usr/include/c++/14.2.1/bits/streambuf_iterator.h:
-
-/usr/lib/libgstbase-1.0.so.0:
-
-/usr/lib/libgstpbutils-1.0.so.0:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/sys/single_threaded.h:
-
-/usr/lib/libgstreamer-1.0.so.0:
-
-/usr/lib/libharfbuzz.so.0:

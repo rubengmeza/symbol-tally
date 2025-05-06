@@ -9,6 +9,7 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core/hal/interface.h>
 #include <SFML/Window.hpp>
+#include <SFML/Graphics.hpp>
 
 // @Temporary: globals bad
 poppler::document *doc = nullptr;
@@ -102,7 +103,7 @@ void create_image_from_pdf(std::string image_name)
     page_renderer.set_render_hint(poppler::page_renderer::text_hinting, true);
 
 	// pass DPI to page renderer for higher resolution image
-    poppler::image img = page_renderer.render_page(page, 600, 600);
+    poppler::image img = page_renderer.render_page(page, 300, 300);
     if (!img.is_valid()) {
 		std::cerr << "failed to render" << std::endl;
     }
@@ -118,13 +119,33 @@ void create_image_from_pdf(std::string image_name)
 
 int main() 
 {
-	doc = load_pdf(file_path);
+	//doc = load_pdf(file_path);
 	// extract a single page
-	page = process_pdf();
+	//page = process_pdf();
 	// Save as a reference image for opencv.
-	create_image_from_pdf("planting.png");
+	//create_image_from_pdf("planting.png");
 	// find the template in the reference image.
-	match("planting.png", "clj_template_4.png");	
+	//match("planting.png", "clj_template_4.png");	
 
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "My window", sf::Style::None, sf::State::Windowed);
+	// TODO: Keybind to load the sprite for display
+	sf::Texture texture("planting.png");
+	sf::Sprite sprite(texture);
+
+	while (window.isOpen())
+    {
+        while (const std::optional event = window.pollEvent())
+        {
+            if (event->is<sf::Event::Closed>())
+                window.close();
+        }
+
+        window.clear(sf::Color::Black);
+
+        window.draw(sprite);
+
+        window.display();
+    }
+	
     return 0;
 }

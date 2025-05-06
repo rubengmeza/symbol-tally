@@ -1,9 +1,5 @@
 #include <print>
 #include <iostream>
-#include <poppler/cpp/poppler-document.h>
-#include <poppler/cpp/poppler-image.h>
-#include <poppler/cpp/poppler-page.h>
-#include <poppler/cpp/poppler-page-renderer.h>
 #include <opencv2/imgcodecs.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
@@ -11,10 +7,7 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 
-// @Temporary: globals bad
-poppler::document *doc = nullptr;
-std::string file_path = "landscape_plans.pdf";
-poppler::page *page = nullptr;
+#include "poppler_pdf_handler.hpp"
 
 int match(std::string filename, std::string templatename)
 {
@@ -65,65 +58,15 @@ int match(std::string filename, std::string templatename)
     return 0;
 }
 
-poppler::document * load_pdf(std::string path)
-{
-	doc = poppler::document::load_from_file(file_path);
-    if (!doc) {
-        delete doc;
-    }
-	else
-	{
-		std::println("Loaded PDF: {}", file_path);
-	}
-
-	// PDF meta data
-	//std::string pdf_title = doc->get_title().to_latin1();
-	//int pdf_page_count = doc->pages();
-	//std::println("Document title: {}", pdf_title);
-	//std::println("Document page count: {}", pdf_page_count);
-	
-	return doc;
-
-}
-
-poppler::page * process_pdf()
-{
-	int target_page = 6;
-	page = doc->create_page(target_page);
-
-	
-	return page;
-}
-
-void create_image_from_pdf(std::string image_name)
-{
-	poppler::page_renderer page_renderer;
-    page_renderer.set_render_hint(poppler::page_renderer::antialiasing, true);
-    page_renderer.set_render_hint(poppler::page_renderer::text_antialiasing, true);
-    page_renderer.set_render_hint(poppler::page_renderer::text_hinting, true);
-
-	// pass DPI to page renderer for higher resolution image
-    poppler::image img = page_renderer.render_page(page, 300, 300);
-    if (!img.is_valid()) {
-		std::cerr << "failed to render" << std::endl;
-    }
-
-    if (!img.save(image_name, "png")) {
-		std::cerr << "failed to save image" << std::endl;
-    }
-	else
-	{
-		std::println("Image saved as: {}", image_name);
-	}
-}
-
 int main() 
 {
-	//doc = load_pdf(file_path);
-	// extract a single page
-	//page = process_pdf();
-	// Save as a reference image for opencv.
-	//create_image_from_pdf("planting.png");
+	// Convert PDF to an image for manipulation
+	Poppler_Pdf_Handler pdf_handler;
+	pdf_handler.load_pdf("landscape_plans.pdf");
+	pdf_handler.process_pdf();
+	pdf_handler.create_image_from_pdf("planting.png");
+
+	// TODO: OpenCV stuff
 	// find the template in the reference image.
 	//match("planting.png", "clj_template_4.png");	
 

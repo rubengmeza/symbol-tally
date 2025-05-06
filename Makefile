@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+poppler_pdf_handler.o: poppler_pdf_handler.cpp.o
+.PHONY : poppler_pdf_handler.o
+
+# target to build an object file
+poppler_pdf_handler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/poppler_pdf_handler.cpp.o
+.PHONY : poppler_pdf_handler.cpp.o
+
+poppler_pdf_handler.i: poppler_pdf_handler.cpp.i
+.PHONY : poppler_pdf_handler.i
+
+# target to preprocess a source file
+poppler_pdf_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/poppler_pdf_handler.cpp.i
+.PHONY : poppler_pdf_handler.cpp.i
+
+poppler_pdf_handler.s: poppler_pdf_handler.cpp.s
+.PHONY : poppler_pdf_handler.s
+
+# target to generate assembly for a file
+poppler_pdf_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/poppler_pdf_handler.cpp.s
+.PHONY : poppler_pdf_handler.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... poppler_pdf_handler.o"
+	@echo "... poppler_pdf_handler.i"
+	@echo "... poppler_pdf_handler.s"
 .PHONY : help
 
 

@@ -34,7 +34,7 @@ find_package(OpenCV REQUIRED)
 # --------------------------------------------------------------------
 # Executable target
 # --------------------------------------------------------------------
-add_executable(run main.cpp)
+add_executable(run main.cpp poppler_pdf_handler.cpp)
 
 # Include OpenCV headers
 target_include_directories(run PRIVATE ${OpenCV_INCLUDE_DIRS})

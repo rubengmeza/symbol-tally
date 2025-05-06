@@ -3,6 +3,7 @@ run: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
   CMakeFiles/run.dir/main.cpp.o \
+  CMakeFiles/run.dir/poppler_pdf_handler.cpp.o \
   /home/roobz/fun/symbol-tally/external/poppler/install/lib/libpoppler-cpp.so \
   external/opencv/install/lib/libopencv_gapi.so.4.12.0 \
   external/opencv/install/lib/libopencv_highgui.so.4.12.0 \
@@ -324,6 +325,8 @@ run: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
 
 CMakeFiles/run.dir/main.cpp.o:
+
+CMakeFiles/run.dir/poppler_pdf_handler.cpp.o:
 
 /home/roobz/fun/symbol-tally/external/poppler/install/lib/libpoppler-cpp.so:
 

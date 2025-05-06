@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/roobz/fun/symbol-tally/main.cpp" "CMakeFiles/run.dir/main.cpp.o" "gcc" "CMakeFiles/run.dir/main.cpp.o.d"
+  "/home/roobz/fun/symbol-tally/poppler_pdf_handler.cpp" "CMakeFiles/run.dir/poppler_pdf_handler.cpp.o" "gcc" "CMakeFiles/run.dir/poppler_pdf_handler.cpp.o.d"
   "" "run" "gcc" "CMakeFiles/run.dir/link.d"
   )
 

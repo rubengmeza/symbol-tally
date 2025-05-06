@@ -173,57 +173,6 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /usr/include/c++/15.1.1/bits/basic_ios.tcc \
  /usr/include/c++/15.1.1/bits/ostream.tcc /usr/include/c++/15.1.1/istream \
  /usr/include/c++/15.1.1/bits/istream.tcc \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-document.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-global.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler_cpp_export.h \
- /usr/include/c++/15.1.1/vector \
- /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
- /usr/include/c++/15.1.1/bits/stl_vector.h \
- /usr/include/c++/15.1.1/bits/stl_bvector.h \
- /usr/include/c++/15.1.1/bits/vector.tcc \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-font.h \
- /usr/include/c++/15.1.1/map /usr/include/c++/15.1.1/bits/stl_tree.h \
- /usr/include/c++/15.1.1/ext/aligned_buffer.h \
- /usr/include/c++/15.1.1/bits/node_handle.h \
- /usr/include/c++/15.1.1/bits/stl_map.h \
- /usr/include/c++/15.1.1/bits/stl_multimap.h \
- /usr/include/c++/15.1.1/bits/erase_if.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-image.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-rectangle.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-page.h \
- /usr/include/c++/15.1.1/memory \
- /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15.1.1/bits/align.h \
- /usr/include/c++/15.1.1/bits/unique_ptr.h \
- /usr/include/c++/15.1.1/bits/shared_ptr.h \
- /usr/include/c++/15.1.1/bits/shared_ptr_base.h \
- /usr/include/c++/15.1.1/bits/allocated_ptr.h \
- /usr/include/c++/15.1.1/ext/concurrence.h \
- /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
- /usr/include/c++/15.1.1/bits/atomic_base.h \
- /usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h \
- /usr/include/c++/15.1.1/bits/atomic_wait.h \
- /usr/include/c++/15.1.1/climits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/syscall.h \
- /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
- /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
- /usr/include/c++/15.1.1/bits/std_mutex.h \
- /usr/include/c++/15.1.1/backward/auto_ptr.h \
- /usr/include/c++/15.1.1/bits/ranges_uninitialized.h \
- /usr/include/c++/15.1.1/bits/out_ptr.h \
- /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
- /usr/include/c++/15.1.1/pstl/execution_defs.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-page-renderer.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-image.h \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvdef.h \
@@ -237,9 +186,16 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /usr/include/c++/15.1.1/stdlib.h \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/base.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/opencv_modules.hpp \
- /usr/include/c++/15.1.1/algorithm \
+ /usr/include/c++/15.1.1/climits \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/c++/15.1.1/algorithm \
  /usr/include/c++/15.1.1/bits/ranges_algo.h \
  /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15.1.1/pstl/execution_defs.h \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvstd.hpp \
  /usr/include/c++/15.1.1/cstring /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/15.1.1/utility \
@@ -264,6 +220,31 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /usr/include/c++/15.1.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/15.1.1/tr1/riemann_zeta.tcc \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+ /usr/include/c++/15.1.1/memory \
+ /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
+ /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15.1.1/bits/align.h \
+ /usr/include/c++/15.1.1/bits/unique_ptr.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr_base.h \
+ /usr/include/c++/15.1.1/bits/allocated_ptr.h \
+ /usr/include/c++/15.1.1/ext/aligned_buffer.h \
+ /usr/include/c++/15.1.1/ext/concurrence.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/15.1.1/bits/atomic_base.h \
+ /usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/15.1.1/bits/atomic_wait.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
+ /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
+ /usr/include/c++/15.1.1/bits/std_mutex.h \
+ /usr/include/c++/15.1.1/backward/auto_ptr.h \
+ /usr/include/c++/15.1.1/bits/ranges_uninitialized.h \
+ /usr/include/c++/15.1.1/bits/out_ptr.h \
+ /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/neon_utils.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/vsx_utils.hpp \
  /usr/include/assert.h \
@@ -276,6 +257,9 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/types.hpp \
  /usr/include/c++/15.1.1/cfloat \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/float.h \
+ /usr/include/c++/15.1.1/vector /usr/include/c++/15.1.1/bits/stl_vector.h \
+ /usr/include/c++/15.1.1/bits/stl_bvector.h \
+ /usr/include/c++/15.1.1/bits/vector.tcc \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/mat.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/bufferpool.hpp \
  /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/mat.inl.hpp \
@@ -291,6 +275,8 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /usr/include/c++/15.1.1/bits/unordered_map.h \
  /usr/include/c++/15.1.1/bits/hashtable.h \
  /usr/include/c++/15.1.1/bits/hashtable_policy.h \
+ /usr/include/c++/15.1.1/bits/node_handle.h \
+ /usr/include/c++/15.1.1/bits/erase_if.h \
  /usr/include/c++/15.1.1/bits/move_only_function.h \
  /usr/include/c++/15.1.1/bits/mofunc_impl.h /usr/include/c++/15.1.1/mutex \
  /usr/include/c++/15.1.1/bits/chrono.h /usr/include/c++/15.1.1/ratio \
@@ -391,4 +377,17 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/Glsl.inl \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/Sprite.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/Text.hpp \
- /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/VertexBuffer.hpp
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/roobz/fun/symbol-tally/poppler_pdf_handler.hpp \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-document.h \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-global.h \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler_cpp_export.h \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-font.h \
+ /usr/include/c++/15.1.1/map /usr/include/c++/15.1.1/bits/stl_tree.h \
+ /usr/include/c++/15.1.1/bits/stl_map.h \
+ /usr/include/c++/15.1.1/bits/stl_multimap.h \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-image.h \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-rectangle.h \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-page.h \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-page-renderer.h \
+ /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-image.h

@@ -6,6 +6,7 @@
 #include <opencv2/core/hal/interface.h>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
+#include <SFML/Graphics/RenderTarget.hpp>
 
 #include "poppler_pdf_handler.hpp"
 
@@ -61,26 +62,63 @@ int match(std::string filename, std::string templatename)
 int main() 
 {
 	// Convert PDF to an image for manipulation
-	Poppler_Pdf_Handler pdf_handler;
-	pdf_handler.load_pdf("landscape_plans.pdf");
-	pdf_handler.process_pdf();
-	pdf_handler.create_image_from_pdf("planting.png");
+	//Poppler_Pdf_Handler pdf_handler;
+	//pdf_handler.load_pdf("landscape_plans.pdf");
+	//pdf_handler.process_pdf();
+	//pdf_handler.create_image_from_pdf("planting.png");
 
 	// TODO: OpenCV stuff
 	// find the template in the reference image.
 	//match("planting.png", "clj_template_4.png");	
 
     sf::RenderWindow window(sf::VideoMode({800, 600}), "My window", sf::Style::None, sf::State::Windowed);
+	window.setFramerateLimit(10);
 	// TODO: Keybind to load the sprite for display
 	sf::Texture texture("planting.png");
 	sf::Sprite sprite(texture);
+	// Track if holding mouse button down.
+	sf::Vector2f drag_offset;
+	bool dragging = false;
 
 	while (window.isOpen())
     {
         while (const std::optional event = window.pollEvent())
         {
             if (event->is<sf::Event::Closed>())
+			{
                 window.close();
+			}
+			else if (const auto *mouse_button_pressed = event->getIf<sf::Event::MouseButtonPressed>())
+			{
+				if (mouse_button_pressed->button == sf::Mouse::Button::Left)
+				{
+					// Convert click position to float. 
+					sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_button_pressed->position);
+
+					// Only work if mouse is on the image.
+                    if (sprite.getGlobalBounds().contains(mouse_position)) {
+                        dragging = true;
+						// Offset is from top left corner of image.
+                        drag_offset = mouse_position - sprite.getPosition();
+                    }
+				}
+			}
+			else if (const auto *mouse_button_released = event->getIf<sf::Event::MouseButtonReleased>())
+			{
+				if (mouse_button_released->button == sf::Mouse::Button::Left)
+				{
+					dragging = false;
+				}
+			}
+			else if (const auto *mouse_moved = event->getIf<sf::Event::MouseMoved>()) 
+			{
+				if (dragging) 
+				{
+					sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_moved->position);
+					// Dragging typically opposite direction of mouse? 
+					sprite.setPosition(mouse_position - drag_offset);
+				}
+			}
         }
 
         window.clear(sf::Color::Black);

@@ -59,6 +59,51 @@ int match(std::string filename, std::string templatename)
     return 0;
 }
 
+class Tally
+{
+private:
+	sf::CircleShape mark_up;
+	std::string name;
+public:
+	Tally();
+	Tally(std::string name);
+
+	void increment(sf::RenderWindow &window, const auto *mouse_button_pressed);
+	std::string get_name();
+	sf::CircleShape get_mark_up();
+};
+
+// Creates new tally with radius 5.
+Tally::Tally(): name(" ")
+{
+	std::println("New tally created without a name.");
+}
+
+// Creates new tally with radius 5.
+Tally::Tally(std::string name): name(name)
+{
+	std::println("New tally created with name: {}", name);
+}
+
+void Tally::increment(sf::RenderWindow &window, const auto *mouse_button_pressed)
+{
+	mark_up.setRadius(300);
+	mark_up.setPointCount(30);
+	mark_up.setFillColor(sf::Color::Red);
+	sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_button_pressed->position);
+	mark_up.setPosition(mouse_position);
+}
+
+std::string Tally::get_name()
+{
+	return name;
+}
+
+sf::CircleShape Tally::get_mark_up()
+{
+	return mark_up;
+}
+
 int main() 
 {
 	// Convert PDF to an image for manipulation
@@ -72,7 +117,6 @@ int main()
 	//match("planting.png", "clj_template_4.png");	
 
     sf::RenderWindow window(sf::VideoMode({800, 600}), "My window", sf::Style::None, sf::State::Windowed);
-	window.setFramerateLimit(10);
 	// TODO: Keybind to load the sprite for display
 	sf::Texture texture("planting.png");
 	sf::Sprite sprite(texture);
@@ -83,13 +127,21 @@ int main()
 	sf::Vector2f drag_offset;
 	bool dragging = false;
 
+	Tally tally("plant");
+	// @QUESTIONABLE: Can this container be pointers? or references? 
+	std::vector<Tally> take_offs;
+
 	while (window.isOpen())
     {
         while (const std::optional event = window.pollEvent())
         {
+			// @FEATURE: Reset view.
             if (event->is<sf::Event::Closed>())
 			{
                 window.close();
+			}
+			else if (const auto *key_press = event->getIf<sf::Event::KeyPressed>())
+			{
 			}
 			else if (const auto *mouse_button_pressed = event->getIf<sf::Event::MouseButtonPressed>())
 			{
@@ -105,6 +157,11 @@ int main()
                         drag_offset = mouse_position - sprite.getPosition();
                     }
 				}
+				else if (mouse_button_pressed->button == sf::Mouse::Button::Right)
+				{
+					tally.increment(window, mouse_button_pressed);
+					take_offs.push_back(tally);
+				}
 			}
 			else if (const auto *mouse_button_released = event->getIf<sf::Event::MouseButtonReleased>())
 			{
@@ -118,6 +175,7 @@ int main()
 				if (dragging) 
 				{
 					sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_moved->position);
+					// @BETTER: This moves the image itself. May make more sense to move the camera instead? 
 					// Make sure image follows mouse. 
 					sprite.setPosition(mouse_position - drag_offset);
 				}
@@ -126,20 +184,22 @@ int main()
 			{
 				if (mouse_wheel_scrolled->wheel == sf::Mouse::Wheel::Vertical)
 				{
-					// Up delta is 1. Down delta is -1.
-					std::println("Zzzzzoooooooooommmm: {}", mouse_wheel_scrolled->delta);
 					// change view when scrolling.
-					view.zoom(1.f+mouse_wheel_scrolled->delta*0.1f);
+					view.zoom(1.0f + mouse_wheel_scrolled->delta * 0.1f);
 				}
 			}
 
         }
-
         window.clear(sf::Color::Black);
 
 		window.setView(view);
 
         window.draw(sprite);
+		for (auto t : take_offs)
+		{
+			window.draw(t.get_mark_up());
+		}
+
 
         window.display();
     }

@@ -76,6 +76,9 @@ int main()
 	// TODO: Keybind to load the sprite for display
 	sf::Texture texture("planting.png");
 	sf::Sprite sprite(texture);
+	// show entire image when opened.
+	sf::FloatRect sprite_bounds = sprite.getGlobalBounds();
+	sf::View view({sprite_bounds.size.x / 2, sprite_bounds.size.y / 2}, {sprite_bounds.size.x, sprite_bounds.size.y});
 	// Track if holding mouse button down.
 	sf::Vector2f drag_offset;
 	bool dragging = false;
@@ -115,13 +118,26 @@ int main()
 				if (dragging) 
 				{
 					sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_moved->position);
-					// Dragging typically opposite direction of mouse? 
+					// Make sure image follows mouse. 
 					sprite.setPosition(mouse_position - drag_offset);
 				}
 			}
+			else if (const auto *mouse_wheel_scrolled = event->getIf<sf::Event::MouseWheelScrolled>())
+			{
+				if (mouse_wheel_scrolled->wheel == sf::Mouse::Wheel::Vertical)
+				{
+					// Up delta is 1. Down delta is -1.
+					std::println("Zzzzzoooooooooommmm: {}", mouse_wheel_scrolled->delta);
+					// change view when scrolling.
+					view.zoom(1.f+mouse_wheel_scrolled->delta*0.1f);
+				}
+			}
+
         }
 
         window.clear(sf::Color::Black);
+
+		window.setView(view);
 
         window.draw(sprite);
 

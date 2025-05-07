@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/run.dir/main.cpp.o.d"
   "CMakeFiles/run.dir/poppler_pdf_handler.cpp.o"
   "CMakeFiles/run.dir/poppler_pdf_handler.cpp.o.d"
+  "CMakeFiles/run.dir/tally.cpp.o"
+  "CMakeFiles/run.dir/tally.cpp.o.d"
   "run"
   "run.pdb"
 )

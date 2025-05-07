@@ -177,6 +177,30 @@ poppler_pdf_handler.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/poppler_pdf_handler.cpp.s
 .PHONY : poppler_pdf_handler.cpp.s
 
+tally.o: tally.cpp.o
+.PHONY : tally.o
+
+# target to build an object file
+tally.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/tally.cpp.o
+.PHONY : tally.cpp.o
+
+tally.i: tally.cpp.i
+.PHONY : tally.i
+
+# target to preprocess a source file
+tally.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/tally.cpp.i
+.PHONY : tally.cpp.i
+
+tally.s: tally.cpp.s
+.PHONY : tally.s
+
+# target to generate assembly for a file
+tally.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/tally.cpp.s
+.PHONY : tally.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... poppler_pdf_handler.o"
 	@echo "... poppler_pdf_handler.i"
 	@echo "... poppler_pdf_handler.s"
+	@echo "... tally.o"
+	@echo "... tally.i"
+	@echo "... tally.s"
 .PHONY : help
 
 

@@ -1,4 +1,4 @@
-CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
+CMakeFiles/run.dir/app.cpp.o: /home/roobz/fun/symbol-tally/app.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/15.1.1/print \
  /usr/include/c++/15.1.1/bits/requires_hosted.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -173,53 +173,13 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /usr/include/c++/15.1.1/bits/basic_ios.tcc \
  /usr/include/c++/15.1.1/bits/ostream.tcc /usr/include/c++/15.1.1/istream \
  /usr/include/c++/15.1.1/bits/istream.tcc \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgcodecs.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvdef.h \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/version.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/hal/interface.h \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/emmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mm_malloc.h \
- /usr/include/c++/15.1.1/stdlib.h \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/base.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/opencv_modules.hpp \
- /usr/include/c++/15.1.1/climits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/c++/15.1.1/algorithm \
- /usr/include/c++/15.1.1/bits/ranges_algo.h \
- /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
- /usr/include/c++/15.1.1/pstl/execution_defs.h \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvstd.hpp \
- /usr/include/c++/15.1.1/cstring /usr/include/string.h \
- /usr/include/strings.h /usr/include/c++/15.1.1/utility \
- /usr/include/c++/15.1.1/bits/stl_relops.h /usr/include/c++/15.1.1/cmath \
- /usr/include/math.h /usr/include/bits/math-vector.h \
- /usr/include/bits/libm-simd-decl-stubs.h \
- /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
- /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
- /usr/include/bits/mathcalls-helper-functions.h \
- /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h /usr/include/c++/15.1.1/bits/specfun.h \
- /usr/include/c++/15.1.1/tr1/gamma.tcc \
- /usr/include/c++/15.1.1/tr1/special_function_util.h \
- /usr/include/c++/15.1.1/tr1/bessel_function.tcc \
- /usr/include/c++/15.1.1/tr1/beta_function.tcc \
- /usr/include/c++/15.1.1/tr1/ell_integral.tcc \
- /usr/include/c++/15.1.1/tr1/exp_integral.tcc \
- /usr/include/c++/15.1.1/tr1/hypergeometric.tcc \
- /usr/include/c++/15.1.1/tr1/legendre_function.tcc \
- /usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc \
- /usr/include/c++/15.1.1/tr1/poly_hermite.tcc \
- /usr/include/c++/15.1.1/tr1/poly_laguerre.tcc \
- /usr/include/c++/15.1.1/tr1/riemann_zeta.tcc \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+ /home/roobz/fun/symbol-tally/app.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Clipboard.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Export.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Config.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Context.hpp \
+ /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/GlResource.hpp \
  /usr/include/c++/15.1.1/memory \
  /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
  /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
@@ -233,7 +193,14 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
  /usr/include/c++/15.1.1/bits/atomic_base.h \
  /usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h \
- /usr/include/c++/15.1.1/bits/atomic_wait.h /usr/include/unistd.h \
+ /usr/include/c++/15.1.1/bits/atomic_wait.h \
+ /usr/include/c++/15.1.1/climits \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/unistd.h \
  /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
  /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
@@ -245,75 +212,12 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /usr/include/c++/15.1.1/bits/ranges_uninitialized.h \
  /usr/include/c++/15.1.1/bits/out_ptr.h \
  /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/neon_utils.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/vsx_utils.hpp \
- /usr/include/assert.h \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/check.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/traits.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/matx.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/saturate.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/fast_math.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/matx.inl.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/types.hpp \
- /usr/include/c++/15.1.1/cfloat \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/float.h \
- /usr/include/c++/15.1.1/vector /usr/include/c++/15.1.1/bits/stl_vector.h \
- /usr/include/c++/15.1.1/bits/stl_bvector.h \
- /usr/include/c++/15.1.1/bits/vector.tcc \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/mat.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/bufferpool.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/mat.inl.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/persistence.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/operations.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvstd.inl.hpp \
- /usr/include/c++/15.1.1/complex /usr/include/c++/15.1.1/sstream \
- /usr/include/c++/15.1.1/bits/sstream.tcc \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/utility.hpp \
- /usr/include/c++/15.1.1/functional \
- /usr/include/c++/15.1.1/bits/std_function.h \
- /usr/include/c++/15.1.1/unordered_map \
- /usr/include/c++/15.1.1/bits/unordered_map.h \
- /usr/include/c++/15.1.1/bits/hashtable.h \
- /usr/include/c++/15.1.1/bits/hashtable_policy.h \
- /usr/include/c++/15.1.1/bits/node_handle.h \
- /usr/include/c++/15.1.1/bits/erase_if.h \
- /usr/include/c++/15.1.1/bits/move_only_function.h \
- /usr/include/c++/15.1.1/bits/mofunc_impl.h /usr/include/c++/15.1.1/mutex \
- /usr/include/c++/15.1.1/bits/chrono.h /usr/include/c++/15.1.1/ratio \
- /usr/include/c++/15.1.1/bits/parse_numbers.h \
- /usr/include/c++/15.1.1/bits/unique_lock.h \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/optim.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/ovx.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/core/cvdef.h \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/highgui.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/videoio.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc.hpp \
- /home/roobz/fun/symbol-tally/external/opencv/install/include/opencv4/opencv2/imgproc/segmentation.hpp \
- /home/roobz/fun/symbol-tally/poppler_pdf_handler.hpp \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-document.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-global.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler_cpp_export.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-font.h \
- /usr/include/c++/15.1.1/map /usr/include/c++/15.1.1/bits/stl_tree.h \
- /usr/include/c++/15.1.1/bits/stl_map.h \
- /usr/include/c++/15.1.1/bits/stl_multimap.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-image.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-rectangle.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-page.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-page-renderer.h \
- /home/roobz/fun/symbol-tally/external/poppler/install/include/poppler/cpp/poppler-image.h \
- /home/roobz/fun/symbol-tally/app.hpp \
- /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window.hpp \
- /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Clipboard.hpp \
- /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Export.hpp \
- /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Config.hpp \
- /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Context.hpp \
- /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/GlResource.hpp \
+ /usr/include/c++/15.1.1/pstl/execution_defs.h \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Vector2.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Export.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Angle.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Angle.inl \
- /usr/include/c++/15.1.1/cassert \
+ /usr/include/c++/15.1.1/cassert /usr/include/assert.h \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Vector2.inl \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/ContextSettings.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Cursor.hpp \
@@ -331,20 +235,28 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Vector3.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Vector3.inl \
  /usr/include/c++/15.1.1/variant \
+ /usr/include/c++/15.1.1/bits/parse_numbers.h \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Event.inl \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Touch.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/VideoMode.hpp \
+ /usr/include/c++/15.1.1/vector /usr/include/c++/15.1.1/bits/stl_vector.h \
+ /usr/include/c++/15.1.1/bits/stl_bvector.h \
+ /usr/include/c++/15.1.1/bits/vector.tcc \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Window.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/WindowBase.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Vulkan.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/WindowEnums.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/WindowHandle.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Time.hpp \
- /usr/include/c++/15.1.1/chrono /usr/include/c++/15.1.1/bits/chrono_io.h \
- /usr/include/c++/15.1.1/iomanip \
+ /usr/include/c++/15.1.1/chrono /usr/include/c++/15.1.1/bits/chrono.h \
+ /usr/include/c++/15.1.1/ratio /usr/include/c++/15.1.1/sstream \
+ /usr/include/c++/15.1.1/bits/sstream.tcc \
+ /usr/include/c++/15.1.1/bits/chrono_io.h /usr/include/c++/15.1.1/iomanip \
  /usr/include/c++/15.1.1/bits/quoted_string.h \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Time.inl \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/WindowBase.inl \
+ /usr/include/c++/15.1.1/utility \
+ /usr/include/c++/15.1.1/bits/stl_relops.h \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Clock.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/System/Err.hpp \
@@ -380,6 +292,12 @@ CMakeFiles/run.dir/main.cpp.o: /home/roobz/fun/symbol-tally/main.cpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/Font.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/Glyph.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/Texture.hpp \
+ /usr/include/c++/15.1.1/unordered_map \
+ /usr/include/c++/15.1.1/bits/unordered_map.h \
+ /usr/include/c++/15.1.1/bits/hashtable.h \
+ /usr/include/c++/15.1.1/bits/hashtable_policy.h \
+ /usr/include/c++/15.1.1/bits/node_handle.h \
+ /usr/include/c++/15.1.1/bits/erase_if.h \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/Image.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/RectangleShape.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Graphics/RenderTarget.hpp \

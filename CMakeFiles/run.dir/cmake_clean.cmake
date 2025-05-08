@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/run.dir/link.d"
+  "CMakeFiles/run.dir/app.cpp.o"
+  "CMakeFiles/run.dir/app.cpp.o.d"
   "CMakeFiles/run.dir/main.cpp.o"
   "CMakeFiles/run.dir/main.cpp.o.d"
   "CMakeFiles/run.dir/poppler_pdf_handler.cpp.o"

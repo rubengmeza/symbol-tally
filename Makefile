@@ -129,6 +129,30 @@ run/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
 .PHONY : run/fast
 
+app.o: app.cpp.o
+.PHONY : app.o
+
+# target to build an object file
+app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/app.cpp.o
+.PHONY : app.cpp.o
+
+app.i: app.cpp.i
+.PHONY : app.i
+
+# target to preprocess a source file
+app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/app.cpp.i
+.PHONY : app.cpp.i
+
+app.s: app.cpp.s
+.PHONY : app.s
+
+# target to generate assembly for a file
+app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/app.cpp.s
+.PHONY : app.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... run"
+	@echo "... app.o"
+	@echo "... app.i"
+	@echo "... app.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

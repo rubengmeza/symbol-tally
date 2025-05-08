@@ -42,6 +42,11 @@ void App::get_user_input(sf::Sprite &image, Tally tally, sf::View &view, sf::Vec
 		}
 		else if (const auto *key_press = event->getIf<sf::Event::KeyPressed>())
 		{
+			if (key_press->code == sf::Keyboard::Key::N)
+			{
+				current_tally = create_take_off();
+
+			}
 		}
 		else if (const auto *mouse_button_pressed = event->getIf<sf::Event::MouseButtonPressed>())
 		{
@@ -118,3 +123,16 @@ void App::load_image(std::string path)
 		std::cerr << "Failed to create texture from file: " << path << std::endl;
 	}
 }
+
+// @TODO: May be a good place for a map.
+Tally App::create_take_off()
+{
+	std::string name;
+	std::println("Enter name: ");
+	std::cin >> name;
+	Tally tally(name);
+	take_offs.push_back(tally);
+
+	// Return tally to set to current.
+	return tally;
+} 

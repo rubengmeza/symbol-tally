@@ -12,6 +12,7 @@ private:
 	sf::RenderWindow window;
 	bool should_quit_app;
 	sf::Texture texture;
+	Tally current_tally;
 
 	std::vector<Tally> take_offs;
 public:
@@ -21,4 +22,5 @@ public:
 	void render(sf::Sprite &image, sf::View view);
 
 	void load_image(std::string path);
+	Tally create_take_off();
 };

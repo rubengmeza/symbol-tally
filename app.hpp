@@ -14,12 +14,19 @@ private:
 	sf::Texture texture;
 
 	std::vector<Tally> take_offs;
+
+	// Track if holding mouse button down.
+	sf::Vector2f last_mouse_position;
+	bool is_dragging = false;
 public:
 	App();
 	void run();
-	void get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &drag_offset, bool &dragging);
+	void get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_mouse_position, bool &is_dragging);
 	void render(sf::Sprite &image, sf::View view);
 
+	// Image stuff.
 	void load_image(std::string path);
+	void drag_image(sf::View &view, bool is_dragging, const sf::Vector2f &last_mouse_position, const sf::Vector2f &mouse_position);
+
 	void create_take_off();
 };

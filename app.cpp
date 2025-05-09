@@ -17,18 +17,14 @@ void App::run()
 	sf::FloatRect image_bounds = image.getGlobalBounds();
 	sf::View view({image_bounds.size.x / 2, image_bounds.size.y / 2}, {image_bounds.size.x, image_bounds.size.y});
 
-	// Track if holding mouse button down.
-	sf::Vector2f drag_offset;
-	bool dragging = false;
-
 	while (!should_quit_app)
 	{
-		get_user_input(image, view, drag_offset, dragging);
+		get_user_input(image, view, last_mouse_position, is_dragging);
 		render(image, view);
 	}
 }
 
-void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &drag_offset, bool &dragging)
+void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_mouse_position, bool &is_dragging)
 {
 
 	while (const std::optional event = window.pollEvent())
@@ -72,9 +68,9 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &drag_o
 				// Only work if mouse is on the image.
 				if (image.getGlobalBounds().contains(mouse_position)) 
 				{
-					dragging = true;
+					is_dragging = true;
 					// Offset is from top left corner of image.
-					drag_offset = mouse_position - image.getPosition();
+					last_mouse_position = mouse_position;
 				}
 			}
 			else if (mouse_button_pressed->button == sf::Mouse::Button::Right)
@@ -87,18 +83,14 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &drag_o
 		{
 			if (mouse_button_released->button == sf::Mouse::Button::Left)
 			{
-				dragging = false;
+				is_dragging = false;
 			}
 		}
 		else if (const auto *mouse_moved = event->getIf<sf::Event::MouseMoved>()) 
 		{
-			if (dragging) 
-			{
-				sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_moved->position);
-				// @BETTER: This moves the image itself. May make more sense to move the camera instead? 
-				// Make sure image follows mouse. 
-				image.setPosition(mouse_position - drag_offset);
-			}
+			// Moving the image.
+			sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_moved->position);
+			drag_image(view, is_dragging, last_mouse_position, mouse_position);
 		}
 		else if (const auto *mouse_wheel_scrolled = event->getIf<sf::Event::MouseWheelScrolled>())
 		{
@@ -150,3 +142,12 @@ void App::create_take_off()
 	Tally tally(name);
 	take_offs.push_back(tally);
 } 
+
+void App::drag_image(sf::View &view, bool is_dragging, const sf::Vector2f &last_mouse_position, const sf::Vector2f &mouse_position)
+{
+	if (is_dragging) 
+	{
+		auto delta = last_mouse_position - mouse_position;
+		view.move(delta);
+	}
+}

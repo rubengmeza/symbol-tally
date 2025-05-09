@@ -27,6 +27,8 @@ public:
 	// Image stuff.
 	void load_image(std::string path);
 	void drag_image(sf::View &view, bool is_dragging, const sf::Vector2f &last_mouse_position, const sf::Vector2f &mouse_position);
+	void zoom_image(sf::View &view, const sf::Event::MouseWheelScrolled *mouse_wheel_scrolled);
 
 	void create_take_off();
+	void print_take_offs();
 };

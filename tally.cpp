@@ -2,13 +2,13 @@
 #include "tally.hpp"
 
 // Creates new tally with radius 5.
-Tally::Tally(): name(" ")
+Tally::Tally(): name(" "), count(0)
 {
 	std::println("New tally created without a name.");
 }
 
 // Creates new tally with radius 5.
-Tally::Tally(std::string name): name(name)
+Tally::Tally(std::string name): name(name), count(0)
 {
 	std::println("New tally created with name: {}", name);
 }
@@ -23,11 +23,17 @@ void Tally::increment(sf::RenderWindow &window, const sf::Event::MouseButtonPres
 	sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_button_pressed->position);
 	mark_up.setPosition(mouse_position);
 	mark_ups.push_back(mark_up);
+	count++;
 }
 
 std::string Tally::get_name() const
 {
 	return name;
+}
+
+int Tally::get_count() const
+{
+	return count;
 }
 
 std::vector<sf::CircleShape> Tally::get_mark_ups()

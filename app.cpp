@@ -42,7 +42,7 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 				create_take_off();
 			}
 			// @DEBUGGING: 
-			if (key_press->code == sf::Keyboard::Key::T) 
+			else if (key_press->code == sf::Keyboard::Key::T) 
 			{
 				std::println("Size of take_off list: {}", take_offs.size());
 				int count = 0;
@@ -55,7 +55,10 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 
 				}
 				std::println("Size of mark_ups list: {}", count);
-
+			}
+			else if (key_press->code == sf::Keyboard::Key::P) 
+			{
+				print_take_offs();
 			}
 		}
 		else if (const auto *mouse_button_pressed = event->getIf<sf::Event::MouseButtonPressed>())
@@ -96,8 +99,7 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 		{
 			if (mouse_wheel_scrolled->wheel == sf::Mouse::Wheel::Vertical)
 			{
-				// change view when scrolling.
-				view.zoom(1.0f + mouse_wheel_scrolled->delta * 0.1f);
+				zoom_image(view, mouse_wheel_scrolled);
 			}
 		}
 	}
@@ -133,7 +135,6 @@ void App::load_image(std::string path)
 	}
 }
 
-// @TODO: May be a good place for a map.
 void App::create_take_off()
 {
 	std::string name;
@@ -143,6 +144,20 @@ void App::create_take_off()
 	take_offs.push_back(tally);
 } 
 
+void App::print_take_offs()
+{
+	std::string name = "default";
+	int count = 0;
+
+	std::println("Take Offs");
+	for (int i = 0; i < take_offs.size(); i++)
+	{
+		name = take_offs[i].get_name();
+		count = take_offs[i].get_count();
+		std::println("{}: {}", name, count);
+	}
+}
+
 void App::drag_image(sf::View &view, bool is_dragging, const sf::Vector2f &last_mouse_position, const sf::Vector2f &mouse_position)
 {
 	if (is_dragging) 
@@ -151,3 +166,10 @@ void App::drag_image(sf::View &view, bool is_dragging, const sf::Vector2f &last_
 		view.move(delta);
 	}
 }
+
+void App::zoom_image(sf::View &view, const sf::Event::MouseWheelScrolled *mouse_wheel_scrolled)
+{
+	// These numbers pulled from sfml example.
+	view.zoom(1.0f + mouse_wheel_scrolled->delta * 0.1f);
+}
+

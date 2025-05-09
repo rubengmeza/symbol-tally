@@ -13,7 +13,6 @@ void App::run()
 	load_image("planting.png"); // Load image as texture.
 	sf::Sprite image(texture);
 
-	Tally tally("plant");
 	// Image should be zoomed out completely when first opened.
 	sf::FloatRect image_bounds = image.getGlobalBounds();
 	sf::View view({image_bounds.size.x / 2, image_bounds.size.y / 2}, {image_bounds.size.x, image_bounds.size.y});
@@ -24,12 +23,12 @@ void App::run()
 
 	while (!should_quit_app)
 	{
-		get_user_input(image, tally, view, drag_offset, dragging);
+		get_user_input(image, view, drag_offset, dragging);
 		render(image, view);
 	}
 }
 
-void App::get_user_input(sf::Sprite &image, Tally tally, sf::View &view, sf::Vector2f &drag_offset, bool &dragging)
+void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &drag_offset, bool &dragging)
 {
 
 	while (const std::optional event = window.pollEvent())
@@ -44,7 +43,22 @@ void App::get_user_input(sf::Sprite &image, Tally tally, sf::View &view, sf::Vec
 		{
 			if (key_press->code == sf::Keyboard::Key::N)
 			{
-				current_tally = create_take_off();
+				create_take_off();
+			}
+			// @DEBUGGING: 
+			if (key_press->code == sf::Keyboard::Key::T) 
+			{
+				std::println("Size of take_off list: {}", take_offs.size());
+				int count = 0;
+				for (auto &take_off : take_offs)
+				{
+					for (auto &mark_up : take_off.get_mark_ups())
+					{
+						count++;
+					}
+
+				}
+				std::println("Size of mark_ups list: {}", count);
 
 			}
 		}
@@ -65,8 +79,8 @@ void App::get_user_input(sf::Sprite &image, Tally tally, sf::View &view, sf::Vec
 			}
 			else if (mouse_button_pressed->button == sf::Mouse::Button::Right)
 			{
-				tally.increment(window, mouse_button_pressed);
-				take_offs.push_back(tally);
+				Tally &current_tally = take_offs.back();
+				current_tally.increment(window, mouse_button_pressed, current_tally);
 			}
 		}
 		else if (const auto *mouse_button_released = event->getIf<sf::Event::MouseButtonReleased>())
@@ -103,9 +117,12 @@ void App::render(sf::Sprite &image, sf::View view)
 	window.setView(view);
 
 	window.draw(image);
-	for (auto t : take_offs)
+	for (auto &t : take_offs)
 	{
-		window.draw(t.get_mark_up());
+		for (auto &m : t.get_mark_ups())
+		{
+			window.draw(m);
+		}
 	}
 
 	window.display();
@@ -125,14 +142,11 @@ void App::load_image(std::string path)
 }
 
 // @TODO: May be a good place for a map.
-Tally App::create_take_off()
+void App::create_take_off()
 {
 	std::string name;
 	std::println("Enter name: ");
 	std::cin >> name;
 	Tally tally(name);
 	take_offs.push_back(tally);
-
-	// Return tally to set to current.
-	return tally;
 } 

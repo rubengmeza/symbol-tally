@@ -13,10 +13,8 @@ Tally::Tally(std::string name): name(name)
 	std::println("New tally created with name: {}", name);
 }
 
-//@BETTER: Pass the mouse position instead of the actual event?
-void Tally::increment(sf::RenderWindow &window, const sf::Event::MouseButtonPressed *mouse_button_pressed, const Tally &current_tally)
+void Tally::increment(sf::RenderWindow &window, const sf::Event::MouseButtonPressed *mouse_button_pressed)
 {
-	std::println("Tally added to: {}", current_tally.get_name());
 	mark_up.setRadius(300);
 	mark_up.setPointCount(30);
 	mark_up.setFillColor(sf::Color::Red);
@@ -25,7 +23,7 @@ void Tally::increment(sf::RenderWindow &window, const sf::Event::MouseButtonPres
 	mark_ups.push_back(mark_up);
 }
 
-std::string Tally::get_name() const
+std::string Tally::get_name()
 {
 	return name;
 }

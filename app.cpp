@@ -4,9 +4,17 @@
 
 #include "app.hpp"
 
+// @PROPAGANDA: Bad practice to place as global????
+enum Mode
+{
+	TALLY,
+	INPUT
+};
+Mode current_mode = Mode::TALLY;
+
 App::App() 
 {
-	window.create(sf::VideoMode({800, 600}), "Symbol Tally: Simple CD Take offs", sf::Style::None, sf::State::Windowed);
+	window.create(sf::VideoMode({800, 600}), "Symbol Tally: Easy CD Take offs", sf::Style::None, sf::State::Windowed);
 	should_quit_app = false;
 }
 
@@ -26,7 +34,6 @@ void App::run()
 	}
 }
 
-// @BADBEHAVIOR: Always listens for input. For example, if typing in the take off name, key strokes will trigger events here.
 void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_mouse_position, bool &is_dragging)
 {
 
@@ -40,32 +47,37 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 		}
 		else if (const auto *key_press = event->getIf<sf::Event::KeyPressed>())
 		{
-			if (key_press->code == sf::Keyboard::Key::N)
+			// Using Mode to prevent keyboard events while typing names of new take offs.
+			if (current_mode == Mode::TALLY)
 			{
-				create_take_off();
-			}
-			// @DEBUGGING: 
-			else if (key_press->code == sf::Keyboard::Key::T) 
-			{
-				std::println("Size of take_off list: {}", take_offs.size());
-				int count = 0;
-				for (auto &take_off : take_offs)
+				if (key_press->code == sf::Keyboard::Key::N)
 				{
-					for (auto &mark_up : take_off.get_mark_ups())
-					{
-						count++;
-					}
-
+					current_mode = Mode::INPUT;
+					create_take_off();
 				}
-				std::println("Size of mark_ups list: {}", count);
-			}
-			else if (key_press->code == sf::Keyboard::Key::P) 
-			{
-				print_take_offs();
-			}
-			else if (key_press->code == sf::Keyboard::Key::S) 
-			{
-				export_take_offs();
+				// @DEBUGGING: 
+				else if (key_press->code == sf::Keyboard::Key::T) 
+				{
+					std::println("Size of take_off list: {}", take_offs.size());
+					int count = 0;
+					for (auto &take_off : take_offs)
+					{
+						for (auto &mark_up : take_off.get_mark_ups())
+						{
+							count++;
+						}
+
+					}
+					std::println("Size of mark_ups list: {}", count);
+				}
+				else if (key_press->code == sf::Keyboard::Key::P) 
+				{
+					print_take_offs();
+				}
+				else if (key_press->code == sf::Keyboard::Key::S) 
+				{
+					export_take_offs();
+				}
 			}
 		}
 		else if (const auto *mouse_button_pressed = event->getIf<sf::Event::MouseButtonPressed>())
@@ -147,8 +159,12 @@ void App::create_take_off()
 	std::string name;
 	std::println("Enter name: ");
 	std::cin >> name;
+	
 	Tally tally(name);
 	take_offs.push_back(tally);
+
+	// Reset mode to allow input.
+	current_mode = Mode::TALLY;
 } 
 
 void App::print_take_offs()

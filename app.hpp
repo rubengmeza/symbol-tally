@@ -12,7 +12,6 @@ private:
 	sf::RenderWindow window;
 	bool should_quit_app;
 	sf::Texture texture;
-
 	std::vector<Tally> take_offs;
 
 	// Track if holding mouse button down.

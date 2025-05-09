@@ -97,8 +97,17 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 			}
 			else if (mouse_button_pressed->button == sf::Mouse::Button::Right)
 			{
-				Tally &current_tally = take_offs.back();
-				current_tally.increment(window, mouse_button_pressed, current_tally);
+				// Prevent tally incrementing when there aren't any take offs in the vector.
+				if (take_offs.size() > 0)
+				{
+					Tally &current_tally = take_offs.back();
+					current_tally.increment(window, mouse_button_pressed, current_tally);
+				}
+				else
+				{
+					std::println("You must create a new take off.");
+				}
+
 			}
 		}
 		else if (const auto *mouse_button_released = event->getIf<sf::Event::MouseButtonReleased>())

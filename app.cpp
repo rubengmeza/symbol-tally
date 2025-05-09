@@ -1,5 +1,7 @@
 #include <print>
 #include <iostream>
+#include <fstream>
+
 #include "app.hpp"
 
 App::App() 
@@ -24,6 +26,7 @@ void App::run()
 	}
 }
 
+// @BADBEHAVIOR: Always listens for input. For example, if typing in the take off name, key strokes will trigger events here.
 void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_mouse_position, bool &is_dragging)
 {
 
@@ -59,6 +62,10 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 			else if (key_press->code == sf::Keyboard::Key::P) 
 			{
 				print_take_offs();
+			}
+			else if (key_press->code == sf::Keyboard::Key::S) 
+			{
+				export_take_offs();
 			}
 		}
 		else if (const auto *mouse_button_pressed = event->getIf<sf::Event::MouseButtonPressed>())
@@ -156,6 +163,25 @@ void App::print_take_offs()
 		count = take_offs[i].get_count();
 		std::println("{}: {}", name, count);
 	}
+}
+
+void App::export_take_offs()
+{
+	std::string file_name = "my_take_offs.txt";
+	std::ofstream output_file;
+	output_file.open(file_name);
+	std::println("File created: {}", file_name);
+
+	std::string name = "default";
+	int count = 0;
+	for (int i = 0; i < take_offs.size(); i++)
+	{
+		name = take_offs[i].get_name();
+		count = take_offs[i].get_count();
+		output_file << name << ": " << count << "\n";
+	}
+
+	std::println("Take offs exported to file {}.", file_name);
 }
 
 void App::drag_image(sf::View &view, bool is_dragging, const sf::Vector2f &last_mouse_position, const sf::Vector2f &mouse_position)

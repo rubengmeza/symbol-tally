@@ -17,7 +17,7 @@ Tally::Tally(std::string name): name(name), count(0)
 void Tally::increment(sf::RenderWindow &window, const sf::Event::MouseButtonPressed *mouse_button_pressed, const Tally &current_tally)
 {
 	std::println("Tally added to: {}", current_tally.get_name());
-	mark_up.setRadius(300);
+	mark_up.setRadius(10);
 	mark_up.setPointCount(30);
 	mark_up.setFillColor(sf::Color::Red);
 	sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_button_pressed->position);

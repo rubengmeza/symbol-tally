@@ -172,7 +172,10 @@ CMakeFiles/run.dir/app.cpp.o: /home/roobz/fun/symbol-tally/app.cpp \
  /usr/include/c++/15.1.1/bits/basic_ios.h \
  /usr/include/c++/15.1.1/bits/basic_ios.tcc \
  /usr/include/c++/15.1.1/bits/ostream.tcc /usr/include/c++/15.1.1/istream \
- /usr/include/c++/15.1.1/bits/istream.tcc \
+ /usr/include/c++/15.1.1/bits/istream.tcc /usr/include/c++/15.1.1/fstream \
+ /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/15.1.1/bits/fstream.tcc \
  /home/roobz/fun/symbol-tally/app.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window.hpp \
  /home/roobz/fun/symbol-tally/external/SFML/install/include/SFML/Window/Clipboard.hpp \

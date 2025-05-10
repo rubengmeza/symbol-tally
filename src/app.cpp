@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "app.hpp"
+#include "../include/app.hpp"
 
 // @PROPAGANDA: Bad practice to place as global????
 enum Mode
@@ -20,7 +20,7 @@ App::App()
 
 void App::run()
 {
-	load_image("planting.png"); // Load image as texture.
+	load_image("../example/planting.png"); // Load image as texture.
 	sf::Sprite image(texture);
 
 	// Image should be zoomed out completely when first opened.

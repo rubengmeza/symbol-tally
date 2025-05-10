@@ -4,9 +4,9 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/core/hal/interface.h>
-#include "poppler_pdf_handler.hpp"
+#include "../include/poppler_pdf_handler.hpp"
 
-#include "app.hpp"
+#include "../include/app.hpp"
 
 int match(std::string filename, std::string templatename)
 {

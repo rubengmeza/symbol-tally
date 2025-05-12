@@ -15,7 +15,13 @@ Mode current_mode = Mode::TALLY;
 
 App::App() 
 {
-	window.create(sf::VideoMode({800, 600}), "Symbol Tally: Easy CD Take offs", sf::Style::None, sf::State::Windowed);
+	window.create(sf::VideoMode({1200, 1000}), "Symbol Tally: Easy CD Take offs", sf::Style::None, sf::State::Windowed);
+
+	sf::VideoMode desktop = sf::VideoMode::getDesktopMode();
+	sf::Vector2u windowSize = window.getSize();
+	sf::Vector2i centeredPosition(desktop.size.x / 2 - windowSize.x / 2, desktop.size.y / 2 - windowSize.y / 2);
+	window.setPosition(centeredPosition);
+
 	should_quit_app = false;
 }
 
@@ -58,6 +64,19 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 					current_mode = Mode::INPUT;
 					create_take_off();
 				}
+				else if (key_press->code == sf::Keyboard::Key::S) 
+				{
+					if (take_offs.size() > 0)
+					{
+						Tally &current_tally = take_offs.back();
+						current_tally.find_template_match("example/planting.png", "example/clj_template.png");
+					}
+					else 
+					{
+						std::println("You must create a new take off.");
+						std::println("Press 'N' to start a new take off.");
+					}
+				}
 				// @DEBUGGING: 
 				else if (key_press->code == sf::Keyboard::Key::T) 
 				{
@@ -77,7 +96,7 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 				{
 					print_take_offs();
 				}
-				else if (key_press->code == sf::Keyboard::Key::S) 
+				else if (key_press->code == sf::Keyboard::Key::E) 
 				{
 					export_take_offs();
 				}
@@ -157,13 +176,17 @@ void App::render(sf::Sprite &image, sf::View view)
 void App::print_usage()
 {
 	std::println("--------------Program Usage-----------------");
+	std::println("");
 	std::println("This is a simple take off program.");
+	std::println("You can move the view with a click and drag motion. You can also zoom with the mouse scroll wheel.");
+	std::println("");
+	std::println("--------------------------------------------");
+	std::println("");
 	std::println("To begin counting material, press 'N'. This will create a new take off.");
 	std::println("You will be prompted to enter a name for the take off. It is common practice to use the name found on the legend for clarity.");
 	std::println("You can then begin counting the symbols for the specified material. Once all symbols have been marked, you can then press 'N' again to begin on the next take off.");
-	std::println("When you have finished all your take offs, press 'S' to save and export your counted materials to the file.");
+	std::println("When you have finished all your take offs, press 'E' to save and export your counted materials to the file.");
 	std::println("");
-	std::println("You can move the view with a click and drag motion. You can also zoom with the mouse scroll wheel.");
 	std::println("--------------------------------------------");
 }
 

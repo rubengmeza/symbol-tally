@@ -32,6 +32,7 @@ void Poppler_Pdf_Handler::create_image_from_pdf(std::string image_name)
     page_renderer.set_render_hint(poppler::page_renderer::text_antialiasing, true);
     page_renderer.set_render_hint(poppler::page_renderer::text_hinting, true);
 
+	std::println("Processing PDF...");
 	// pass DPI to page renderer for higher resolution image
     poppler::image img = page_renderer.render_page(page, 300, 300);
     if (!img.is_valid()) {

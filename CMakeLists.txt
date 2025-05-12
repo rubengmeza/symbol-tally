@@ -7,12 +7,7 @@ set(CMAKE_CXX_STANDARD 23)
 # --------------------------------------------------------------------
 # SFML
 # --------------------------------------------------------------------
-set(SFML_DIR "${CMAKE_SOURCE_DIR}/external/SFML/install/lib/cmake/SFML")
-
-include_directories("${CMAKE_SOURCE_DIR}/external/SFML/install/include")
-link_directories("${CMAKE_SOURCE_DIR}/external/SFML/install/lib")
-
-#find_package(SFML 3 COMPONENTS Graphics Window System REQUIRED)
+add_subdirectory(external/SFML)
 
 # --------------------------------------------------------------------
 # POPPLER
@@ -27,7 +22,7 @@ link_directories(${POPPLER_LIB_DIR})
 # OpenCV
 # --------------------------------------------------------------------
 # Path to OpenCV (has a config file for use with find_package)
-set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/external/opencv/install/lib/cmake/opencv4")
+set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/external/opencv/build")
 
 find_package(OpenCV REQUIRED)
 
@@ -41,3 +36,11 @@ target_include_directories(run PRIVATE ${OpenCV_INCLUDE_DIRS})
 
 # Link Poppler and OpenCV libraries
 target_link_libraries(run PRIVATE poppler-cpp ${OpenCV_LIBS} sfml-graphics sfml-window sfml-system)
+
+# Add RPATH for Poppler and OpenCV
+set_target_properties(run PROPERTIES
+    BUILD_WITH_INSTALL_RPATH TRUE
+    INSTALL_RPATH "${CMAKE_SOURCE_DIR}/external/poppler/install/lib;${CMAKE_SOURCE_DIR}/external/opencv/build/lib"
+)
+
+

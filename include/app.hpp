@@ -22,6 +22,7 @@ public:
 	void run();
 	void get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_mouse_position, bool &is_dragging);
 	void render(sf::Sprite &image, sf::View view);
+	void print_usage();
 
 	// Image stuff.
 	void load_image(std::string path);

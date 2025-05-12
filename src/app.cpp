@@ -1,6 +1,7 @@
 #include <print>
 #include <iostream>
 #include <fstream>
+#include <stdlib.h>
 
 #include "../include/app.hpp"
 
@@ -20,7 +21,7 @@ App::App()
 
 void App::run()
 {
-	load_image("../example/planting.png"); // Load image as texture.
+	load_image("example/planting.png"); // Load image as texture.
 	sf::Sprite image(texture);
 
 	// Image should be zoomed out completely when first opened.
@@ -155,11 +156,15 @@ void App::render(sf::Sprite &image, sf::View view)
 
 void App::print_usage()
 {
+	std::println("--------------Program Usage-----------------");
 	std::println("This is a simple take off program.");
 	std::println("To begin counting material, press 'N'. This will create a new take off.");
 	std::println("You will be prompted to enter a name for the take off. It is common practice to use the name found on the legend for clarity.");
 	std::println("You can then begin counting the symbols for the specified material. Once all symbols have been marked, you can then press 'N' again to begin on the next take off.");
 	std::println("When you have finished all your take offs, press 'S' to save and export your counted materials to the file.");
+	std::println("");
+	std::println("You can move the view with a click and drag motion. You can also zoom with the mouse scroll wheel.");
+	std::println("--------------------------------------------");
 }
 
 // @RESILIENCE: If starting a new take off, will the user be able to just load another image? Or does this method imply restarting app to begin new project.
@@ -172,6 +177,7 @@ void App::load_image(std::string path)
 	else
 	{
 		std::cerr << "Failed to create texture from file: " << path << std::endl;
+		exit(EXIT_FAILURE);
 	}
 }
 

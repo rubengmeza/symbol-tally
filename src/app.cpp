@@ -27,6 +27,8 @@ void App::run()
 	sf::FloatRect image_bounds = image.getGlobalBounds();
 	sf::View view({image_bounds.size.x / 2, image_bounds.size.y / 2}, {image_bounds.size.x, image_bounds.size.y});
 
+	print_usage();
+
 	while (!should_quit_app)
 	{
 		get_user_input(image, view, last_mouse_position, is_dragging);
@@ -106,6 +108,7 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 				else
 				{
 					std::println("You must create a new take off.");
+					std::println("Press 'N' to start a new take off.");
 				}
 
 			}
@@ -148,6 +151,15 @@ void App::render(sf::Sprite &image, sf::View view)
 	}
 
 	window.display();
+}
+
+void App::print_usage()
+{
+	std::println("This is a simple take off program.");
+	std::println("To begin counting material, press 'N'. This will create a new take off.");
+	std::println("You will be prompted to enter a name for the take off. It is common practice to use the name found on the legend for clarity.");
+	std::println("You can then begin counting the symbols for the specified material. Once all symbols have been marked, you can then press 'N' again to begin on the next take off.");
+	std::println("When you have finished all your take offs, press 'S' to save and export your counted materials to the file.");
 }
 
 // @RESILIENCE: If starting a new take off, will the user be able to just load another image? Or does this method imply restarting app to begin new project.

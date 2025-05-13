@@ -5,7 +5,7 @@
 
 #include "../include/app.hpp"
 
-// @PROPAGANDA: Bad practice to place as global????
+// Prevent keyboard events in main loop while typing in a tally name.
 enum Mode
 {
 	TALLY,
@@ -13,6 +13,7 @@ enum Mode
 };
 Mode current_mode = Mode::TALLY;
 
+// Basic app setup.
 App::App() 
 {
 	window.create(sf::VideoMode({1200, 1000}), "Symbol Tally: Easy CD Take offs", sf::Style::None, sf::State::Windowed);
@@ -27,7 +28,7 @@ App::App()
 
 void App::run()
 {
-	load_image("example/planting.png"); // Load image as texture.
+	load_image("../example/planting.png"); // Load image as texture.
 	sf::Sprite image(texture);
 
 	// Image should be zoomed out completely when first opened.
@@ -48,7 +49,6 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 
 	while (const std::optional event = window.pollEvent())
 	{
-		// @FEATURE: Reset view.
 		if (event->is<sf::Event::Closed>())
 		{
 			window.close();
@@ -69,7 +69,7 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 					if (take_offs.size() > 0)
 					{
 						Tally &current_tally = take_offs.back();
-						current_tally.find_template_match("example/planting.png", "example/clj_template.png");
+						current_tally.find_template_match("../example/planting.png", "../example/clj_template.png");
 					}
 					else 
 					{
@@ -142,7 +142,6 @@ void App::get_user_input(sf::Sprite &image, sf::View &view, sf::Vector2f &last_m
 		}
 		else if (const auto *mouse_moved = event->getIf<sf::Event::MouseMoved>()) 
 		{
-			// Moving the image.
 			sf::Vector2f mouse_position = window.mapPixelToCoords(mouse_moved->position);
 			drag_image(view, is_dragging, last_mouse_position, mouse_position);
 		}
@@ -190,7 +189,6 @@ void App::print_usage()
 	std::println("--------------------------------------------");
 }
 
-// @RESILIENCE: If starting a new take off, will the user be able to just load another image? Or does this method imply restarting app to begin new project.
 void App::load_image(std::string path)
 {
 	if (texture.loadFromFile(path))
@@ -213,7 +211,7 @@ void App::create_take_off()
 	Tally tally(name);
 	take_offs.push_back(tally);
 
-	// Reset mode to allow input.
+	// Reset mode to allow input events.
 	current_mode = Mode::TALLY;
 } 
 

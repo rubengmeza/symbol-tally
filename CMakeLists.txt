@@ -10,37 +10,55 @@ set(CMAKE_CXX_STANDARD 23)
 add_subdirectory(external/SFML)
 
 # --------------------------------------------------------------------
-# POPPLER
+# POPPLER (disabled)
 # --------------------------------------------------------------------
-set(POPPLER_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/include")
-set(POPPLER_LIB_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/lib")
+set(POPPLER_ENABLED TRUE)  
 
-include_directories(${POPPLER_INCLUDE_DIR})
-link_directories(${POPPLER_LIB_DIR})
+if(POPPLER_ENABLED)
+    set(POPPLER_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/include")
+    set(POPPLER_LIB_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/lib")
+endif()
 
 # --------------------------------------------------------------------
 # OpenCV
 # --------------------------------------------------------------------
-# Path to OpenCV (has a config file for use with find_package)
 set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/external/opencv/build")
-
 find_package(OpenCV REQUIRED)
 
 # --------------------------------------------------------------------
-# Executable target
+# Sources
 # --------------------------------------------------------------------
-add_executable(run src/main.cpp src/poppler_pdf_handler.cpp src/tally.cpp src/app.cpp)
-
-# Include OpenCV headers
-target_include_directories(run PRIVATE ${OpenCV_INCLUDE_DIRS})
-
-# Link Poppler and OpenCV libraries
-target_link_libraries(run PRIVATE poppler-cpp ${OpenCV_LIBS} sfml-graphics sfml-window sfml-system)
-
-# Add RPATH for Poppler and OpenCV
-set_target_properties(run PROPERTIES
-    BUILD_WITH_INSTALL_RPATH TRUE
-    INSTALL_RPATH "${CMAKE_SOURCE_DIR}/external/poppler/install/lib;${CMAKE_SOURCE_DIR}/external/opencv/build/lib"
+set(SOURCES
+    src/main.cpp
+    src/tally.cpp
+    src/app.cpp
 )
 
+if(POPPLER_ENABLED)
+    list(APPEND SOURCES src/poppler_pdf_handler.cpp)
+endif()
 
+add_executable(run ${SOURCES})
+
+# --------------------------------------------------------------------
+# Include directories
+# --------------------------------------------------------------------
+target_include_directories(run PRIVATE
+    ${OpenCV_INCLUDE_DIRS}
+)
+
+if(POPPLER_ENABLED)
+    target_include_directories(run PRIVATE ${POPPLER_INCLUDE_DIR})
+endif()
+
+# --------------------------------------------------------------------
+# Link libraries
+# --------------------------------------------------------------------
+target_link_libraries(run PRIVATE
+    ${OpenCV_LIBS}
+    sfml-graphics sfml-window sfml-system
+)
+
+if(POPPLER_ENABLED)
+    target_link_libraries(run PRIVATE poppler-cpp)
+endif()

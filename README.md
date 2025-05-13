@@ -110,3 +110,18 @@ For me it was /home/roobz/fun/
 ```bash
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/path/to/project/symbol-tally/external/poppler/install/lib:/path/to/project/symbol-tally/external/opencv/build/lib
 ```
+
+
+### Usage
+
+- You can move the view with a click and drag motion. You can also zoom with the mouse scroll wheel.
+
+- To begin counting material, press 'N'. This will create a new take off.
+
+- You will be prompted to enter a name for the take off. It is common practice to use the name found on the legend for clarity.
+
+- You can then begin counting the symbols for the specified material. Once all symbols have been marked, you can then press 'N' again to begin on the next take off.
+
+- When you have finished all your take offs, press 'E' to save and export your counted materials to the file.
+
+To use the symbol search, you must already have a take off created. Then push the 'S' key.

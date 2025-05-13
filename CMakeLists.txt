@@ -12,7 +12,7 @@ add_subdirectory(external/SFML)
 # --------------------------------------------------------------------
 # POPPLER (can disable) 
 # --------------------------------------------------------------------
-set(POPPLER_ENABLED TRUE)  
+set(POPPLER_ENABLED FALSE)  
 
 if(POPPLER_ENABLED)
     set(POPPLER_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/include")

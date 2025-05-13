@@ -53,12 +53,17 @@ mkdir build && cd build
 cmake .. \
   -DCMAKE_INSTALL_PREFIX=../install \
   -DENABLE_UNSTABLE_API_ABI_HEADERS=ON \
-  -DENABLE_QT5=OFF
+  -DENABLE_QT5=OFF \
+  -DENABLE_QT6=OFF \
+  -DENABLE_GLIB=OFF
 make -j
 make install
 ```
 
 3. OpenCV
+
+Make sure you are in the project root (/symbol-tally) before running the following. 
+All dependencies MUST be in `symbol-tally/external`.
 
 ```bash
 cd external
@@ -75,11 +80,13 @@ cmake .. \
   -DBUILD_opencv_java=OFF \
   -DBUILD_opencv_python=OFF
 
-make -j
+make -j$(nproc)
 ```
 
 
 ### Building the Project
+
+Again, make sure you are in the project root.
 
 ```bash
 cd symbol-tally

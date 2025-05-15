@@ -35,6 +35,7 @@ cd symbol-tally
 ```
 
 This project uses SFML, Poppler, and OpenCV — all vendored in external/. Follow the steps below to install them properly before building.
+**For Windows usage: Poppler can be tricky to get working. The example will run without needing to try to install Poppler. All code involving Poppler has been commented out.**
 
 1. SFML
 

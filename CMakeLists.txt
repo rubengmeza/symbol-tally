@@ -1,28 +1,38 @@
-cmake_minimum_required(VERSION 3.10)
-
-project(symbol-tally)
-
+cmake_minimum_required(VERSION 3.28)
+project(symbol-tally LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 23)
 
-# --------------------------------------------------------------------
-# SFML
-# --------------------------------------------------------------------
-add_subdirectory(external/SFML)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# --------------------------------------------------------------------
-# POPPLER (can disable) 
-# --------------------------------------------------------------------
-set(POPPLER_ENABLED FALSE)  
+include(FetchContent)
+FetchContent_Declare(SFML
+    GIT_REPOSITORY https://github.com/SFML/SFML.git
+    GIT_TAG 3.0.1
+    GIT_SHALLOW ON
+    EXCLUDE_FROM_ALL
+    SYSTEM)
+FetchContent_MakeAvailable(SFML)
 
-if(POPPLER_ENABLED)
-    set(POPPLER_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/include")
-    set(POPPLER_LIB_DIR "${CMAKE_SOURCE_DIR}/external/poppler/install/lib")
-endif()
+FetchContent_Declare(IMGUI
+    GIT_REPOSITORY https://github.com/ocornut/imgui.git
+    GIT_TAG v1.91.9b
+    GIT_SHALLOW ON
+    EXCLUDE_FROM_ALL
+    SYSTEM)
+FetchContent_MakeAvailable(IMGUI)
 
-# --------------------------------------------------------------------
-# OpenCV
-# --------------------------------------------------------------------
-set(OpenCV_DIR "${CMAKE_SOURCE_DIR}/external/opencv/build")
+FetchContent_Declare(IMGUI-SFML
+    GIT_REPOSITORY https://github.com/SFML/imgui-sfml.git
+    GIT_TAG v3.0
+    GIT_SHALLOW ON
+    EXCLUDE_FROM_ALL
+    SYSTEM)
+set(IMGUI_DIR ${imgui_SOURCE_DIR})
+set(IMGUI_SFML_FIND_SFML OFF)
+set(IMGUI_SFML_IMGUI_DEMO ON)
+FetchContent_MakeAvailable(IMGUI-SFML)
+
+set(OpenCV_DIR "build/_deps/opencv/build")
 find_package(OpenCV REQUIRED)
 
 # --------------------------------------------------------------------
@@ -34,31 +44,15 @@ set(SOURCES
     src/app.cpp
 )
 
-if(POPPLER_ENABLED)
-    list(APPEND SOURCES src/poppler_pdf_handler.cpp)
-endif()
-
 add_executable(run ${SOURCES})
-
-# --------------------------------------------------------------------
-# Include directories
-# --------------------------------------------------------------------
-target_include_directories(run PRIVATE
-    ${OpenCV_INCLUDE_DIRS}
-)
-
-if(POPPLER_ENABLED)
-    target_include_directories(run PRIVATE ${POPPLER_INCLUDE_DIR})
-endif()
 
 # --------------------------------------------------------------------
 # Link libraries
 # --------------------------------------------------------------------
 target_link_libraries(run PRIVATE
-    ${OpenCV_LIBS}
-    sfml-graphics sfml-window sfml-system
+	ImGui-SFML::ImGui-SFML SFML::Graphics
 )
 
-if(POPPLER_ENABLED)
-    target_link_libraries(run PRIVATE poppler-cpp)
-endif()
+#if(POPPLER_ENABLED)
+#    target_link_libraries(run PRIVATE poppler-cpp)
+#endif()

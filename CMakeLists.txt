@@ -50,7 +50,9 @@ add_executable(run ${SOURCES})
 # Link libraries
 # --------------------------------------------------------------------
 target_link_libraries(run PRIVATE
-	ImGui-SFML::ImGui-SFML SFML::Graphics
+	SFML::Graphics
+	ImGui-SFML::ImGui-SFML 
+	${OpenCV_LIBS}
 )
 
 #if(POPPLER_ENABLED)

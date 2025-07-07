@@ -11,6 +11,8 @@
 ```console
 cd build/_deps
 git clone https://github.com/opencv/opencv.git
+mkdir build
+cd build
 cmake -DCMAKE_INSTALL_PREFIX=../build/_deps/opencv/install ..
 sudo make install -j$(nproc)
 ```
